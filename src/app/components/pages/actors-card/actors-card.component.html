@@ -1,0 +1,5 @@
+<ng-container *ngFor="let actor of actors">
+<p>{{actor.name}}</p>
+<img *ngIf="actor.photo" [src]="actor.photo" [alt]="actor.name">
+<img *ngIf="!actor.photo" [src]="basicIcon" [alt]="actor.name">
+</ng-container>

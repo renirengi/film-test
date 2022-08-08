@@ -1,0 +1,9 @@
+<ng-container *ngIf="film">
+  <div class="film-container" routerLink="/catalog/{{film.id}}">
+  <h2>{{film.title}}</h2>
+  <h3 *ngIf="film.originalTitle">Aka: {{film.originalTitle}}</h3>
+  <img [src]="film.urlPoster" [alt]="film.title">
+  <p>{{film.year}}</p>
+  <p>{{film.price | currency}}</p>
+  </div>
+  </ng-container>

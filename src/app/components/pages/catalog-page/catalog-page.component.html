@@ -1,0 +1,41 @@
+ <div class="page" *ngIf="filmService.films">
+  <app-films-list
+  *ngIf="films"
+  [films]="films"
+  [currentPage]="displayedPage"
+  [showLoadMore]="showLoadMore"
+  >
+ </app-films-list>
+  <button
+  mat-stroked-button
+  color="primary"
+ [disabled]="displayedPage===1"
+ (click)="onLoadPage(displayedPage-1)">Back</button>
+ <button *ngIf="displayedPage!==1"
+ mat-stroked-button
+ color="primary"
+ (click)="onLoadPage(1)">1</button>
+ <button *ngIf="displayedPage!==1 && displayedPage !==2"
+ mat-stroked-button
+ color="primary" >...</button>
+ <button
+ mat-stroked-button
+ color="primary">{{displayedPage}}</button>
+ <button *ngIf="displayedPage!==endPage && displayedPage!==endPage-1"
+ mat-stroked-button
+ color="primary"
+ (click)="onLoadPage(displayedPage+1)">{{displayedPage+1}}</button>
+ <button *ngIf="displayedPage!==endPage && displayedPage!==endPage-1 && displayedPage!==endPage-2"
+ mat-stroked-button
+ color="primary">...</button>
+ <button *ngIf="displayedPage!==endPage"
+ mat-stroked-button
+ color="primary"
+ (click)="onLoadPage(endPage)">{{endPage}}</button>
+ <button [disabled]="displayedPage===endPage"
+ mat-stroked-button
+ color="primary"
+ (click)="onLoadPage(displayedPage+1)">Next</button>
+</div>
+
+
