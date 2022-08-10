@@ -13,7 +13,11 @@
   </span>
 </mat-icon>
 </button>
-
+<div class="user-container">
+  <ng-container *ngIf="currentUser$ | async as user; else loginOrRegister">
+   <a [routerLink]="['/user']">{{ user.email }}</a> | <a (click)="onLogout()">Logout</a>
+  </ng-container>
+<ng-template #loginOrRegister>
 <button
     mat-stroked-button
     color="primary"
@@ -38,6 +42,7 @@
     </span>
   </mat-icon>
 </button>
-
+</ng-template>
+</div>
 </div>
 </div>

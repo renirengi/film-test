@@ -21,9 +21,14 @@
       "id": 4
     },
     {
+      "id": 5,
       "email": "",
-      "password": "",
-      "id": 5
+      "password": ""
+    },
+    {
+      "id": 6,
+      "email": "",
+      "password": ""
     }
   ],
   "films": [
@@ -3267,7 +3272,7 @@
       "plot": "Nora is a young tourist traveling through Rome which takes a sudden turn when she witnesses a murder by a serial killer that the police have sought for years for the so-called Alphabet Killings, and Nora soon finds herself in way-over-her-head trouble when the police want her cooperation to catch the killer while the mystery killer soon targets her for his next victim.",
       "urlIMDB": "https://www.imdb.com/title/tt0057443/?ref_=nv_sr_srsg_3",
       "type": "VHS",
-      "rating": 7.0,
+      "rating": 7,
       "price": 58.9,
       "counts": 135
     },
@@ -3316,7 +3321,7 @@
       ],
       "plot": "A Carpathian village is haunted by the ghost of a murderous little girl, prompting a coroner and a medical student to uncover her secrets while a witch attempts to protect the villagers.",
       "urlIMDB": "https://www.imdb.com/title/tt0060794/?ref_=nv_sr_srsg_0",
-       "type": "VHS",
+      "type": "VHS",
       "rating": 6.9,
       "price": 34.98,
       "counts": 45
@@ -3477,7 +3482,7 @@
       "rated": "R",
       "type": "DVD",
       "rating": 7.1,
-      "price": 76.90,
+      "price": 76.9,
       "counts": 34
     },
     {
@@ -3615,7 +3620,6 @@
           "name": "Miki Nakatani",
           "photo": "https://m.media-amazon.com/images/M/MV5BMTkzMjM2NjM2M15BMl5BanBnXkFtZTgwOTI5NjUyNzE@._V1_UY317_CR130,0,214,317_AL_.jpg"
         }
-
       ],
       "runtime": "96 min",
       "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/86210f23-ef18-42a1-b9c3-bafc7eb7c48a/1920x",
@@ -3831,7 +3835,6 @@
         "Spanish (Dolby Digital 5.1)",
         "Italian (Dolby Digital 5.1)",
         "German (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English",
@@ -3889,7 +3892,6 @@
       ],
       "languages": [
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English"
@@ -3942,7 +3944,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Sci-Fi"
@@ -3994,7 +3995,6 @@
       "languages": [
         "Swiss German (Dolby Digital 5.1)",
         "German (Dolby Digital 5.1)"
-
       ],
       "genres": [
         "Thriller"
@@ -4045,7 +4045,6 @@
       "languages": [
         "Spanish (Dolby Digital 5.1)",
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English",
@@ -4100,7 +4099,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Thriller"
@@ -4150,7 +4148,6 @@
       ],
       "languages": [
         "German"
-
       ],
       "genres": [
         "Thriller",
@@ -4160,7 +4157,7 @@
       "plot": "Hypnotist Dr. Caligari uses a somnambulist, Cesare, to commit murders.",
       "urlIMDB": "https://www.imdb.com/title/tt0010323/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 8.0,
+      "rating": 8,
       "price": 44.67,
       "counts": 67
     },
@@ -4257,7 +4254,6 @@
       ],
       "languages": [
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English"
@@ -4270,13 +4266,13 @@
       "urlIMDB": "https://www.imdb.com/title/tt1323605/?ref_=nv_sr_srsg_3",
       "rated": "R",
       "type": "DVD",
-      "rating": 6.0,
+      "rating": 6,
       "price": 13.12,
       "counts": 32
     },
     {
       "title": "Kwaidan",
-      "originalTitle":"Kaidan",
+      "originalTitle": "Kaidan",
       "id": 81,
       "trailer": "https://www.youtube.com/embed/XG5mvupo9Wc",
       "year": "1964",
@@ -4312,7 +4308,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Mystic",
@@ -4387,7 +4382,7 @@
       "rated": "18+",
       "type": "Blu-Ray",
       "rating": 7.3,
-      "price": 87.90,
+      "price": 87.9,
       "counts": 100
     },
     {
@@ -4487,7 +4482,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Witch",
@@ -4539,7 +4533,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Thriller"
@@ -4587,7 +4580,6 @@
       ],
       "languages": [
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English"
@@ -4641,7 +4633,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Secta"
@@ -4687,12 +4678,12 @@
       "runtime": "99 min",
       "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/3ec82c2a-7c1f-4bbd-97c9-9bf9dc865dc2/1920x",
       "countries": [
-        "USA",""
+        "USA",
+        ""
       ],
       "languages": [
         "English (Dolby Digital 5.1)",
         "German (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English",
@@ -4707,7 +4698,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1127180/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "Blu-Ray",
-      "rating": 6.0,
+      "rating": 6,
       "price": 13.12,
       "counts": 32
     },
@@ -4750,7 +4741,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Religion",
@@ -4804,7 +4794,6 @@
       "languages": [
         "Japanese (Dolby Digital 5.1)",
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English"
@@ -4858,7 +4847,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Children",
@@ -4911,7 +4899,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Action",
@@ -4933,13 +4920,12 @@
       "trailer": "https://www.youtube.com/embed/GLDMYRDmpuI",
       "year": "2005",
       "directors": [
-      "Shin-yeon Won"
+        "Shin-yeon Won"
       ],
       "writers": [
         "Sung-won Cho",
         "Hyun-jung Do",
         "Shin-yeon Won"
-
       ],
       "actors": [
         {
@@ -5009,7 +4995,6 @@
           "name": "John Saxon",
           "photo": "https://m.media-amazon.com/images/M/MV5BMTk2NjE1NTk3Ml5BMl5BanBnXkFtZTcwOTAzMjg0NA@@._V1_UY317_CR134,0,214,317_AL_.jpg"
         }
-
       ],
       "runtime": "92 min",
       "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/51e2b36b-745b-4a86-a1cd-4f6d58cc882b/1920x",
@@ -5018,7 +5003,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Mystic",
@@ -5072,7 +5056,6 @@
       "languages": [
         "English (Dolby Digital 5.1)",
         "French (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "German",
@@ -5131,7 +5114,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Crime",
@@ -5183,7 +5165,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Adaptation",
@@ -5237,7 +5218,6 @@
       ],
       "languages": [
         "French"
-
       ],
       "genres": [
         "Crime",
@@ -5291,7 +5271,6 @@
       "languages": [
         "Korean (Dolby Digital 5.1)",
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English"
@@ -5346,7 +5325,6 @@
       "languages": [
         "Japanese (Dolby Digital 5.1)",
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English"
@@ -5455,7 +5433,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Mystic",
@@ -5509,7 +5486,6 @@
       ],
       "languages": [
         "Italian"
-
       ],
       "genres": [
         "Mystic",
@@ -5520,7 +5496,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0059116/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "VHS",
-      "rating": 7.0,
+      "rating": 7,
       "price": 67.99,
       "counts": 78
     },
@@ -5614,7 +5590,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Mystic",
@@ -5669,7 +5644,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Mystic",
@@ -5723,7 +5697,6 @@
       "languages": [
         "Thai (Dolby Digital 5.1)",
         "English (Dolby Digital 5.1)"
-
       ],
       "subs": [
         "English",
@@ -5735,7 +5708,7 @@
       "plot": "A young photographer and his girlfriend discover mysterious shadows in their photographs after a tragic accident. They soon learn that you can not escape your past.",
       "urlIMDB": "https://www.imdb.com/title/tt0440803/?ref_=nv_sr_srsg_3",
       "type": "DVD",
-      "rating": 7.0,
+      "rating": 7,
       "price": 23.56,
       "counts": 10
     },
@@ -5778,7 +5751,6 @@
       ],
       "languages": [
         "English"
-
       ],
       "genres": [
         "Thriller",
@@ -5825,7 +5797,6 @@
       ],
       "languages": [
         "English (Dolby Digital 2.1)"
-
       ],
       "subs": [
         "English"
@@ -5880,7 +5851,6 @@
       ],
       "languages": [
         "Italian"
-
       ],
       "genres": [
         "Thriller",
@@ -5895,7 +5865,5 @@
       "price": 16.33,
       "counts": 4
     }
-
-
   ]
 }

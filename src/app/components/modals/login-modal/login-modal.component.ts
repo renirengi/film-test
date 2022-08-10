@@ -42,13 +42,11 @@ export class LoginModalComponent implements OnInit {
     const password = this.loginForm.value['password'] as string;
 
     this.result$ = this.usersService.loginUser(email, password).pipe(
-      map((result) => result ? userLoggedIn : loginFailed))
-      tap((result) => {
-        result && this.dialogRef.close();
-        console.log(result)
-      })
-    ;
+      map((result) => result ? userLoggedIn : loginFailed),
+      tap((result) => result && this.dialogRef.close()))
   }
+
+
 
   onNoClick(): void {
     this.dialogRef.close();

@@ -51,19 +51,13 @@ export class RegisterModalComponent implements OnInit {
     return this.registerForm.controls.confirmPassword as FormControl
   }
 
-
-
-  onSubmit () {
-    this.userService.addUser({
-      email: this.registerForm.value['email'] as string,
-      password: this.registerForm.value['password'] as string,
-      }).subscribe(() => this.dialogRef.close())
-
-    /*await firstValueFrom(this.userService.addUser({
+  async onSubmit () {
+    await firstValueFrom(this.userService.addUser({
+      id: 0 as number,
       email: this.registerForm.value['email'] as string,
       password: this.registerForm.value['password'] as string,
     }));
-    this.dialogRef.close();*/
+    this.dialogRef.close();
   }
 
   onNoClick () {
