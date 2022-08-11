@@ -9,8 +9,6 @@ import { CookieService } from './cookie.service';
 })
 export class UserService {
 
-  users: IUser[] = [];
-
   private readonly baseUrl = 'http://localhost:3000/users';
 
   private _currentUser$ = new BehaviorSubject<IUser|null>(null);
@@ -31,16 +29,13 @@ export class UserService {
     return this.http.get<IUser>(url);
   }
 
-  public addUser(user:IUser): Observable<IUser> {
-    return this.http.post<IUser>(this.baseUrl, user)
-    .pipe(
-      tap(user => {
-        this.users.push(user);
-      })
-    )
+  public addUser(user: IUser): any {
+    const url = `${this.baseUrl}`;
+    return this.http.post<IUser>(url, {...user});
   }
 
   public findUserByEmail(email: string): Observable<IUser[]> {
+    console.log("I find email")
     return this.http.get<IUser[]>(`${this.baseUrl}?email=${email}`);
   }
 
@@ -50,7 +45,8 @@ export class UserService {
     }
 
     return this.findUserByEmail(email).pipe(
-      map(([user]) => user?.password === password ? user : null)
+      map(([user]) => user?.password === password ? user : null),
+      tap (()=> console.log("hyugyu"))
     );
   }
 

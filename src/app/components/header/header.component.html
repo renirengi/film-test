@@ -1,48 +1,49 @@
-<div class="header">
-<div class="icons-settings">
 
-<button
-  mat-stroked-button
-  color="primary"
-  (click)="goToCatalogPage()">
-  <mat-icon
-  aria-label="Example catalog icon"
-  >
-  <span class="material-symbols-outlined">
-    duo
-  </span>
-</mat-icon>
-</button>
-<div class="user-container">
-  <ng-container *ngIf="currentUser$ | async as user; else loginOrRegister">
-   <a [routerLink]="['/user']">{{ user.email }}</a> | <a (click)="onLogout()">Logout</a>
-  </ng-container>
-<ng-template #loginOrRegister>
-<button
-    mat-stroked-button
-    color="primary"
-    (click)="showRegisterModal()">
-    <mat-icon
-    aria-label="Example register icon"
-    >
-    <span class="material-symbols-outlined">
-      account_circle
-    </span>
-  </mat-icon>
-</button>
+<header class="header">
+  <div class="icons-settings">
     <button
     mat-stroked-button
     color="primary"
-    (click)="showLoginModal()">
+    (click)="goToCatalogPage()">
     <mat-icon
-    aria-label="Example login icon"
-    >
-    <span class="material-symbols-outlined">
-      how_to_reg
-    </span>
-  </mat-icon>
-</button>
-</ng-template>
-</div>
-</div>
-</div>
+      aria-label="Example catalog icon"
+      >
+      <span class="material-symbols-outlined">
+      duo
+      </span>
+    </mat-icon>
+  </button>
+  </div>
+   <div class="user-container">
+    <ng-container *ngIf="currentUser$ | async as user; else loginOrRegister">
+      <button
+      mat-stroked-button
+      color="primary"  [routerLink]="['/user']">{{ user.email }}</button> | <button
+      mat-stroked-button
+      color="primary"  (click)="onLogout()">Logout</button>
+    </ng-container>
+
+    <ng-template #loginOrRegister>
+      <button
+      mat-stroked-button
+      color="primary" (click)="showLoginModal()">Login <mat-icon
+      aria-label="Example register icon"
+      >
+      <span class="material-symbols-outlined">
+      account_circle
+      </span>
+    </mat-icon></button> or
+      <button
+      mat-stroked-button
+      color="primary" (click)="showRegisterModal()">Register
+      <mat-icon
+            aria-label="Example login icon"
+            >
+            <span class="material-symbols-outlined">
+            how_to_reg
+            </span>
+          </mat-icon>
+    </button>
+    </ng-template>
+  </div>
+</header>

@@ -1,12 +1,12 @@
 export interface IUser {
   id: number;
+  name: string;
   email: string;
   password: string;
   personalData?: IUserPersonalData;
 }
 
 export interface IUserPersonalData {
-  name: string;
   phoneNumber: string;
   country: string;
   zipCode: string;

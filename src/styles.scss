@@ -4,10 +4,28 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .header {
- display: flex;
- justify-content: center;
- height: 10vh;
- background-color: black;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  .icons-settings {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .input-container {
+
+    .input-search {
+      width: 70%;
+      height: 3vh;
+      border: 2px solid black;
+     }
+  }
+
 }
 
 .page {

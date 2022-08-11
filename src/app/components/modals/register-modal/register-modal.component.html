@@ -7,8 +7,14 @@
     <input matInput placeholder="pat@example.com" formControlName="email" />
   </mat-form-field>
 
-  <p *ngIf="email.errors && email.touched"
-  >Please fill email field according to template!</p>
+
+
+  <mat-form-field>
+    <mat-label>Enter your name</mat-label>
+    <input matInput placeholder="Name" formControlName="name" />
+  </mat-form-field>
+
+
 
   <mat-form-field>
     <mat-label>Enter your password</mat-label>
@@ -25,8 +31,6 @@
       </button>
   </mat-form-field>
 
-  <p *ngIf="password.errors && password.touched"
-  >Please fill password field width min or max length. Now {{ password.value.length }}</p>
 
   <mat-form-field *ngIf="confirmPassword">
     <mat-label>Confirm your password</mat-label>
@@ -40,6 +44,6 @@
  </mat-dialog-content>
  <div mat-dialog-actions>
   <button mat-stroked-button type="submit" color="primary" [disabled]="!registerForm.valid || confirmPassword.value!==password.value ">Register</button>
-  <button mat-button (click)="onNoClick()" type="submit" color="primary">Cancel</button>
+  <button mat-stroked-button  type="button" (click)="onNoClick()" color="primary">Cancel</button>
 </div>
 </form>

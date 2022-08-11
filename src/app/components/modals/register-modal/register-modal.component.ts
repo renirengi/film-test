@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, lastValueFrom } from 'rxjs';
 
 import { UserService } from 'src/app/services/user.service';
 
@@ -21,6 +21,11 @@ export class RegisterModalComponent implements OnInit {
     email: new FormControl('', [
       Validators.required,
       Validators.email
+    ]),
+    name: new FormControl('', [
+      Validators.required,
+      Validators.minLength(8),
+      Validators.maxLength(16)
     ]),
     password: new FormControl('', [
       Validators.required,
@@ -51,16 +56,23 @@ export class RegisterModalComponent implements OnInit {
     return this.registerForm.controls.confirmPassword as FormControl
   }
 
+  get name() {
+    return this.registerForm.controls.name as FormControl
+  }
+
   async onSubmit () {
-    await firstValueFrom(this.userService.addUser({
-      id: 0 as number,
-      email: this.registerForm.value['email'] as string,
-      password: this.registerForm.value['password'] as string,
-    }));
+
+    const id = 0 as number;
+    const email = this.registerForm.value['email'] as string;
+    const name = this.registerForm.value['name']as string;
+    const password = this.registerForm.value['password'] as string;
+    const user = {id, email, name, password};
+    await lastValueFrom(this.userService.addUser(user));
+
     this.dialogRef.close();
   }
 
-  onNoClick () {
+  onNoClick ():void {
     this.dialogRef.close();
   }
 

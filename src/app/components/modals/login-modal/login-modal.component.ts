@@ -43,7 +43,10 @@ export class LoginModalComponent implements OnInit {
 
     this.result$ = this.usersService.loginUser(email, password).pipe(
       map((result) => result ? userLoggedIn : loginFailed),
-      tap((result) => result && this.dialogRef.close()))
+      tap((result) => {
+        result && this.dialogRef.close()
+        console.log(result)
+      }))
   }
 
 
