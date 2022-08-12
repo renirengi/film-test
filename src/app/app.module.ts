@@ -40,6 +40,7 @@ import { ActorsCardComponent } from './components/pages/actors-card/actors-card.
 import { VideoPlayerComponent } from './components/pages/video-player/video-player.component';
 import { ButtonsPageComponent } from './components/pages/buttons-page/buttons-page.component';
 import { UserPageComponent } from './components/pages/user-page/user-page.component';
+import { UserAboutComponent } from './components/pages/user-about/user-about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,8 @@ import { UserPageComponent } from './components/pages/user-page/user-page.compon
     ActorsCardComponent,
     VideoPlayerComponent,
     ButtonsPageComponent,
-    UserPageComponent
+    UserPageComponent,
+    UserAboutComponent
 
   ],
   imports: [

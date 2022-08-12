@@ -1,1 +1,45 @@
-<p>user-page works!</p>
+<div *ngIf="user$ | async as user">
+  <div class="user-registration-container">
+    <h2>My data </h2>
+    <p>Name: {{user.name}}</p>
+    <p>Email: {{user.email}}</p>
+    <button
+    mat-stroked-button
+    color="primary">
+    <mat-icon
+    aria-label="Example manage icon">
+    <span class="material-symbols-outlined">
+      manage_accounts
+      </span>
+    </mat-icon>
+     Change data & password
+    </button>
+  </div>
+  <div class="user-about-container">
+    <ng-container *ngIf="isVisibleAbout; else UserAbout">
+      <app-user-about
+      [user]="user"
+      [isVisibleAbout]="isVisibleAbout"
+      (update)="onTakeCover()"
+      >
+      </app-user-about>
+    </ng-container>
+    <ng-template #UserAbout>
+      <p>Phone Number: {{user.personalData?.phoneNumber}}</p>
+      <p>State: {{user.personalData?.state}}</p>
+      <p>Zip-code: {{user.personalData?.zipCode}}</p>
+      <p>City: {{user.personalData?.city}}</p>
+      <p>Address: {{user.personalData?.address}}</p>
+      <button
+      mat-stroked-button
+      color="primary" (click)="onTakeCover()">
+      <mat-icon
+      aria-label="Example manage icon">
+      <span class="material-symbols-outlined">
+        manage_accounts
+        </span>
+      </mat-icon>
+       Change data</button>
+    </ng-template>
+  </div>
+</div>

@@ -67,6 +67,14 @@ export class UserService {
 
   }
 
+  public updateUser(user: IUser) {
+    const url = `${this.baseUrl}/${user.id}`;
+
+    return this.http.patch<IUser>(url, user).pipe(
+      tap((user)=> this._currentUser$.next(user))
+    );
+  }
+
   public getAllUsers() {
     return this.http.get<IUser>(this.baseUrl).
     pipe(

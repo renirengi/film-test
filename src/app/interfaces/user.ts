@@ -8,12 +8,10 @@ export interface IUser {
 
 export interface IUserPersonalData {
   phoneNumber: string;
-  country: string;
+  state: string;
   zipCode: string;
   city: string;
-  house: number,
-  building?: number|string;
-  apartment?: number;
+  address: string;
   goods?: IGoods;
 
 }

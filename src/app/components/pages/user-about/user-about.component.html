@@ -1,0 +1,35 @@
+<form [formGroup]="userAboutForm" (ngSubmit)="onSubmit()">
+  <h2>Пожалуйста, заполните эти поля</h2>
+  <mat-dialog-content>
+
+   <mat-form-field>
+     <mat-label>Enter your phone</mat-label>
+     <input matInput type="tel" placeholder="+8" formControlName="phoneNumber" />
+   </mat-form-field>
+
+   <mat-form-field>
+    <mat-label>Enter your state</mat-label>
+    <input matInput placeholder="California" formControlName="state" />
+  </mat-form-field>
+
+   <mat-form-field>
+     <mat-label>Enter your city</mat-label>
+     <input matInput placeholder="Las-Vegas" formControlName="city" />
+   </mat-form-field>
+
+   <mat-form-field>
+    <mat-label>Enter your zip-code</mat-label>
+    <input matInput type="number" placeholder="90001" formControlName="zipCode" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Enter your address</mat-label>
+    <input matInput placeholder="" formControlName="address" />
+  </mat-form-field>
+
+  </mat-dialog-content>
+  <mat-dialog-actions>
+   <button mat-stroked-button type="submit" color="primary" [disabled]="!userAboutForm.valid">Submit</button>
+   <button mat-stroked-button  type="button" color="primary" (click)="apply(isVisibleAbout)">Hide</button>
+ </mat-dialog-actions>
+ </form>

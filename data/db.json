@@ -4,7 +4,14 @@
       "id": 1,
       "name": "Pat Verr",
       "email": "pat@gmail.com",
-      "password": "12345678"
+      "password": "12345678",
+      "personalData": {
+        "phoneNumber": "+375291714557",
+        "state": "Catland",
+        "zipCode": 90000,
+        "city": "EmperorsVill",
+        "address": "Mauricio str, 45"
+      }
     }
   ],
   "films": [
