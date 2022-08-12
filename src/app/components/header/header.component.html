@@ -18,9 +18,25 @@
     <ng-container *ngIf="currentUser$ | async as user; else loginOrRegister">
       <button
       mat-stroked-button
-      color="primary"  [routerLink]="['/user']">{{ user.email }}</button> | <button
+      color="primary"  [routerLink]="['/user']">
+      <mat-icon
+      aria-label="Example face icon"
+      >
+      <span class="material-symbols-outlined">
+        face
+        </span>
+    </mat-icon>
+      {{ user.email }}</button> | <button
       mat-stroked-button
-      color="primary"  (click)="onLogout()">Logout</button>
+      color="primary"
+      (click)="onLogout()">
+      <mat-icon
+      aria-label="Example logout icon"
+      >
+      <span class="material-symbols-outlined">
+        logout
+        </span>
+    </mat-icon></button>
     </ng-container>
 
     <ng-template #loginOrRegister>

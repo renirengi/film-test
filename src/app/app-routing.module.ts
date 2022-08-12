@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { CatalogPageComponent } from './components/pages/catalog-page/catalog-page.component';
 import { FilmPageComponent } from './components/pages/film-page/film-page.component';
 import { StartPageComponent } from './components/pages/start-page/start-page.component';
+import { UserPageComponent } from './components/pages/user-page/user-page.component';
 
 const routes: Routes = [
   { path: '', component: StartPageComponent},
-  //{ path: 'user', component: UserPageComponent },
+  { path: 'user', component: UserPageComponent },
   { path: 'catalog', component: CatalogPageComponent },
   { path: 'catalog/:id', component: FilmPageComponent },
   //{ path: 'users', component: AllUsersPageComponent },

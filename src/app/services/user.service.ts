@@ -35,7 +35,6 @@ export class UserService {
   }
 
   public findUserByEmail(email: string): Observable<IUser[]> {
-    console.log("I find email")
     return this.http.get<IUser[]>(`${this.baseUrl}?email=${email}`);
   }
 
@@ -46,7 +45,7 @@ export class UserService {
 
     return this.findUserByEmail(email).pipe(
       map(([user]) => user?.password === password ? user : null),
-      tap (()=> console.log("hyugyu"))
+      tap((user) => this.onUserUpdate(user))
     );
   }
 

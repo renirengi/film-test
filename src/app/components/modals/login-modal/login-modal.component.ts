@@ -45,7 +45,6 @@ export class LoginModalComponent implements OnInit {
       map((result) => result ? userLoggedIn : loginFailed),
       tap((result) => {
         result && this.dialogRef.close()
-        console.log(result)
       }))
   }
 
