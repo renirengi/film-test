@@ -29,6 +29,7 @@ export class UserAboutComponent implements OnInit {
   })
 
   ngOnInit(): void {
+
   }
 
   async onSubmit () {

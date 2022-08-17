@@ -5,7 +5,8 @@
     <p>Email: {{user.email}}</p>
     <button
     mat-stroked-button
-    color="primary">
+    color="primary"
+    (click)="changeUser(user)">
     <mat-icon
     aria-label="Example manage icon">
     <span class="material-symbols-outlined">

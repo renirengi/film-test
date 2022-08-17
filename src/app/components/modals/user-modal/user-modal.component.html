@@ -1,0 +1,45 @@
+<mat-card>
+  <form [formGroup]="userForm">
+    <mat-form-field>
+      <mat-label>Real name</mat-label>
+      <input matInput autocomplete="off" formControlName="name" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter email</mat-label>
+      <input matInput placeholder="pat@example.com" formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter new password</mat-label>
+      <input
+        matInput
+        [type]="showConfirmation ? 'password' : 'text'"
+        formControlName="password"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="showConfirmation = !showConfirmation"
+        [attr.aria-label]="'Hide password'"
+      >
+        <mat-icon>{{ showConfirmation ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="showConfirmation">
+      <mat-label>Password confirmation</mat-label>
+      <input matInput formControlName="passwordConfirmation" type="password" />
+    </mat-form-field>
+
+    <button
+      mat-stroked-button
+      type="button"
+      color="primary"
+      [disabled]="!userForm.valid"
+      [mat-dialog-close]="userForm.value"
+    >
+      Save
+    </button>
+  </form>
+</mat-card>

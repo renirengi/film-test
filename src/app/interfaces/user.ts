@@ -7,11 +7,11 @@ export interface IUser {
 }
 
 export interface IUserPersonalData {
-  phoneNumber: string;
-  state: string;
-  zipCode: string;
-  city: string;
-  address: string;
+  phoneNumber?: string;
+  state?: string;
+  zipCode?: string;
+  city?: string;
+  address?: string;
   goods?: IGoods;
 
 }

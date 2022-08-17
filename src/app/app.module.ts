@@ -41,6 +41,7 @@ import { VideoPlayerComponent } from './components/pages/video-player/video-play
 import { ButtonsPageComponent } from './components/pages/buttons-page/buttons-page.component';
 import { UserPageComponent } from './components/pages/user-page/user-page.component';
 import { UserAboutComponent } from './components/pages/user-about/user-about.component';
+import { UserModalComponent } from './components/modals/user-modal/user-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { UserAboutComponent } from './components/pages/user-about/user-about.com
     VideoPlayerComponent,
     ButtonsPageComponent,
     UserPageComponent,
-    UserAboutComponent
+    UserAboutComponent,
+    UserModalComponent
 
   ],
   imports: [
