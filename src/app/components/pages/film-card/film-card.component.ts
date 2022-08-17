@@ -37,7 +37,7 @@ export class FilmCardComponent implements OnInit {
     this.router.navigate([`/catalog/${film.id}`]);
   }
 
-  public async onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
+  public onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
   const newRating = Math.round((film.rating+rating)/2);
   const newFilm = {
   title: film.title,
