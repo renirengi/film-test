@@ -42,6 +42,7 @@ import { ButtonsPageComponent } from './components/pages/buttons-page/buttons-pa
 import { UserPageComponent } from './components/pages/user-page/user-page.component';
 import { UserAboutComponent } from './components/pages/user-about/user-about.component';
 import { UserModalComponent } from './components/modals/user-modal/user-modal.component';
+import { MovieRatingComponent } from './components/pages/movie-rating/movie-rating.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +60,8 @@ import { UserModalComponent } from './components/modals/user-modal/user-modal.co
     ButtonsPageComponent,
     UserPageComponent,
     UserAboutComponent,
-    UserModalComponent
+    UserModalComponent,
+    MovieRatingComponent
 
   ],
   imports: [

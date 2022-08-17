@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 import { IFilm } from '../interfaces/film';
 
 import {catchError, delay, Observable, retry, tap, throwError, shareReplay} from 'rxjs'
@@ -35,5 +36,10 @@ export class FilmService {
   public getFilmByID(id:number) {
     const url =  `${this.baseUrl}/${String(id)}`;
     return this.http.get<IFilm>(url);
+  }
+
+  public updateFilm(film:IFilm): Observable <IFilm> {
+    console.log(film.id);
+    return this.http.patch<IFilm>(`${this.baseUrl}/${film.id}`, film);
   }
 }

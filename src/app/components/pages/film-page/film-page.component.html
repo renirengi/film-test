@@ -13,6 +13,7 @@
   <p>Genres:</p>
   <span *ngFor="let genre of film.genres">{{genre}}
   </span>
+  <app-movie-rating [rating]="film.rating"></app-movie-rating>
   <div *ngIf="film.id">
   <app-video-player [id]="film.id"></app-video-player>
   </div>
