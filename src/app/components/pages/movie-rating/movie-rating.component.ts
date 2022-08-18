@@ -1,4 +1,5 @@
 import { Component, Input, EventEmitter, Output, OnInit } from '@angular/core';
+import { IUser } from 'src/app/interfaces/user';
 
 export enum StarRatingColor {
   primary = "primary",
@@ -12,15 +13,16 @@ export enum StarRatingColor {
   styleUrls: ['./movie-rating.component.scss']
 })
 export class MovieRatingComponent  implements OnInit{
-  @Input() rating?: number
+  @Input() rating?: number;
+  @Input() user?: IUser;
   @Output() update = new EventEmitter<number>();
 
   public starCount: number = 10;
   public color: string = 'accent';
   public ratingArr: number[] = [];
+  public message: string='';
 
-  //public readonly values = [1,2,3,4,5,6,7,8,9,10];
-  constructor() { }
+    constructor() { }
 
   ngOnInit():void {
     for (let index = 0; index < this.starCount; index++) {
@@ -43,6 +45,7 @@ export class MovieRatingComponent  implements OnInit{
   }
   return false;
   }
+
 
 }
 

@@ -58,7 +58,10 @@ export class FilmCardComponent implements OnInit {
       price: film.price,
       counts: film.counts,
     };
-    console.log(newRating, newFilm);
     this.filmService.updateFilm(newFilm).pipe().subscribe();
+  }
+
+  public showMessage() {
+    console.log ("User underfund")
   }
 }

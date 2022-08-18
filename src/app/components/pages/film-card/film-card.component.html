@@ -2,13 +2,13 @@
   <div class="film-container" >
   <h2>{{film.title}}</h2>
   <img [src]="film.urlPoster" [alt]="film.title" routerLink="/catalog/{{film.id}}">
-  <p>{{film.year}}</p>
-  <ng-container *ngIf="user$ | async as user else RatingWithoutButton" >
-  <app-movie-rating [rating]="film.rating" (update)="onMovieRatingUpdate(film, user, $event)"></app-movie-rating>
+  <p>Year: {{film.year}}</p>
+  <ng-container *ngIf="user$ | async as user; else WithoutUser" >
+  <app-movie-rating [rating]="film.rating" [user]="user" (update)="onMovieRatingUpdate(film, user, $event)"></app-movie-rating>
   </ng-container>
-  <ng-template #RatingWithoutButton >
-    <app-movie-rating [rating]="film.rating"></app-movie-rating>
-  </ng-template>
-  <p>{{film.price | currency}}</p>
+  <ng-template #WithoutUser >
+    <app-movie-rating [rating]="film.rating" (update)="showMessage()"></app-movie-rating>
+    </ng-template>
+  <p>Price: {{film.price | currency}}</p>
   </div>
   </div>
