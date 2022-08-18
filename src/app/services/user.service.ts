@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap, of, map, BehaviorSubject } from 'rxjs';
+import { Observable, tap, of, map, BehaviorSubject, firstValueFrom } from 'rxjs';
 import { IUser } from '../interfaces/user';
 import { CookieService } from './cookie.service';
 
@@ -17,7 +17,9 @@ export class UserService {
   constructor(
     private http: HttpClient,
     private cookies: CookieService
-    ) {  }
+    ) {
+      this.restoreUser();
+     }
 
     get currentUser$(): BehaviorSubject<IUser|null> {
     return this._currentUser$;
@@ -54,14 +56,14 @@ export class UserService {
   }
 
   public onUserUpdate(user: IUser | null): void {
-    /*if (user) {
+    if (user) {
       const sameSite = 'strict';
       const expires = this.cookies.getExpiritonDate(1);
 
       this.cookies.setCookie(this.cookieName, user.id.toString(), { expires, sameSite })
     } else {
       this.cookies.deleteCookie(this.cookieName)
-    }*/
+    }
 
     this._currentUser$.next(user)
 
@@ -80,5 +82,15 @@ export class UserService {
     pipe(
       tap((users)=> console.log(users))
     )
+  }
+
+  private async restoreUser() {
+    const userID = this.cookies.getCookie(this.cookieName);
+
+    if (userID) {
+      const currentUser = await firstValueFrom(this.getUser(+userID));
+
+      this.currentUser$.next(currentUser);
+    }
   }
 }

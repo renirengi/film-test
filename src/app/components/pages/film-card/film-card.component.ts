@@ -10,14 +10,13 @@ import { UserService } from 'src/app/services/user.service';
 @Component({
   selector: 'app-film-card',
   templateUrl: './film-card.component.html',
-  styleUrls: ['./film-card.component.scss']
+  styleUrls: ['./film-card.component.scss'],
 })
+
 export class FilmCardComponent implements OnInit {
   [x: string]: any;
 
   @Input() film!: IFilm;
-
-  ///newFilm:IFilm = {};
 
   public user$: Observable<IUser | null>;
 
@@ -25,48 +24,41 @@ export class FilmCardComponent implements OnInit {
     private router: Router,
     private userService: UserService,
     private filmService: FilmService
-    ) {
+  ) {
     this.user$ = this.userService.currentUser$;
-
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   public goToFilmPage(film: IFilm) {
     this.router.navigate([`/catalog/${film.id}`]);
   }
 
   public onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
-  const newRating = Math.round((film.rating+rating)/2);
-  const newFilm = {
-  title: film.title,
-  originalTitle: film.originalTitle,
-  id: film.id,
-  trailer: film.trailer,
-  year: film.year,
-  directors: film.directors,
-  writers: film.writers,
-  actors: film.actors,
-  runtime: film.runtime,
-  urlPoster: film.urlPoster,
-  countries: film.countries,
-  languages: film.languages,
-  genres: film.genres,
-  plot: film.plot,
-  urlIMDB: film.urlIMDB,
-  rated: film.rated,
-  type: film.type,
-  rating: newRating,
-  price: film.price,
-  counts: film.counts
-    }
+    const newRating = (film.rating + rating) / 2;
+    const newFilm = {
+      title: film.title,
+      originalTitle: film.originalTitle,
+      id: film.id,
+      trailer: film.trailer,
+      year: film.year,
+      directors: film.directors,
+      writers: film.writers,
+      actors: film.actors,
+      runtime: film.runtime,
+      urlPoster: film.urlPoster,
+      countries: film.countries,
+      languages: film.languages,
+      genres: film.genres,
+      plot: film.plot,
+      urlIMDB: film.urlIMDB,
+      rated: film.rated,
+      type: film.type,
+      rating: newRating,
+      price: film.price,
+      counts: film.counts,
+    };
     console.log(newRating, newFilm);
-    this.filmService.updateFilm(newFilm);
+    this.filmService.updateFilm(newFilm).pipe().subscribe();
   }
-
-
-
 }
-
-

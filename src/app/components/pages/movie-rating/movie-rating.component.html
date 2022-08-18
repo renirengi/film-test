@@ -1,10 +1,6 @@
-<p>{{rating}}</p>
-<button
-  class="movie-rating"
-  [ngClass]="{ active: isActive(val) }"
-  *ngFor="let val of values"
-  (click)="apply(val)"
-  [attr.aria-label]="'Rating ' + val"
->
-  ★
+<button mat-icon-button [color]="color" *ngFor="let ratingId of ratingArr;index as i" [id]="'star_'+i" (click)="onClick(i+1)" >
+  <mat-icon>
+    {{showIcon(i)}}
+  </mat-icon>
 </button>
+
