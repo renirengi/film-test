@@ -1,7 +1,8 @@
+import { IFeedback } from "./feedback";
 export interface IFilm {
   title: string,
   originalTitle?: string,
-  id?: number,
+  id: number,
   trailer: string,
   year: number,
   directors: string[],
@@ -19,6 +20,7 @@ export interface IFilm {
   rating: number,
   price: number,
   counts: number
+  //feedback: IFeedback []
 }
 
 export interface IActor {

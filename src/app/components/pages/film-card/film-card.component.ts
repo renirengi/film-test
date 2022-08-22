@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { first, Observable, map } from 'rxjs';
-
+import { IFeedback } from 'src/app/interfaces/feedback';
 import { IFilm } from 'src/app/interfaces/film';
 import { IUser } from 'src/app/interfaces/user';
+import { FeedbackService } from 'src/app/services/feedback.service';
 import { FilmService } from 'src/app/services/film.service';
 import { UserService } from 'src/app/services/user.service';
 
@@ -19,11 +20,13 @@ export class FilmCardComponent implements OnInit {
   @Input() film!: IFilm;
 
   public user$: Observable<IUser | null>;
+  public message: string = "";
 
   constructor(
     private router: Router,
     private userService: UserService,
-    private filmService: FilmService
+    private filmService: FilmService,
+    private feedbackService: FeedbackService
   ) {
     this.user$ = this.userService.currentUser$;
   }
@@ -36,7 +39,8 @@ export class FilmCardComponent implements OnInit {
 
   public onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
     const newRating = (film.rating + rating) / 2;
-    const newFilm = {
+    const newFeedback = {userId: user.id, filmId: film.id, movieRating: rating};
+      const newFilm = {
       title: film.title,
       originalTitle: film.originalTitle,
       id: film.id,
@@ -57,11 +61,16 @@ export class FilmCardComponent implements OnInit {
       rating: newRating,
       price: film.price,
       counts: film.counts,
+
     };
     this.filmService.updateFilm(newFilm).pipe().subscribe();
   }
 
   public showMessage() {
-    console.log ("User underfund")
+    this.message = "Зарегистрируйтесь или войдите в свой профиль";
+  }
+
+  public deleteMessage () {
+    this.message = "";
   }
 }

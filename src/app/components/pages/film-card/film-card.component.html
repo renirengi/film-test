@@ -7,7 +7,8 @@
   <app-movie-rating [rating]="film.rating" [user]="user" (update)="onMovieRatingUpdate(film, user, $event)"></app-movie-rating>
   </ng-container>
   <ng-template #WithoutUser >
-    <app-movie-rating [rating]="film.rating" (update)="showMessage()"></app-movie-rating>
+    <app-movie-rating [rating]="film.rating" (update)="showMessage()" (mouseleave)="deleteMessage()"></app-movie-rating>
+    <p >{{message}}</p>
     </ng-template>
   <p>Price: {{film.price | currency}}</p>
   </div>

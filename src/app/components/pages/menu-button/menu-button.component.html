@@ -5,11 +5,12 @@ aria-label="Example icon-button with a menu">
   <mat-icon>menu</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+  <div *ngFor = "let genre of genres$ | async">
+  <button mat-menu-item>{{genre}}</button>
+  </div>
 </mat-menu>
 
-<mat-menu #vertebrates="matMenu">
+<!---<mat-menu #vertebrates="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
   <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
   <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
@@ -48,4 +49,4 @@ aria-label="Example icon-button with a menu">
   <button mat-menu-item>Black Tree Monitor</button>
   <button mat-menu-item>Blue Spiny Lizard</button>
   <button mat-menu-item disabled>Velociraptor</button>
-</mat-menu>
+</mat-menu>--->

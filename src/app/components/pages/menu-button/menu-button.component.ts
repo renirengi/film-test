@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { FilmService } from 'src/app/services/film.service';
 
 @Component({
   selector: 'app-menu-button',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-button.component.scss']
 })
 export class MenuButtonComponent implements OnInit {
+  public genres$: Observable<string[]>;
 
-  constructor() { }
+  constructor(
+    private filmService: FilmService
+  ) {
+    this.genres$ = filmService.getAvailable('genres');
+   }
 
   ngOnInit(): void {
   }
