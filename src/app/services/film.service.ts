@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { IFilm } from '../interfaces/film';
 
-import {catchError, delay, Observable, retry, tap, throwError, shareReplay} from 'rxjs'
+import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay} from 'rxjs'
 
 
 @Injectable({
@@ -31,6 +31,26 @@ export class FilmService {
       retry(2),
       tap(films => this.films = films)
     )
+  }
+
+  public getAvailable(value: string): Observable<string[]> {
+    return this.http.get<IFilm[]>('http://localhost:3000/films').pipe(
+      map((films) => {
+        const years = new Set();
+        if (value === 'year') {
+          films.forEach((film) => years.add(film.year));
+        } else if (value === 'type') {
+          films.forEach((film) => years.add(film.type));
+        } else if (value === 'genres') {
+          films.forEach((film) => years.add(film.genres));
+        } else if (value === 'countries') {
+          films.forEach((film) => years.add(film.countries));
+        } else if (value === 'languages') {
+          films.forEach((film) => years.add(film.languages));
+        }
+        return Array.from(years) as string[];
+      })
+    );
   }
 
   public getFilmByID(id:number) {

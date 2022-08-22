@@ -28,6 +28,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { RegisterModalComponent } from './components/modals/register-modal/register-modal.component';
 import { LoginModalComponent } from './components/modals/login-modal/login-modal.component';
@@ -43,6 +44,7 @@ import { UserPageComponent } from './components/pages/user-page/user-page.compon
 import { UserAboutComponent } from './components/pages/user-about/user-about.component';
 import { UserModalComponent } from './components/modals/user-modal/user-modal.component';
 import { MovieRatingComponent } from './components/pages/movie-rating/movie-rating.component';
+import { MenuButtonComponent } from './components/pages/menu-button/menu-button.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +63,8 @@ import { MovieRatingComponent } from './components/pages/movie-rating/movie-rati
     UserPageComponent,
     UserAboutComponent,
     UserModalComponent,
-    MovieRatingComponent
+    MovieRatingComponent,
+    MenuButtonComponent
 
   ],
   imports: [
@@ -87,6 +90,8 @@ import { MovieRatingComponent } from './components/pages/movie-rating/movie-rati
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
+    MatMenuModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
