@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { IFilm } from '../interfaces/film';
 
-import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay} from 'rxjs'
+import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay, BehaviorSubject} from 'rxjs'
 
 
 @Injectable({
@@ -15,6 +15,12 @@ export class FilmService {
 
   films: IFilm[] = [];
   page: number = 1;
+
+  public readonly filmSearchString$ = new BehaviorSubject<string>('');
+
+  public set filmSearchString(str: string) {
+    this.filmSearchString$.next(str);
+  }
 
   constructor(
     private http: HttpClient
@@ -33,22 +39,34 @@ export class FilmService {
     )
   }
 
+  public findFilmsByParams(params: { [key: string]: string }): Observable<IFilm[]> {
+    return this.http.get<IFilm[]>(this.baseUrl, { params });
+  }
+
   public getAvailable(value: string): Observable<string[]> {
     return this.http.get<IFilm[]>('http://localhost:3000/films').pipe(
       map((films) => {
         const years = new Set();
         if (value === 'year') {
           films.forEach((film) => years.add(film.year));
+
         } else if (value === 'type') {
           films.forEach((film) => years.add(film.type));
-        } else if (value === 'genres') {
+        } else if (value === 'genre') {
           films.forEach((film) => years.add(film.genres));
-        } else if (value === 'countries') {
+        } else if (value === 'country') {
           films.forEach((film) => years.add(film.countries));
-        } else if (value === 'languages') {
+        } else if (value === 'language') {
           films.forEach((film) => years.add(film.languages));
+        } else if (value === 'director') {
+          films.forEach((film) => years.add(film.directors));
+        } else if (value === 'rated') {
+          films.forEach((film) => years.add(film.rated));
         }
-        return Array.from(years) as string[];
+
+        let newSet = new Set(Array.from(years).flat().sort());
+        return  Array.from(newSet) as string[];
+
       })
     );
   }

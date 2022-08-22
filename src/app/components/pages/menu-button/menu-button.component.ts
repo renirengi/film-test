@@ -13,7 +13,7 @@ export class MenuButtonComponent implements OnInit {
   constructor(
     private filmService: FilmService
   ) {
-    this.genres$ = filmService.getAvailable('genres');
+    this.genres$ = filmService.getAvailable('genre');
    }
 
   ngOnInit(): void {

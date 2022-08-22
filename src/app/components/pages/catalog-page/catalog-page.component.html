@@ -1,3 +1,5 @@
+ <app-catalog-filter (filtersChanged)="applyFilters($event)"></app-catalog-filter>
+
  <div class="page" *ngIf="filmService.films">
   <app-films-list
   *ngIf="films"
@@ -10,7 +12,7 @@
   mat-stroked-button
   color="primary"
  [disabled]="displayedPage===1"
- (click)="onLoadPage(displayedPage-1)">Back</button>
+ (click)="onLoadPage(previousPage)">Back</button>
  <button *ngIf="displayedPage!==1"
  mat-stroked-button
  color="primary"
@@ -24,7 +26,7 @@
  <button *ngIf="displayedPage!==endPage && displayedPage!==endPage-1"
  mat-stroked-button
  color="primary"
- (click)="onLoadPage(displayedPage+1)">{{displayedPage+1}}</button>
+ (click)="onLoadPage(nextPage)">{{nextPage}}</button>
  <button *ngIf="displayedPage!==endPage && displayedPage!==endPage-1 && displayedPage!==endPage-2"
  mat-stroked-button
  color="primary">...</button>
@@ -35,7 +37,7 @@
  <button [disabled]="displayedPage===endPage"
  mat-stroked-button
  color="primary"
- (click)="onLoadPage(displayedPage+1)">Next</button>
+ (click)="onLoadPage(nextPage)">Next</button>
 </div>
 
 

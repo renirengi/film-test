@@ -14,8 +14,9 @@ export class CatalogPageComponent implements OnInit {
   public films!: IFilm[];
 
   private lastPage: number = 1;
-  public displayedPage: number = 1;
-  //public nextPage: number = 2;
+  public displayedPage: number | null = 1;
+  public nextPage: number = 2;
+  public previousPage: number = 0;
   public showLoadMore: boolean = true;
   public endPage:number=0
   constructor(
@@ -29,6 +30,14 @@ export class CatalogPageComponent implements OnInit {
     this.endPage = Math.floor(allFilms.length/10);
 
   }
+
+  public async applyFilters(params: {[key: string]: string}) {
+    this.films = await lastValueFrom(this.filmService.findFilmsByParams(params));
+    console.log(this.films)
+    //this.displayedPage = null;
+    //this.showLoadMore = false;
+  }
+
 
   /*public async onLoadMore() {
     const newFilms = await lastValueFrom(this.filmService.getFilmsPage(this.lastPage + 1));
@@ -54,7 +63,8 @@ export class CatalogPageComponent implements OnInit {
 
     this.films = newFilms;
     this.displayedPage = num;
-    //this.nextPage= this.displayedPage+1;
+    this.nextPage= this.displayedPage+1;
+    this.previousPage = this.displayedPage-1;
   }
 
 }

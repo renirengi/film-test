@@ -1,0 +1,64 @@
+<section class="catalog-filter">
+  <form [formGroup]="filtersForm" (change)="onChange()">
+    <div class= "catalog-filter-container">
+    <div class="genres">
+    <h3>Sort by genres</h3>
+    <select multiple name="genres" formControlName="genre">
+      <option *ngFor="let genre of genres$ | async">
+        {{ genre }}
+      </option>
+    </select>
+    </div>
+
+  <div class = "directors">
+    <h3>Sort by directors</h3>
+    <select multiple name="directors" formControlName="director">
+      <option *ngFor="let director of directors$ | async">
+        {{ director }}
+      </option>
+    </select>
+  </div>
+
+  <div class = "countries">
+    <h3>Sort by countries</h3>
+    <select multiple name="countries" formControlName="country">
+      <option *ngFor="let country of countries$ | async">
+        {{ country }}
+      </option>
+    </select>
+  </div>
+
+  <div class = "languages">
+    <h3>Sort by languages</h3>
+    <select multiple name="languages" formControlName="language">
+      <option *ngFor="let language of languages$ | async">
+        {{ language }}
+      </option>
+    </select>
+  </div>
+
+  <div class = "rated">
+    <h3>Sort by rated</h3>
+    <select multiple name="rated" formControlName="rated">
+      <option *ngFor="let rated of rateds$ | async">
+        {{ rated }}
+      </option>
+    </select>
+  </div>
+
+  <div class = "type">
+    <h3>Sort by type</h3>
+    <select multiple name="types" formControlName="type">
+      <option *ngFor="let type of types$ | async">
+        {{ type }}
+      </option>
+    </select>
+  </div>
+
+  <div class = "checkbox">
+    <mat-checkbox formControlName="onlySale" (click)="onChange()"
+    >Only sale</mat-checkbox>
+  </div>
+  </div>
+  </form>
+</section>

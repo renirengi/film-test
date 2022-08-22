@@ -7,6 +7,7 @@ import { LoginModalComponent } from '../modals/login-modal/login-modal.component
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { IUser } from 'src/app/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
+import { FilmService } from 'src/app/services/film.service';
 
 @Component({
   selector: 'app-header',
@@ -18,16 +19,33 @@ export class HeaderComponent implements OnInit {
   private readonly headerModalConfig = { width: '30vw', data: {} };
   public currentUser$!: BehaviorSubject<IUser | null>;
 
+  public searchString: string = '';
+  public filmsSearchString$: BehaviorSubject<string>;
+
 
   constructor(
     public dialog: MatDialog,
     private router: Router,
-    private userService: UserService
+    private userService: UserService,
+    private filmService: FilmService,
   ) {
     this.currentUser$ = this.userService.currentUser$;
+    this.filmsSearchString$ = this.filmService.filmSearchString$;
    }
 
   ngOnInit(): void {
+  }
+
+  public onSearch({ target }: Event) {
+    const str = (target as HTMLInputElement).value;
+    const q = str !== '' ? str : undefined;
+
+    this.router.navigate(['/catalog'], { queryParams: { q } });
+
+  }
+
+  public onClean() {
+    console.log('clean')
   }
 
   public onLogout() {

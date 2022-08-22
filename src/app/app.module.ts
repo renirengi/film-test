@@ -45,6 +45,7 @@ import { UserAboutComponent } from './components/pages/user-about/user-about.com
 import { UserModalComponent } from './components/modals/user-modal/user-modal.component';
 import { MovieRatingComponent } from './components/pages/movie-rating/movie-rating.component';
 import { MenuButtonComponent } from './components/pages/menu-button/menu-button.component';
+import { CatalogFilterComponent } from './components/pages/catalog-filter/catalog-filter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +65,8 @@ import { MenuButtonComponent } from './components/pages/menu-button/menu-button.
     UserAboutComponent,
     UserModalComponent,
     MovieRatingComponent,
-    MenuButtonComponent
+    MenuButtonComponent,
+    CatalogFilterComponent
 
   ],
   imports: [
