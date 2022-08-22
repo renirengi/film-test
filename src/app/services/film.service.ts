@@ -40,7 +40,9 @@ export class FilmService {
   }
 
   public findFilmsByParams(params: { [key: string]: string }): Observable<IFilm[]> {
-    return this.http.get<IFilm[]>(this.baseUrl, { params });
+    console.log(params)
+    ///return this.http.get<IFilm[]>('http://localhost:3000/films?genres_like=children');
+    return this.http.get<IFilm[]>('http://localhost:3000/films', { params });
   }
 
   public getAvailable(value: string): Observable<string[]> {

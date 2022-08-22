@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { map, Observable, Subscription, tap } from 'rxjs';
 import { FilmService } from 'src/app/services/film.service';
@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './catalog-filter.component.html',
   styleUrls: ['./catalog-filter.component.scss']
 })
-export class CatalogFilterComponent implements OnInit {
+export class CatalogFilterComponent implements OnInit, OnDestroy {
   @Output() filtersChanged = new EventEmitter<{ [key: string]: string }>();
 
   private subscription: Subscription = new Subscription();
@@ -50,13 +50,14 @@ export class CatalogFilterComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+   public ngOnInit() {
     const searchString$ = this.route.queryParams.pipe(map(params => params['q'])).pipe(
       tap((q) => {
         this.filtersForm.patchValue({q});
         this.filmService.filmSearchString = q || '';
         this.onChange();
       })
+
     );
 
     this.subscription.add(searchString$.subscribe());
@@ -67,7 +68,8 @@ export class CatalogFilterComponent implements OnInit {
 }
 
 public onChange() {
-  let filterParams: { [key: string]: string } = {};
+  let filterParams: {} = {};
+  console.log(this.filtersForm.value)
 
   filterParams = Object.entries(this.filtersForm.value).reduce((acc, [key, value]) => {
     let keyString: string;

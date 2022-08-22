@@ -10,7 +10,6 @@ import { lastValueFrom } from 'rxjs';
 })
 export class CatalogPageComponent implements OnInit {
 
-
   public films!: IFilm[];
 
   private lastPage: number = 1;
@@ -18,7 +17,8 @@ export class CatalogPageComponent implements OnInit {
   public nextPage: number = 2;
   public previousPage: number = 0;
   public showLoadMore: boolean = true;
-  public endPage:number=0
+  public endPage:number=0;
+  public appliedFilters?: {[key: string]: string};
   constructor(
     public filmService: FilmService
   ) { }
@@ -33,13 +33,12 @@ export class CatalogPageComponent implements OnInit {
 
   public async applyFilters(params: {[key: string]: string}) {
     this.films = await lastValueFrom(this.filmService.findFilmsByParams(params));
-    console.log(this.films)
     //this.displayedPage = null;
     //this.showLoadMore = false;
   }
 
 
-  /*public async onLoadMore() {
+  public async onLoadMore() {
     const newFilms = await lastValueFrom(this.filmService.getFilmsPage(this.lastPage + 1));
 
     this.films = newFilms;
@@ -49,7 +48,7 @@ export class CatalogPageComponent implements OnInit {
 
   }
 
-  public async onLoadBack() {
+  /*public async onLoadBack() {
     const newFilms = await lastValueFrom(this.filmService.getFilmsPage(this.lastPage - 1));
 
     this.films = newFilms;

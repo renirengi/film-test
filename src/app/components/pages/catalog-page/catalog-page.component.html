@@ -2,13 +2,18 @@
 
  <div class="page" *ngIf="filmService.films">
   <app-films-list
-  *ngIf="films"
+  *ngIf="films; else loading"
   [films]="films"
   [currentPage]="displayedPage"
   [showLoadMore]="showLoadMore"
+  (loadMore)="onLoadMore()"
   >
  </app-films-list>
-  <button
+
+ <ng-template #loading>Loading...</ng-template>
+
+
+ <!--- <button
   mat-stroked-button
   color="primary"
  [disabled]="displayedPage===1"
@@ -38,6 +43,6 @@
  mat-stroked-button
  color="primary"
  (click)="onLoadPage(nextPage)">Next</button>
-</div>
+</div>-->
 
 
