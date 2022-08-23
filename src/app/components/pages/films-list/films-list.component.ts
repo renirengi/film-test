@@ -10,7 +10,7 @@ export class FilmsListComponent {
   @Input()
   films!: IFilm[];
   @Input() currentPage: number|null = null;
-  @Input() showLoadMore: boolean = false;
+  @Input() showLoadMore: boolean = true;
   @Output() loadMore = new EventEmitter()
 
   constructor() { }

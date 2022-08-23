@@ -30,7 +30,6 @@ export class MovieRatingComponent  implements OnInit{
     }
   }
   onClick(rating:number) {
-    console.log(rating)
     this.update.emit(rating);
     return false;
   }

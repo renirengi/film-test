@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
 
   public searchString: string = '';
   public filmsSearchString$: BehaviorSubject<string>;
+  public change:boolean=false;
 
 
   constructor(
@@ -35,17 +36,15 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  public onSearch({ target }: Event) {
+  public onChange({ target }: Event){
     const str = (target as HTMLInputElement).value;
     const q = str !== '' ? str : undefined;
-
     this.router.navigate(['/catalog'], { queryParams: { q } });
-
   }
 
   public onClean() {
     console.log('clean')
+    this.router.navigate(['/catalog']);
   }
 
   public onLogout() {

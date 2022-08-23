@@ -1,8 +1,8 @@
  <app-catalog-filter (filtersChanged)="applyFilters($event)"></app-catalog-filter>
 
- <div class="page" *ngIf="filmService.films">
+ <div class="page">
   <app-films-list
-  *ngIf="films; else loading"
+  *ngIf="films"
   [films]="films"
   [currentPage]="displayedPage"
   [showLoadMore]="showLoadMore"
@@ -10,10 +10,8 @@
   >
  </app-films-list>
 
- <ng-template #loading>Loading...</ng-template>
-
-
- <!--- <button
+<div *ngIf="showButton==true">
+ <button
   mat-stroked-button
   color="primary"
  [disabled]="displayedPage===1"
@@ -43,6 +41,6 @@
  mat-stroked-button
  color="primary"
  (click)="onLoadPage(nextPage)">Next</button>
-</div>-->
-
+</div>
+</div>
 

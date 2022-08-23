@@ -69,7 +69,6 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
 public onChange() {
   let filterParams: {} = {};
-  console.log(this.filtersForm.value)
 
   filterParams = Object.entries(this.filtersForm.value).reduce((acc, [key, value]) => {
     let keyString: string;

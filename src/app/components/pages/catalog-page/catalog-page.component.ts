@@ -17,6 +17,7 @@ export class CatalogPageComponent implements OnInit {
   public nextPage: number = 2;
   public previousPage: number = 0;
   public showLoadMore: boolean = true;
+  public showButton: boolean= true;
   public endPage:number=0;
   public appliedFilters?: {[key: string]: string};
   constructor(
@@ -25,8 +26,8 @@ export class CatalogPageComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.films = await lastValueFrom(this.filmService.getFilmsPage(this.lastPage));
-
     const allFilms = await lastValueFrom(this.filmService.getAll());
+    this.showButton= true;
     this.endPage = Math.floor(allFilms.length/10);
 
   }
@@ -34,7 +35,8 @@ export class CatalogPageComponent implements OnInit {
   public async applyFilters(params: {[key: string]: string}) {
     this.films = await lastValueFrom(this.filmService.findFilmsByParams(params));
     //this.displayedPage = null;
-    //this.showLoadMore = false;
+    this.showLoadMore = false;
+    this.showButton= false;
   }
 
 

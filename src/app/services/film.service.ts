@@ -77,7 +77,6 @@ export class FilmService {
   }
 
   public updateFilm(film:IFilm): Observable <IFilm> {
-    console.log(film.id);
     return this.http.patch<IFilm>(`${this.baseUrl}/${film.id}`, film);
   }
 }

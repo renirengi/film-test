@@ -22,11 +22,15 @@
         class="input input-search"
         placeholder="Search"
         [value]="filmsSearchString$ | async"
-        (change)="onSearch($event)"
+        (change)="onChange($event)"
       />
     </div>
-    <button mat-icon-button matSuffix color="primary" (click)="onClean()" [attr.aria-label]="'Clean search string'">
-      <mat-icon>close</mat-icon>
+    <button mat-icon-button matSuffix color="primary"
+    (click)="onClean()"
+    [attr.aria-label]="'Use search string'">
+      <mat-icon><span class="material-symbols-outlined">
+        travel_explore
+        </span></mat-icon>
     </button>
   </div>
    <div class="user-container">
