@@ -15,11 +15,11 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   private subscription: Subscription = new Subscription();
 
   public filtersForm = new FormGroup({
-    genre: new FormControl([]),
-    type: new FormControl([]),
-    director: new FormControl([]),
-    country: new FormControl([]),
-    language: new FormControl([]),
+    genres: new FormControl([]),
+    types: new FormControl([]),
+    directors: new FormControl([]),
+    countries: new FormControl([]),
+    languages: new FormControl([]),
     rated: new FormControl([]),
     onlySale: new FormControl(false),
     q: new FormControl('')

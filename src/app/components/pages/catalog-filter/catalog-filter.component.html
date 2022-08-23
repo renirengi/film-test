@@ -3,7 +3,7 @@
     <div class= "catalog-filter-container">
     <div class="genres">
     <h3>Sort by genres</h3>
-    <select multiple name="genres" formControlName="genre">
+    <select multiple name="genres" formControlName="genres">
       <option *ngFor="let genre of genres$ | async">
         {{ genre }}
       </option>
@@ -12,7 +12,7 @@
 
   <div class = "directors">
     <h3>Sort by directors</h3>
-    <select multiple name="directors" formControlName="director">
+    <select multiple name="directors" formControlName="directors">
       <option *ngFor="let director of directors$ | async">
         {{ director }}
       </option>
@@ -21,7 +21,7 @@
 
   <div class = "countries">
     <h3>Sort by countries</h3>
-    <select multiple name="countries" formControlName="country">
+    <select multiple name="countries" formControlName="countries">
       <option *ngFor="let country of countries$ | async">
         {{ country }}
       </option>
@@ -30,7 +30,7 @@
 
   <div class = "languages">
     <h3>Sort by languages</h3>
-    <select multiple name="languages" formControlName="language">
+    <select multiple name="languages" formControlName="languages">
       <option *ngFor="let language of languages$ | async">
         {{ language }}
       </option>
@@ -48,7 +48,7 @@
 
   <div class = "type">
     <h3>Sort by type</h3>
-    <select multiple name="types" formControlName="type">
+    <select multiple name="types" formControlName="types">
       <option *ngFor="let type of types$ | async">
         {{ type }}
       </option>
