@@ -15,7 +15,7 @@ export class FilmService {
 
   films: IFilm[] = [];
   page: number = 1;
-
+  public _currentGenre$ = new BehaviorSubject<string|null>(null);
   public readonly filmSearchString$ = new BehaviorSubject<string>('');
 
   public set filmSearchString(str: string) {

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FilmService } from 'src/app/services/film.service';
 import { IFilm } from 'src/app/interfaces/film';
-import { lastValueFrom } from 'rxjs';
+import { lastValueFrom, map } from 'rxjs';
 
 @Component({
   selector: 'app-catalog-page',
@@ -22,7 +22,9 @@ export class CatalogPageComponent implements OnInit {
   public appliedFilters?: {[key: string]: string};
   constructor(
     public filmService: FilmService
-  ) { }
+  ) {
+
+   }
 
   async ngOnInit(): Promise<void> {
     this.films = await lastValueFrom(this.filmService.getFilmsPage(this.lastPage));
