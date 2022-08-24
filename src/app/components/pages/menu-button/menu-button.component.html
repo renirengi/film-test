@@ -4,9 +4,9 @@ mat-icon-button [matMenuTriggerFor]="menu"
 aria-label="Example icon-button with a menu">
   <mat-icon>menu</mat-icon>
 </button>
-<mat-menu #menu="matMenu" >
-  <div *ngFor = "let genre of genres$ | async">
-  <button mat-menu-item (click)="onRoute('genre')">{{genre}}</button>
+<mat-menu #menu="matMenu">
+  <div class="categories-menu" *ngFor = "let genre of genres$ | async">
+  <button mat-menu-item (click)="onRoute(genre)"></button>
   </div>
 </mat-menu>
 

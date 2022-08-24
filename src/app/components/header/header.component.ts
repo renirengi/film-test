@@ -8,6 +8,7 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { IUser } from 'src/app/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
 import { FilmService } from 'src/app/services/film.service';
+import { ConstantPool } from '@angular/compiler';
 
 @Component({
   selector: 'app-header',
@@ -39,6 +40,7 @@ export class HeaderComponent implements OnInit {
   public onChange({ target }: Event){
     const str = (target as HTMLInputElement).value;
     const q = str !== '' ? str : undefined;
+    console.log(q)
     this.router.navigate(['/catalog'], { queryParams: { q } });
   }
 

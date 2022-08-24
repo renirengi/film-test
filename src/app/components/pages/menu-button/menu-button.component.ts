@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { FilmService } from 'src/app/services/film.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { IFilm } from 'src/app/interfaces/film';
 
 @Component({
   selector: 'app-menu-button',
@@ -11,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class MenuButtonComponent implements OnInit {
   public genres$: Observable<string[]>;
-
+  value:string=''
 
   constructor(
     private filmService: FilmService,
@@ -20,10 +21,9 @@ export class MenuButtonComponent implements OnInit {
     this.genres$ = filmService.getAvailable('genre');
    }
 
-   onRoute(param:string){
-    let string = `/catalog?genres_like=${param}`;
-    console.log(string)
-    ///this.router.navigate(['/catalog'], { queryParams: { q } })
+   onRoute(par:string){
+    let genres_like = `(${par})`;
+    console.log({ genres_like })
    }
 
   ngOnInit(): void {
