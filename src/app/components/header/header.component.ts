@@ -62,4 +62,8 @@ export class HeaderComponent implements OnInit {
   public goToCatalogPage() {
     this.router.navigate(['/catalog']);
   }
+
+  public goToMainPage() {
+    this.router.navigate(['/']);
+  }
 }

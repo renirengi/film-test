@@ -1,22 +1,7 @@
 
 <header class="header">
-  <app-menu-button></app-menu-button>
-  <div class="icons-settings">
-    <button
-    mat-stroked-button
-    color="primary"
-    (click)="goToCatalogPage()">
-    <mat-icon
-      aria-label="Example catalog icon"
-      >
-      <span class="material-symbols-outlined">
-      duo
-      </span>
-    </mat-icon>
-  </button>
-  </div>
   <div class="input-container">
-    <div>
+
       <input
         matInput
         class="input input-search"
@@ -24,15 +9,45 @@
         [value]="filmsSearchString$ | async"
         (change)="onChange($event)"
       />
-    </div>
+
     <button mat-icon-button matSuffix color="primary"
     (click)="onClean()"
     [attr.aria-label]="'Use search string'">
       <mat-icon><span class="material-symbols-outlined">
-        travel_explore
+       close
         </span></mat-icon>
     </button>
   </div>
+  <div class="settings-container">
+  <app-menu-button></app-menu-button>
+  <div class="icons-settings">
+
+  <button
+    mat-stroked-button
+    color="primary"
+    (click)="goToMainPage()">
+    <mat-icon
+      aria-label="Example home icon"
+      >
+      <span class="material-symbols-outlined">
+      home
+      </span>
+    </mat-icon>
+  </button>
+  <button
+  mat-stroked-button
+  color="primary"
+  (click)="goToCatalogPage()">
+  <mat-icon
+    aria-label="Example catalog icon"
+    >
+    <span class="material-symbols-outlined">
+    duo
+    </span>
+  </mat-icon>
+</button>
+  </div>
+
    <div class="user-container">
     <ng-container *ngIf="currentUser$ | async as user; else loginOrRegister">
       <button
@@ -80,5 +95,6 @@
           </mat-icon>
     </button>
     </ng-template>
+  </div>
   </div>
 </header>
