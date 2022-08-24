@@ -6,7 +6,7 @@ aria-label="Example icon-button with a menu">
 </button>
 <mat-menu #menu="matMenu">
   <div class="categories-menu" *ngFor = "let genre of genres$ | async">
-  <button mat-menu-item (click)="onRoute(genre)"></button>
+  <button mat-menu-item (click)="onRoute(genre)">{{genre}}</button>
   </div>
 </mat-menu>
 
