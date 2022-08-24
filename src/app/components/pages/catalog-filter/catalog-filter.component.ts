@@ -37,6 +37,10 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   public rateds$: Observable<string[]>;
 
+  public currentGenre: string | null ='';
+
+  selected: string =''
+
   constructor(
     private filmService: FilmService,
     private route: ActivatedRoute
@@ -60,8 +64,14 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
     );
 
+    this.currentGenre = this.filmService._currentGenre$.getValue();
+    if (this.currentGenre) {
+      this.filtersForm.get('genres')!.setValue(this.currentGenre);
+    }
+
     this.subscription.add(searchString$.subscribe());
-  }
+    }
+
 
   public ngOnDestroy(): void {
     this.subscription.unsubscribe();
