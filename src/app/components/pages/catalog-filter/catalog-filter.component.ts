@@ -15,14 +15,17 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   private subscription: Subscription = new Subscription();
 
   public filtersForm = new FormGroup({
-    genres: new FormControl([]),
-    types: new FormControl([]),
-    directors: new FormControl([]),
-    countries: new FormControl([]),
-    languages: new FormControl([]),
-    rated: new FormControl([]),
-    year: new FormControl([]),
+    genres: new FormControl(['']),
+    types: new FormControl(['']),
+    directors: new FormControl(['']),
+    countries: new FormControl(['']),
+    languages: new FormControl(['']),
+    rated: new FormControl(['']),
+    year: new FormControl(['']),
+    priceMax: new FormControl(['']),
+    priceMin: new FormControl(['']),
     onlySale: new FormControl(false),
+    price: new FormControl(['']),
     q: new FormControl('')
   });
 
@@ -40,6 +43,10 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   public years$: Observable<string[]>;
 
+  public prices$: Observable<string[]>;
+
+  public prices!:string[];
+
   public currentGenre: string | null ='';
 
   selected: string =''
@@ -48,7 +55,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     private filmService: FilmService,
     private route: ActivatedRoute
   ) {
-    const years:[]=[];
+
     this.genres$ = this.filmService.getAvailable('genre');
     this.types$ = this.filmService.getAvailable('type');
     this.directors$ = this.filmService.getAvailable('director');
@@ -56,6 +63,9 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     this.languages$ = this.filmService.getAvailable('language');
     this.rateds$ = this.filmService.getAvailable('rated');
     this.years$ = this.filmService.getAvailable('years');
+    this.prices$ = this.filmService.getAvailable('prices');
+    this.filmService.getAvailable('prices').subscribe({next:(data: string[]) => this.prices=data});
+
   }
 
    public ngOnInit() {
@@ -70,7 +80,10 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
     this.currentGenre = this.filmService._currentGenre$.getValue();
     if (this.currentGenre) {
-      ///this.filtersForm.get('genres')!.setValue(this.currentGenre);
+      let newArr=[]
+      newArr.push(this.currentGenre)
+      this.filtersForm.get('genres')!.setValue(newArr);
+      this.onChange();
     }
 
     this.subscription.add(searchString$.subscribe());
@@ -83,14 +96,27 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
 public onChange() {
   let filterParams: {} = {};
+  console.log(this.filtersForm.value['genres']);
 
   filterParams = Object.entries(this.filtersForm.value).reduce((acc, [key, value]) => {
     let keyString: string;
     let valueString: string;
 
     if (typeof value === 'string') {
+      /*if( key=='priceMin' || key=='priceMax'){
+        let priceMin=5.6;
+        let priceMax= 120.98;
+        if(key=='priceMin'){
+          priceMin=+value;
+        }
+        else{
+          priceMax=+value;
+        }
+        this.getInterval(priceMin, priceMax);
+      }*/
       keyString = key;
       valueString = value;
+
       acc = {...acc, [keyString]: valueString};
     } else if (Array.isArray(value) && value.length > 0) {
       keyString = `${key}_like`;
@@ -107,6 +133,11 @@ public onChange() {
 
   this.filtersChanged.emit(filterParams);
 }
+
+private getInterval(min:any, max:any){
+return this.prices.filter((el) => el >= min && el<= max).map((el)=>String(el))
+}
+
 private booleanFilterGenerator(key: string): string[] {
   const config: {[key: string]: () => string[]} = {
     notReissue: () => ['reissue', 'false'],

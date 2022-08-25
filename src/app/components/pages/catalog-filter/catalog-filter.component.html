@@ -64,6 +64,14 @@
     </select>
   </div>
 
+  <div class = "price" *ngIf="prices$ | async as price">
+    <h3>Sort by price</h3>
+    <p>From</p>
+    <input name="priceMin" formControlName="priceMin" [placeholder]="price[0]">
+    <p>To</p>
+    <input name="priceMax" formControlName="priceMax" [placeholder]="price[price.length-1]">
+    </div>
+
   <div class = "checkbox">
     <mat-checkbox formControlName="onlySale" (click)="onChange()"
     >Only sale</mat-checkbox>

@@ -66,12 +66,22 @@ export class FilmService {
         else if (value === 'years') {
           films.forEach((film) => years.add(film.year));
         }
+        else if (value === 'prices') {
+          films.forEach((film) => years.add(film.price));
+          let newSet = new Set(Array.from(years).flat().sort(this.compareNumbers))
+          return  Array.from(newSet) as string[];
+        }
 
         let newSet = new Set(Array.from(years).flat().sort());
         return  Array.from(newSet) as string[];
 
       })
     );
+  }
+
+
+  private compareNumbers(a:any, b:any) {
+    return a - b;
   }
 
   public getFilmByID(id:number) {
