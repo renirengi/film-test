@@ -82,7 +82,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     if (this.currentGenre) {
       let newArr=[]
       newArr.push(this.currentGenre)
-      this.filtersForm.get('genres')!.setValue(newArr);
+      this.filtersForm.get('genres')!.patchValue(newArr);
       this.onChange();
     }
 
