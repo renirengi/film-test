@@ -69,7 +69,7 @@ export class FilmService {
         else if (value === 'prices') {
           films.forEach((film) => years.add(film.price));
           let newSet = new Set(Array.from(years).flat().sort(this.compareNumbers))
-          return  Array.from(newSet) as string[];
+          return  Array.from(newSet).map((elem) => String(elem)) as string[];
         }
 
         let newSet = new Set(Array.from(years).flat().sort());

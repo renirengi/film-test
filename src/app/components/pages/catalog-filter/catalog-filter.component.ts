@@ -45,7 +45,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   public prices$: Observable<string[]>;
 
-  public prices!:string[];
+  public prices:string[]=[];
 
   public currentGenre: string | null ='';
 
@@ -64,8 +64,11 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     this.rateds$ = this.filmService.getAvailable('rated');
     this.years$ = this.filmService.getAvailable('years');
     this.prices$ = this.filmService.getAvailable('prices');
-    this.filmService.getAvailable('prices').subscribe({next:(data: string[]) => this.prices=data});
-
+    this.filmService.getAvailable('prices').subscribe({next:(data) => {
+      this.prices=data;
+      console.log(this.prices);
+    }});
+    console.log(this.prices);
   }
 
    public ngOnInit() {
@@ -75,7 +78,6 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
         this.filmService.filmSearchString = q || '';
         this.onChange();
       })
-
     );
 
     this.currentGenre = this.filmService._currentGenre$.getValue();
@@ -96,32 +98,45 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
 public onChange() {
   let filterParams: {} = {};
-  console.log(this.filtersForm.value['genres']);
 
   filterParams = Object.entries(this.filtersForm.value).reduce((acc, [key, value]) => {
     let keyString: string;
     let valueString: string;
 
-    if (typeof value === 'string') {
-      /*if( key=='priceMin' || key=='priceMax'){
-        let priceMin=5.6;
-        let priceMax= 120.98;
-        if(key=='priceMin'){
-          priceMin=+value;
-        }
-        else{
-          priceMax=+value;
-        }
-        this.getInterval(priceMin, priceMax);
-      }*/
-      keyString = key;
-      valueString = value;
+    if (key=='priceMin' || key=='priceMax') {
+     let priceMinArr = [];
+     let priceMaxArr = [];
+     let minValue:number = +'5.6';
+     this.filmService.getAvailable('prices').subscribe({next:(data) => {
+      this.prices=data;
+      minValue=+this.prices[0];
+    }});
+    console.log(minValue);
+     //let maxValue = this.prices[this.prices.length-1]
+     //console.log(this.prices[0])
+      if(key=='priceMin'){
+        //minValue = this.filtersForm.value['priceMin'];
+        console.log(this.filtersForm.value['priceMin'])
+        //priceMinArr.push(String(minValue));
 
-      acc = {...acc, [keyString]: valueString};
+      }
+        else{
+          //priceMax=+value;
+        }
+        //this.getInterval(priceMin, priceMax);
+
+      keyString = key;
+      //valueString = value;
+
+      ///acc = {...acc, [keyString]: valueString};
     } else if (Array.isArray(value) && value.length > 0) {
       keyString = `${key}_like`;
       valueString = value.reduce((acc, val, i) => i === 0 ? `(${val})`: `${acc}|(${val})`, '');
+
+      if(valueString!=='()'){
       acc = {...acc, [keyString]: valueString};
+    }
+
     } else if (typeof value === 'boolean' && value === true) {
       [keyString, valueString] = this.booleanFilterGenerator(key);
       acc = {...acc, [keyString]: valueString};
@@ -129,7 +144,7 @@ public onChange() {
 
     return acc;
   }, {});
-  console.log(filterParams)
+  //console.log(filterParams)
 
   this.filtersChanged.emit(filterParams);
 }

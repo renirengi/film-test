@@ -1,7 +1,7 @@
 <section class="catalog-filter">
   <form [formGroup]="filtersForm" (change)="onChange()">
     <div class= "catalog-filter-container">
-    <div class="genres" *ngIf="currentGenre">
+    <div class="genres" *ngIf="currentGenre; else Genre">
     <h3>Sort by genres</h3>
     <select multiple name="genres" formControlName="genres">
       <option *ngFor="let genre of genres$ | async" [selected]="genre===currentGenre">
@@ -9,6 +9,15 @@
       </option>
     </select>
     </div>
+    <ng-template class="genres" #Genre>
+      <h3>Sort by genres</h3>
+      <select multiple name="genres" formControlName="genres">
+        <option *ngFor="let genre of genres$ | async">
+          {{ genre }}
+        </option>
+      </select>
+      </ng-template>
+
 
   <div class = "directors">
     <h3>Sort by directors</h3>
