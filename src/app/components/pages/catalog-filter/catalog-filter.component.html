@@ -4,7 +4,7 @@
     <div class="genres" *ngIf="currentGenre">
     <h3>Sort by genres</h3>
     <select multiple name="genres" formControlName="genres">
-      <option *ngFor="let genre of genres$ | async">
+      <option *ngFor="let genre of genres$ | async" [selected]="genre===currentGenre">
         {{ genre }}
       </option>
     </select>
@@ -15,6 +15,15 @@
     <select multiple name="directors" formControlName="directors">
       <option *ngFor="let director of directors$ | async">
         {{ director }}
+      </option>
+    </select>
+  </div>
+
+  <div class = "years">
+    <h3>Sort by years</h3>
+    <select multiple name="year" formControlName="year">
+      <option *ngFor="let year of years$ | async">
+        {{ year }}
       </option>
     </select>
   </div>

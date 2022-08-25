@@ -21,6 +21,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     countries: new FormControl([]),
     languages: new FormControl([]),
     rated: new FormControl([]),
+    year: new FormControl([]),
     onlySale: new FormControl(false),
     q: new FormControl('')
   });
@@ -37,6 +38,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   public rateds$: Observable<string[]>;
 
+  public years$: Observable<string[]>;
+
   public currentGenre: string | null ='';
 
   selected: string =''
@@ -45,13 +48,14 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     private filmService: FilmService,
     private route: ActivatedRoute
   ) {
+    const years:[]=[];
     this.genres$ = this.filmService.getAvailable('genre');
     this.types$ = this.filmService.getAvailable('type');
     this.directors$ = this.filmService.getAvailable('director');
     this.countries$ = this.filmService.getAvailable('country');
     this.languages$ = this.filmService.getAvailable('language');
     this.rateds$ = this.filmService.getAvailable('rated');
-
+    this.years$ = this.filmService.getAvailable('years');
   }
 
    public ngOnInit() {
@@ -66,7 +70,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
     this.currentGenre = this.filmService._currentGenre$.getValue();
     if (this.currentGenre) {
-      this.filtersForm.get('genres')!.setValue(this.currentGenre);
+      ///this.filtersForm.get('genres')!.setValue(this.currentGenre);
     }
 
     this.subscription.add(searchString$.subscribe());

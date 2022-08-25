@@ -63,6 +63,9 @@ export class FilmService {
         } else if (value === 'rated') {
           films.forEach((film) => years.add(film.rated));
         }
+        else if (value === 'years') {
+          films.forEach((film) => years.add(film.year));
+        }
 
         let newSet = new Set(Array.from(years).flat().sort());
         return  Array.from(newSet) as string[];
