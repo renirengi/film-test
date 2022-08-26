@@ -381,7 +381,7 @@
       "rated": "18+",
       "type": "VHS",
       "rating": 7.3,
-      "price": 34.78,
+      "price": 78.99,
       "counts": 1
     },
     {
@@ -1439,7 +1439,7 @@
       "rated": "18+",
       "type": "VHS",
       "rating": "6.6",
-      "price": 40.3,
+      "price": 39.99,
       "counts": 7
     },
     {
@@ -1496,7 +1496,7 @@
       "type": "VHS",
       "condition": "new",
       "rating": 6.7,
-      "price": 38.65,
+      "price": 50.65,
       "counts": 1
     },
     {
@@ -2196,7 +2196,7 @@
       "rated": "R",
       "type": "VHS",
       "rating": 5.8,
-      "price": 38.6,
+      "price": 41.99,
       "counts": 4
     },
     {
@@ -2354,8 +2354,8 @@
       "urlIMDB": "https://www.imdb.com/title/tt0089885/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": "18+",
-      "price": 34.17,
+      "rating": 7.2,
+      "price": 33.99,
       "counts": 49
     },
     {
@@ -2454,11 +2454,11 @@
         "Mystic",
         "Religion"
       ],
-      "plot": "From director Anthony DiBlasi comes a Manson inspired horror film centering around a transitioning police station. Officer Jessica Loren has been assigned to wait for a Hazmat team to pick up bio-hazardous waste from the station's armory. But unbeknownst to Jessica, cult Leader John Michael Paymon has haunted the department ever since he and two of this followers committed suicide a year ago to date. And now, Jessica is about to find out how dangerous they can be when she's left alone on this Last Shift.",
-      "urlIMDB": "A rookie cop's 1st shift alone in the last night of a closing police station turns into a living nightmare.",
+      "plot": "A rookie cop's 1st shift alone in the last night of a closing police station turns into a living nightmare.",
+      "urlIMDB": "https://www.imdb.com/title/tt2965466/",
       "rated": "R",
       "type": "Blu-Ray",
-      "rating": "R",
+      "rating": 5.8,
       "price": 18.76,
       "counts": 2
     },
@@ -2723,7 +2723,7 @@
       "rated": "12+",
       "type": "DVD",
       "rating": 7.2,
-      "price": 55.78,
+      "price": 9.99,
       "counts": 130
     },
     {
@@ -3566,7 +3566,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0852726/?ref_=nv_sr_srsg_0",
       "type": "DVD",
       "rating": 6.1,
-      "price": 19.99,
+      "price": 18.99,
       "counts": 25
     },
     {
@@ -3618,7 +3618,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0178868/?ref_=nv_sr_srsg_0",
       "type": "VHS",
       "rating": 7.2,
-      "price": 45.99,
+      "price": 130.99,
       "counts": 99
     },
     {
@@ -3663,7 +3663,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0055830/?ref_=nv_sr_srsg_0",
       "type": "VHS",
       "rating": 7.1,
-      "price": 99.99,
+      "price": 100.99,
       "counts": 34
     },
     {
@@ -3717,7 +3717,7 @@
       "rated": "14+",
       "type": "DVD",
       "rating": 6.7,
-      "price": 45.67,
+      "price": 43.67,
       "counts": 23
     },
     {
@@ -4728,7 +4728,7 @@
       "rated": "16+",
       "type": "VHS",
       "rating": 6.7,
-      "price": 25.92,
+      "price": 33.92,
       "counts": 45
     },
     {
@@ -4887,7 +4887,7 @@
       "rated": "16+",
       "type": "VHS",
       "rating": 7.2,
-      "price": 89.99,
+      "price": 80.99,
       "counts": 5
     },
     {
@@ -5102,7 +5102,7 @@
       "rated": "18+",
       "type": "VHS",
       "rating": 6.8,
-      "price": 56.78,
+      "price": 36.99,
       "counts": 67
     },
     {
@@ -5418,7 +5418,7 @@
       "rated": "R",
       "type": "VHS",
       "rating": 6.9,
-      "price": 45.99,
+      "price": 25.00,
       "counts": 13
     },
     {
@@ -5525,7 +5525,7 @@
       "rated": "R",
       "type": "VHS",
       "rating": 7.2,
-      "price": 99.99,
+      "price": 100.00,
       "counts": 67
     },
     {
@@ -5629,7 +5629,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0055018/?ref_=nv_sr_srsg_3",
       "type": "VHS",
       "rating": 7.8,
-      "price": 45.99,
+      "price": 57.99,
       "counts": 21
     },
     {
@@ -5736,7 +5736,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0065553/?ref_=nv_sr_srsg_0",
       "type": "VHS",
       "rating": 5.8,
-      "price": 78.66,
+      "price": 100.66,
       "counts": 3
     },
     {
@@ -5889,7 +5889,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0228807/?ref_=nv_sr_srsg_0",
       "type": "VHS",
       "rating": 6.1,
-      "price": 11.78,
+      "price": 16.33,
       "counts": 8
     },
     {
@@ -5994,7 +5994,7 @@
       "urlIMDB": "imdb.com/title/tt0037635/?ref_=nv_sr_srsg_3",
       "type": "VHS",
       "rating": 7.6,
-      "price": 33.17,
+      "price": 18.99,
       "counts": 17
     },
     {
