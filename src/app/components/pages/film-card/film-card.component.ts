@@ -37,7 +37,7 @@ export class FilmCardComponent implements OnInit {
     this.router.navigate([`/catalog/${film.id}`]);
   }
 
-  public onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
+  public async onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
     const newRating = (film.rating + rating) / 2;
     const newFeedback = {userId: user.id, filmId: film.id, movieRating: rating};
       const newFilm = {
@@ -63,7 +63,7 @@ export class FilmCardComponent implements OnInit {
       counts: film.counts,
 
     };
-    this.filmService.updateFilm(newFilm).pipe().subscribe();
+   await this.filmService.updateFilm(newFilm).pipe().subscribe();
   }
 
   public showMessage() {

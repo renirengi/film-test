@@ -55,6 +55,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   public currentGenre: string | null = '';
 
+  public searchString: string = '';
+
   selected: string = '';
 
   constructor(private filmService: FilmService, private route: ActivatedRoute) {
@@ -68,8 +70,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     this.prices$ = this.filmService.getAvailable('prices');
   }
 
-  public async ngOnInit() {
-    await this.getPrices().then((prices) => (this.prices = prices));
+  public ngOnInit() {
+    this.getPrices().then((prices) => (this.prices = prices));
     this.filtersForm.get('priceMin')!.patchValue(this.prices[0]);
     this.filtersForm
       .get('priceMax')!
@@ -79,7 +81,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
       .pipe(
         tap((q) => {
           this.filtersForm.patchValue({ q });
-          this.filmService.filmSearchString = q || '';
+          //this.filmService.filmSearchString = q || '';
+          this.searchString= q;
           this.onChange();
         })
       );
@@ -112,7 +115,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   }
 
   public onChange() {
-    let filterParams: {} = {};
+    console.log (this.searchString)
+    let filterParams: { [key: string]: string} = {};
     filterParams = Object.entries(this.filtersForm.value).reduce(
       (acc, [key, value]) => {
         let keyString: string;
@@ -134,8 +138,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
               (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
               ''
             );
-            console.log(valueString);
-            if (valueString !== '()') {
+           if (valueString !== '()') {
               acc = { ...acc, [keyString]: valueString };
             }
           }
@@ -149,6 +152,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
           if (valueString !== '()') {
             acc = { ...acc, [keyString]: valueString };
           }
+
         } else if (typeof value === 'boolean' && value === true) {
           [keyString, valueString] = this.booleanFilterGenerator(key);
           acc = { ...acc, [keyString]: valueString };
@@ -158,8 +162,11 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
       },
       {}
     );
-
+    if (this.searchString) {
+      filterParams['q']=this.searchString;
+    }
     this.filtersChanged.emit(filterParams);
+
   }
 
   private getInterval(min: any, max: any) {
