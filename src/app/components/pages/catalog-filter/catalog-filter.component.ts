@@ -57,6 +57,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit() {
+    this.getPrices().then((prices) => (this.prices = prices));
+
     const searchString$ = this.route.queryParams
       .pipe(map((params) => params['q']))
       .pipe(
@@ -96,6 +98,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
         let valueString: string;
 
         if (key == 'priceMin' || key == 'priceMax') {
+
           let price = [''];
           let minValue;
           let maxValue;
@@ -107,6 +110,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
             maxValue = +this.filtersForm.value['priceMax'];
             price = this.getInterval(minValue, maxValue);
             keyString = `price_like`;
+            console.log(price)
             valueString = price.reduce(
               (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
               ''

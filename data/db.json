@@ -4125,7 +4125,7 @@
         "Germany"
       ],
       "languages": [
-        "German"
+        "None"
       ],
       "genres": [
         "Thriller",
@@ -6085,7 +6085,7 @@
         "Germany"
       ],
       "languages": [
-        "German"
+        "None"
       ],
       "genres": [
         "Mystic",
@@ -6136,6 +6136,9 @@
         "Germany"
       ],
       "languages": [
+        "None"
+      ],
+      "subs":[
         "English"
       ],
       "genres": [
@@ -6150,6 +6153,275 @@
       "rating": 7.9,
       "price": 150.00,
       "counts": 1
+    },
+    {
+      "title": "The Hunchback of Notre Dame",
+      "id": 117,
+      "trailer": "https://www.youtube.com/embed/83jvD0gvZuo",
+      "year": "1923",
+      "directors": [
+        "Wallace Worsley"
+      ],
+      "writers": [
+        "Victor Hugo",
+        "Perley Poore Sheehan",
+        "Edward T. Lowe Jr."
+      ],
+      "actors": [
+        {
+           "name": "Lon Chaney",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTM1MTg1MDU4OF5BMl5BanBnXkFtZTYwOTkwNjI2._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Norman Kerry",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTQ2MzkwOTY2M15BMl5BanBnXkFtZTgwNTg2MDU1MzE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Patsy Ruth Miller",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTU5MzgxMjM2MV5BMl5BanBnXkFtZTgwNjE3ODY3MTE@._V1_UY317_CR16,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Kate Lester",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTUxN2M3NDEtMmJiNS00ZjZiLThmYmItMThiZWMwZWU2YmQ3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UY317_CR1,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "133 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/8c8ea070-091b-4bd5-b617-198ea1149f2b/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "None"
+      ],
+      "subs": [
+        "English"
+      ],
+      "genres": [
+        "Adaptation",
+        "Classic"
+      ],
+      "plot": "In 15th-century Paris, the brother of the archdeacon plots with the gypsy king to foment a peasant revolt. Meanwhile, a freakish hunchback falls in love with the gypsy queen.",
+      "urlIMDB": "https://www.imdb.com/title/tt0014142/?ref_=fn_al_tt_7",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7.2,
+      "price": 149.99,
+      "counts": 3
+    },
+    {
+      "title": "The Hands of Orlac",
+      "originalTitle": "Orlacs Hände",
+      "id": 118,
+      "trailer": "https://www.youtube.com/embed/HW1SF9VitMw",
+      "year": "1924",
+      "directors": [
+        "Robert Wiene"
+      ],
+      "writers": [
+        "Louis Nerz",
+        "Maurice Renard"
+      ],
+      "actors": [
+        {
+           "name": "Conrad Veidt",
+           "photo": "https://m.media-amazon.com/images/M/MV5BNDQyMTk3OTM1OV5BMl5BanBnXkFtZTcwNDc5MzQ3OA@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Alexandra Sorina",
+          "photo": "https://images.mubicdn.net/images/cast_member/113970/cache-178557-1476852801/image-w856.jpg?size=800x"
+        },
+        {
+           "name": "Fritz Strassny",
+          "photo": "https://images.mubicdn.net/images/cast_member/145074/cache-575995-1597200996/image-w856.jpg"
+        },
+        {
+          "name": "Paul Askonas",
+          "photo": "https://image.tmdb.org/t/p/w300/e10QYfmD8cgLHaodMWilJov0ao8.jpg"
+        }
+      ],
+      "runtime": "92 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/46b392e9-7eea-44b8-b60b-f7167b2c16e2/1920x",
+      "countries": [
+        "Austria"
+      ],
+      "languages": [
+        "None"
+      ],
+      "subs": [
+        "English"
+      ],
+      "genres": [
+        "Mystic",
+        "Adaptation",
+        "Classic"
+      ],
+      "plot": "A world-famous pianist loses both hands in an accident. When new hands are grafted on, he doesn't know they once belonged to a murderer.",
+      "urlIMDB": "https://www.imdb.com/title/tt0015202/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7.0,
+      "price": 144.99,
+      "counts": 10
+    },
+    {
+      "title": "The Phantom of the Opera",
+      "id": 119,
+      "trailer": "https://www.youtube.com/embed/HYvbaILyc2s",
+      "year": "1925",
+      "directors": [
+        "Rupert Julian"
+      ],
+      "writers": [
+        "Gaston Leroux",
+        "Elliott J. Clawson"
+      ],
+      "actors": [
+        {
+          "name": "Lon Chaney",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTM1MTg1MDU4OF5BMl5BanBnXkFtZTYwOTkwNjI2._V1_UX214_CR0,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Mary Philbin",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTIxMTIxMTg0M15BMl5BanBnXkFtZTYwNTAzNDI2._V1_UY317_CR15,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Norman Kerry",
+         "photo": "https://m.media-amazon.com/images/M/MV5BMTQ2MzkwOTY2M15BMl5BanBnXkFtZTgwNTg2MDU1MzE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+       },
+        {
+          "name": "Arthur Edmund Carewe",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNjIxYzhjMWMtNzMxYS00ODQ4LTg4YjUtM2I3MTc0MjdmOWI1XkEyXkFqcGdeQXVyMTcyODY2NDQ@._V1_UY317_CR20,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "93 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/647e0469-f37a-4ab8-a410-e47ef35ffcbf/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "None"
+      ],
+      "subs": [
+        "English"
+      ],
+      "genres": [
+        "Adaptation",
+        "Classic"
+      ],
+      "plot": "At the Opera of Paris, a mysterious phantom threatens a famous lyric singer, Carlotta, and forces her to give up her role (Marguerite in Faust) for unknown Christine Daae. Christine meets this phantom (a masked man) in the catacombs, where he lives. What's his goal? What's his secret?",
+      "urlIMDB": "https://www.imdb.com/title/tt0016220/?ref_=fn_al_tt_2",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7.5,
+      "price":139.99,
+      "counts": 7
+    },
+    {
+      "title": "Faust",
+      "id": 120,
+      "trailer": "https://www.youtube.com/embed/Luuw4yTTtRU",
+      "year": "1926",
+      "directors": [
+        "F.W. Murnau"
+      ],
+      "writers": [
+        "Gerhart Hauptmann",
+        "Hans Kyser",
+        "Johann Wolfgang von Goethe"
+      ],
+      "actors": [
+        {
+           "name": "Gösta Ekman",
+           "photo": "https://m.media-amazon.com/images/M/MV5BNDg3NTYxNDkxOF5BMl5BanBnXkFtZTcwMzg3MDkwNA@@._V1_UY317_CR14,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Emil Jannings",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTg3NzYyNTQ1Nl5BMl5BanBnXkFtZTgwMjc4NjcwMzE@._V1_UY317_CR17,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Camilla Horn",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Camilla_Horn_by_Gregor_Harlip.jpg/640px-Camilla_Horn_by_Gregor_Harlip.jpg"
+        },
+        {
+          "name": "Frida Richard",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Richard-frida-foto-ernst-foerster-1879-1943-in-brieger-lothar-das-frauengesicht-der-gegenwart-stuttgart-enke-1930-s078.jpg/1200px-Richard-frida-foto-ernst-foerster-1879-1943-in-brieger-lothar-das-frauengesicht-der-gegenwart-stuttgart-enke-1930-s078.jpg"
+        }
+      ],
+      "runtime": "107 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/58ba69e6-918c-45ef-957e-986332cafbd0/1920x",
+      "countries": [
+        "Germany"
+      ],
+      "languages": [
+        "None"
+      ],
+      "subs": [
+        "English"
+      ],
+      "genres": [
+        "Mystic",
+        "Adaptation",
+        "Classic"
+      ],
+      "plot": "God and Satan war over earth; to settle things, they wager on the soul of Faust, a learned and prayerful alchemist. During a plague, Faust despairs and burns his books after failing to stop death; Satan sends Mephisto to tempt Faust, first with insight into treating the plague and then with a day's return to youth. Mephisto is clever, timing the end of this 24 hours as Faust embraces the beautiful Duchess of Parma. Faust trades his soul for youth. Some time later, he's bored, and demands on Easter Sunday that Mephisto take him home. Faust promptly sees and falls in love with the beautiful Gretchen, whose liaison with him brings her dishonor. Is there redemption? Who wins the wager?",
+      "urlIMDB": "https://www.imdb.com/title/tt0016847/?ref_=nv_sr_srsg_1",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 8.1,
+      "price":134.99,
+      "counts": 10
+    },{
+      "title": "The Unknown",
+      "id": 121,
+      "trailer": "https://www.youtube.com/embed/0ZPxz_gwOvk",
+      "year": "1927",
+      "directors": [
+        "Tod Browning"
+      ],
+      "writers": [
+        "Tod Browning",
+        "Waldemar Young",
+        "Joseph Farnham"
+      ],
+      "actors": [
+        {
+          "name": "Lon Chaney",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTM1MTg1MDU4OF5BMl5BanBnXkFtZTYwOTkwNjI2._V1_UX214_CR0,0,214,317_AL_.jpg"
+       },
+       {
+          "name": "Norman Kerry",
+         "photo": "https://m.media-amazon.com/images/M/MV5BMTQ2MzkwOTY2M15BMl5BanBnXkFtZTgwNTg2MDU1MzE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Joan Crawford",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjMzNzQ5Mjg5MF5BMl5BanBnXkFtZTYwNTg0NDM2._V1_UY317_CR6,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Nick De Ruiz",
+          "photo": "https://images.mubicdn.net/images/cast_member/59770/cache-601509-1603517126/image-w856.jpg?size=800x"
+        }
+      ],
+      "runtime": "63 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/47ca355d-e7ce-404c-b61a-f9360ffa5a19/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "None"
+      ],
+      "subs": [
+        "English"
+      ],
+      "genres": [
+        ""
+      ],
+      "plot": "Alonzo is an armless knife thrower and gun shooter for a circus---or so he appears. He is actually a criminal with his arms intact. He and his accomplice, Cojo (a little person), are hiding from the police. Alonzo views his disguise as perfect, especially since it keeps from view an unusual deformity of his left hand that would immediately give him away as the criminal the police are searching for. Nanon, the daughter of Zanzi, the circus owner, is the target in his act. Although Alonzo is in love with her, Nanon's father despises him. Malabar, the circus strong man, is attracted to Nanon but she is repulsed by his uninhibited sexual advances and desire to touch and hold her. Her phobia extends to the touch of any man's hand. ",
+      "urlIMDB": "https://www.imdb.com/title/tt0018528/?ref_=nv_sr_srsg_4",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7.8,
+      "price":129.99,
+      "counts": 17
     }
   ]
 }
