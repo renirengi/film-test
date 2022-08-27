@@ -1,90 +1,81 @@
 <section class="catalog-filter">
-  <form [formGroup]="filtersForm" (change)="onChange()">
-    <div class= "catalog-filter-container">
-    <div class="genres" *ngIf="currentGenre; else Genre">
-    <h3>Sort by genres</h3>
-    <select multiple name="genres" formControlName="genres">
-      <option *ngFor="let genre of genres$ | async" [selected]="genre===currentGenre">
-        {{ genre }}
-      </option>
-    </select>
-    </div>
-    <ng-template class="genres" #Genre>
-      <h3>Sort by genres</h3>
-      <select multiple name="genres" formControlName="genres">
-        <option *ngFor="let genre of genres$ | async">
-          {{ genre }}
-        </option>
-      </select>
-      </ng-template>
+  <form [formGroup]="filtersForm" *ngIf="filtersOptions$ | async as options">
+    <mat-form-field appearance="fill" class="genres">
+      <mat-label>Sort by genres</mat-label>
+      <mat-select formControlName="genres" multiple (selectionChange)="onChange()">
+        <mat-option *ngFor="let genre of options['genres']" [value]="genre">{{
+          genre
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
+    <mat-form-field appearance="fill" class="directors">
+      <mat-label>Sort by directors</mat-label>
+      <mat-select formControlName="directors" multiple (selectionChange)="onChange()">
+        <mat-option
+          *ngFor="let director of options['directors']"
+          [value]="director"
+          >{{ director }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
 
-  <div class = "directors">
-    <h3>Sort by directors</h3>
-    <select multiple name="directors" formControlName="directors">
-      <option *ngFor="let director of directors$ | async">
-        {{ director }}
-      </option>
-    </select>
-  </div>
+    <mat-form-field appearance="fill" class="years">
+      <mat-label>Sort by years</mat-label>
+      <mat-select formControlName="year" multiple (selectionChange)="onChange()">
+        <mat-option *ngFor="let year of options['years']" [value]="year">{{
+          year
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <div class = "years">
-    <h3>Sort by years</h3>
-    <select multiple name="year" formControlName="year">
-      <option *ngFor="let year of years$ | async">
-        {{ year }}
-      </option>
-    </select>
-  </div>
+    <mat-form-field appearance="fill" class="countries">
+      <mat-label>Sort by countries</mat-label>
+      <mat-select formControlName="countries" multiple (selectionChange)="onChange()">
+        <mat-option
+          *ngFor="let countrie of options['countries']"
+          [value]="countrie"
+          >{{ countrie }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
 
-  <div class = "countries">
-    <h3>Sort by countries</h3>
-    <select multiple name="countries" formControlName="countries">
-      <option *ngFor="let country of countries$ | async">
-        {{ country }}
-      </option>
-    </select>
-  </div>
+    <mat-form-field appearance="fill" class="languages">
+      <mat-label>Sort by languages</mat-label>
+      <mat-select formControlName="languages" multiple (selectionChange)="onChange()">
+        <mat-option
+          *ngFor="let language of options['languages']"
+          [value]="language"
+          >{{ language }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
 
-  <div class = "languages">
-    <h3>Sort by languages</h3>
-    <select multiple name="languages" formControlName="languages">
-      <option *ngFor="let language of languages$ | async">
-        {{ language }}
-      </option>
-    </select>
-  </div>
+    <mat-form-field appearance="fill" class="rated">
+      <mat-label>Sort by rated</mat-label>
+      <mat-select formControlName="rated" multiple (selectionChange)="onChange()">
+        <mat-option *ngFor="let rating of options['rateds']" [value]="rating">{{
+          rating
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <div class = "rated">
-    <h3>Sort by rated</h3>
-    <select multiple name="rated" formControlName="rated">
-      <option *ngFor="let rated of rateds$ | async">
-        {{ rated }}
-      </option>
-    </select>
-  </div>
+    <mat-form-field appearance="fill" class="type">
+      <mat-label>Sort by type</mat-label>
+      <mat-select formControlName="types" multiple (selectionChange)="onChange()">
+        <mat-option *ngFor="let type of options['types']" [value]="type">{{
+          type
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <div class = "type">
-    <h3>Sort by type</h3>
-    <select multiple name="types" formControlName="types">
-      <option *ngFor="let type of types$ | async">
-        {{ type }}
-      </option>
-    </select>
-  </div>
+    <mat-form-field appearance="fill" class="price">
+      <mat-label>Sort by price</mat-label>
+      <input type="number" matInput formControlName="priceMin" placeholder="From" min="{options['prices'][0]}" max="{options['prices'][options['prices'].length - 1]}" (change)="onChange()"/>
+      <input type="number" matInput formControlName="priceMax" placeholder="To" min="{options['prices'][0]}" max="{options['prices'][options['prices'].length - 1]}" (change)="onChange()"/>
+    </mat-form-field>
 
-  <div class = "price" *ngIf="prices$ | async as price">
-    <h3>Sort by price</h3>
-    <p>From</p>
-    <input name="priceMin" formControlName="priceMin" [placeholder]="price[0]">
-    <p>To</p>
-    <input name="priceMax" formControlName="priceMax" [placeholder]="price[price.length-1]">
-    </div>
+    <mat-checkbox formControlName="onlySale" (change)="onChange()">Only sale</mat-checkbox>
 
-  <div class = "checkbox">
-    <mat-checkbox formControlName="onlySale" (click)="onChange()"
-    >Only sale</mat-checkbox>
-  </div>
-  </div>
   </form>
 </section>
