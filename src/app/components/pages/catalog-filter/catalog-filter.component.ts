@@ -20,7 +20,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   private subscription: Subscription = new Subscription();
   public filtersForm = new FormGroup({
-    genres: new FormControl([]),
+    genres: new FormControl(['']),
     types: new FormControl([]),
     directors: new FormControl([]),
     countries: new FormControl([]),
@@ -39,9 +39,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   public currentGenre: string | null = '';
   public searchString: string = '';
 
-  selected: string = '';
-
-  constructor(private filmService: FilmService, private route: ActivatedRoute) {
+   constructor(private filmService: FilmService, private route: ActivatedRoute) {
     this.filtersOptions$ = forkJoin({
       genres: this.filmService.getAvailable('genre'),
       types: this.filmService.getAvailable('type'),
@@ -58,6 +56,14 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
   public ngOnInit() {
     this.getPrices().then((prices) => (this.prices = prices));
+
+    this.currentGenre = this.filmService._currentGenre$.getValue();
+    if (this.currentGenre) {
+      let newArr = [];
+      newArr.push(this.currentGenre);
+      this.filtersForm.get('genres')!.patchValue(newArr);
+      this.onChange();
+    }
 
     const searchString$ = this.route.queryParams
       .pipe(map((params) => params['q']))
