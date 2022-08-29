@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
   public searchString: string = '';
   public filmsSearchString$: BehaviorSubject<string>;
   public change:boolean=false;
+  public url: any;
 
 
   constructor(
@@ -33,6 +34,8 @@ export class HeaderComponent implements OnInit {
   ) {
     this.currentUser$ = this.userService.currentUser$;
     this.filmsSearchString$ = this.filmService.filmSearchString$;
+    this.url = this.filmService._currentUrl$.getValue();
+    console.log(this.url);
    }
 
   ngOnInit(): void {

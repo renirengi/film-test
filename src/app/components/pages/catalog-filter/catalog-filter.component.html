@@ -72,10 +72,23 @@
     <mat-form-field appearance="fill" class="price">
       <mat-label>Sort by price</mat-label>
       <input type="number" matInput formControlName="priceMin" placeholder="From" min="{options['prices'][0]}" max="{options['prices'][options['prices'].length - 1]}" (change)="onChange()"/>
-      <input type="number" matInput formControlName="priceMax" placeholder="To" min="{options['prices'][0]}" max="{options['prices'][options['prices'].length - 1]}" (change)="onChange()"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="price">
+       <input type="number" matInput formControlName="priceMax" placeholder="To" min="{options['prices'][0]}" max="{options['prices'][options['prices'].length - 1]}" (change)="onChange()"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="rating">
+      <mat-label>Sort by rating</mat-label>
+      <input type="number" matInput formControlName="minRating" placeholder="From" min="1" max="10" (change)="onChange()"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="rating">
+       <input type="number" matInput formControlName="maxRating" placeholder="To" min="2" max="10" (change)="onChange()"/>
     </mat-form-field>
 
     <mat-checkbox formControlName="onlySale" (change)="onChange()">Only sale</mat-checkbox>
 
   </form>
+
 </section>

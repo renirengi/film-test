@@ -29,6 +29,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     year: new FormControl([]),
     priceMax: new FormControl(),
     priceMin: new FormControl(),
+    maxRating: new FormControl(),
+    minRating: new FormControl(),
     onlySale: new FormControl(false),
     price: new FormControl([]),
     q: new FormControl(''),
@@ -36,6 +38,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   public filtersOptions$: Observable<{[key: string]: string[]}>
 
   public prices: string[] = [];
+  public ratingArr: string[] = [];
   public currentGenre: string | null = '';
   public searchString: string = '';
 
@@ -55,7 +58,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   }
 
   public ngOnInit() {
-    this.getPrices().then((prices) => (this.prices = prices));
+    this. getPricesOrRating("prices").then((prices) => (this.prices = prices));
+    this. getPricesOrRating("rating").then((rating) => (this.ratingArr= rating));
 
     this.currentGenre = this.filmService._currentGenre$.getValue();
     if (this.currentGenre) {
@@ -83,14 +87,14 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
-  public getPrices(): Promise<string[]> {
+  public getPricesOrRating(str:string): Promise<string[]> {
     return new Promise((resolve, reject) => {
-      let prices: string[] = [];
-      this.filmService.getAvailable('prices').subscribe((data) => {
+      let arr: string[] = [];
+      this.filmService.getAvailable(str).subscribe((data) => {
         data.forEach((price) => {
-          prices.push(price);
+          arr.push(price);
         });
-        resolve(prices);
+        resolve(arr);
       });
     });
   }
@@ -114,9 +118,9 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
           ) {
             minValue = +this.filtersForm.value['priceMin'];
             maxValue = +this.filtersForm.value['priceMax'];
-            price = this.getInterval(minValue, maxValue);
+            price = this.getInterval(minValue, maxValue, this.prices);
+
             keyString = `price_like`;
-            console.log(price)
             valueString = price.reduce(
               (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
               ''
@@ -124,15 +128,37 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
             acc = { ...acc, [keyString]: valueString };
           }
-        } else if (Array.isArray(value) && value.length > 0) {
+        }
+        else if(key=='minRating'|| key == 'maxRating') {
+          let ratingCur = [''];
+          let minValue:number;
+          let maxValue:number;
+          if (
+            this.filtersForm.value['minRating'] &&
+            this.filtersForm.value['maxRating']
+          ){
+
+            minValue = +this.filtersForm.value['minRating'];
+            maxValue = +this.filtersForm.value['maxRating'];
+            ratingCur = this.getInterval(minValue, maxValue, this.ratingArr);
+
+            keyString = `rating_like`;
+            valueString = ratingCur.reduce(
+              (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
+              ''
+            );
+            acc = { ...acc, [keyString]: valueString };
+          }
+        }
+         else if (Array.isArray(value) && value.length > 0) {
           keyString = `${key}_like`;
           valueString = value.reduce(
             (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
             ''
           );
-
+           if(valueString !=="()"){
             acc = { ...acc, [keyString]: valueString };
-
+}
         } else if (typeof value === 'boolean' && value === true) {
           [keyString, valueString] = this.booleanFilterGenerator(key);
           acc = { ...acc, [keyString]: valueString };
@@ -144,12 +170,13 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     if (this.searchString) {
       filterParams['q'] = this.searchString;
     }
+    console.log (filterParams)
     this.filtersChanged.emit(filterParams);
 
   }
 
-  private getInterval(min: any, max: any) {
-    return this.prices
+  private getInterval(min: any, max: any, arr:string[] ) {
+    return arr
       .filter((el) => el >= min && el <= max)
       .map((el) => String(el));
   }

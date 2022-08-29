@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FilmService } from 'src/app/services/film.service';
 import { IFilm } from 'src/app/interfaces/film';
+import { ActivatedRoute } from '@angular/router';
 import { lastValueFrom, map } from 'rxjs';
 
 @Component({
@@ -21,12 +22,14 @@ export class CatalogPageComponent implements OnInit {
   public endPage:number=0;
   public appliedFilters?: {[key: string]: string};
   constructor(
-    public filmService: FilmService
+    public filmService: FilmService,
+    public route: ActivatedRoute,
   ) {
 
    }
 
   async ngOnInit(): Promise<void> {
+
     this.films = await lastValueFrom(this.filmService.getFilmsPage(this.lastPage));
     const allFilms = await lastValueFrom(this.filmService.getAll());
     this.showButton= true;

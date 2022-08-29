@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
 import { IFilm } from '../interfaces/film';
 
 import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay, BehaviorSubject} from 'rxjs'
@@ -16,7 +15,9 @@ export class FilmService {
   films: IFilm[] = [];
   page: number = 1;
   public _currentGenre$ = new BehaviorSubject<string|null>(null);
+  public _currentUrl$ = new BehaviorSubject<any|null>(null);
   public readonly filmSearchString$ = new BehaviorSubject<string>('');
+  public url: any;
 
   public set filmSearchString(str: string) {
     this.filmSearchString$.next(str);
@@ -68,6 +69,11 @@ export class FilmService {
         }
         else if (value === 'prices') {
           films.forEach((film) => years.add(film.price));
+          let newSet = new Set(Array.from(years).flat().sort(this.compareNumbers))
+          return  Array.from(newSet).map((elem) => String(elem)) as string[];
+        }
+        else if (value === 'rating') {
+          films.forEach((film) => years.add(film.rating));
           let newSet = new Set(Array.from(years).flat().sort(this.compareNumbers))
           return  Array.from(newSet).map((elem) => String(elem)) as string[];
         }
