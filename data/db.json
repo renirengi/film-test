@@ -61,7 +61,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt2328549/?ref_=tt_mv_close",
       "rated": "18+",
       "type": "DVD",
-      "rating": 4.8,
+      "rating": 3,
       "price": 18.45,
       "counts": 3
     },
@@ -115,7 +115,7 @@
         "French",
         "German"
       ],
-      "rating": 8.3,
+      "rating": 8,
       "price": 16.98,
       "counts": 10
     },
@@ -168,7 +168,7 @@
         "Japan",
         "Korean"
       ],
-      "rating": 5.6,
+      "rating": 6,
       "price": 13.65,
       "counts": 2
     },
@@ -221,7 +221,7 @@
       "rated": "R",
       "type": "VHS",
       "condition": "used",
-      "rating": 7.5,
+      "rating": 7,
       "price": 25,
       "counts": 1
     },
@@ -269,7 +269,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1047490/?ref_=nm_knf_t1",
       "rated": "18+",
       "type": "DVD",
-      "rating": 6.4,
+      "rating": 6,
       "price": 13.05,
       "counts": 7
     },
@@ -328,7 +328,7 @@
       "rated": "16+",
       "type": "DVD",
       "condition": "new",
-      "rating": 7.6,
+      "rating": 8,
       "price": 26.98,
       "counts": 5
     },
@@ -380,7 +380,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0076786/?ref_=nv_sr_srsg_3",
       "rated": "18+",
       "type": "VHS",
-      "rating": 7.3,
+      "rating": 7,
       "price": 78.99,
       "counts": 1
     },
@@ -431,7 +431,7 @@
       "urlIMDB": "imdb.com/title/tt0240119/?ref_=nv_sr_srsg_1",
       "rated": "18+",
       "type": "DVD",
-      "rating": 5.1,
+      "rating": 5,
       "price": 39.37,
       "counts": 2
     },
@@ -529,7 +529,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0069715/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 5.9,
+      "rating": 6,
       "price": 23.14,
       "counts": 1
     },
@@ -577,7 +577,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0082511/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 5.6,
+      "rating": 6,
       "price": 19.3,
       "counts": 1
     },
@@ -632,7 +632,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0075666/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "DVD",
-      "rating": 6.2,
+      "rating": 6,
       "price": 21.34,
       "counts": 5
     },
@@ -683,7 +683,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0070078/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 6.6,
+      "rating": 7,
       "price": 8.6,
       "counts": 1
     },
@@ -735,7 +735,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0283027/?ref_=nm_flmg_act_44",
       "rated": "16+",
       "type": "DVD",
-      "rating": 4.4,
+      "rating": 4,
       "price": 12.17,
       "counts": 13
     },
@@ -788,7 +788,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0220827/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "DVD",
-      "rating": 6.2,
+      "rating": 6,
       "price": 46.7,
       "counts": 3
     },
@@ -846,7 +846,7 @@
       "rated": "18+",
       "type": "DVD",
       "condition": "new",
-      "rating": 4.4,
+      "rating": 4,
       "price": 17,
       "counts": 7
     },
@@ -959,7 +959,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0430676/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "DVD",
-      "rating": "5.6",
+      "rating": 5,
       "price": 16.3,
       "counts": 1
     },
@@ -1013,7 +1013,7 @@
       "rated": "16+",
       "type": "DVD",
       "condition": "new",
-      "rating": 4.8,
+      "rating": 5,
       "price": 20.77,
       "counts": 14
     },
@@ -1069,7 +1069,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0119588/?ref_=fn_al_tt_1",
       "rated": "18+",
       "type": "DVD",
-      "rating": 5.7,
+      "rating": 6,
       "price": 31.01,
       "counts": 2
     },
@@ -1122,7 +1122,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0117658/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": "6.0",
+      "rating": 6,
       "price": 34.99,
       "counts": 1
     },
@@ -1174,7 +1174,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0104053/?ref_=nv_sr_srsg_1",
       "rated": "18+",
       "type": "VHS",
-      "rating": 5.8,
+      "rating": 6,
       "price": 25.88,
       "counts": 23
     },
@@ -1228,7 +1228,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0100581/?ref_=nv_sr_srsg_4",
       "rated": "18+",
       "type": "VHS",
-      "rating": 6.1,
+      "rating": 6,
       "price": 23.4,
       "counts": 1
     },
@@ -1283,7 +1283,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0100827/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "VHS",
-      "rating": 6.1,
+      "rating": 6,
       "price": 119.87,
       "counts": 1
     },
@@ -1334,7 +1334,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0093677/?ref_=nm_flmg_wr_17",
       "rated": "18+",
       "type": "VHS",
-      "rating": 6.9,
+      "rating": 7,
       "price": 39,
       "counts": 3
     },
@@ -1387,7 +1387,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0090930/?ref_=nm_flmg_wr_18",
       "rated": "16+",
       "type": "Blu-Ray",
-      "rating": "5.9",
+      "rating": 6,
       "price": 71.99,
       "counts": 4
     },
@@ -1438,7 +1438,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0089013/?ref_=nm_flmg_wr_19",
       "rated": "18+",
       "type": "VHS",
-      "rating": "6.6",
+      "rating": 7,
       "price": 39.99,
       "counts": 7
     },
@@ -1495,7 +1495,7 @@
       "rated": "18+",
       "type": "VHS",
       "condition": "new",
-      "rating": 6.7,
+      "rating": 7,
       "price": 50.65,
       "counts": 1
     },
@@ -1598,7 +1598,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0080923/?ref_=nm_flmg_wr_22",
       "rated": "18+",
       "type": "VHS",
-      "rating": 6.5,
+      "rating": 6,
       "price": 24,
       "counts": 12
     },
@@ -1654,7 +1654,7 @@
       "rated": "18+",
       "type": "DVD",
       "condition": "new",
-      "rating": 6.6,
+      "rating": 6,
       "price": 13.15,
       "counts": 23
     },
@@ -1710,7 +1710,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0065761/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "DVD",
-      "rating": 6.6,
+      "rating": 7,
       "price": 65.05,
       "counts": 12
     },
@@ -1765,7 +1765,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0065143/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "DVD",
-      "rating": 7.1,
+      "rating": 7,
       "price": 55.09,
       "counts": 3
     },
@@ -1822,7 +1822,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0357507/?ref_=nv_sr_srsg_3",
       "rated": "13+",
       "type": "DVD",
-      "rating": 4.3,
+      "rating": 4,
       "price": 15.3,
       "counts": 100
     },
@@ -1881,7 +1881,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0109836/?ref_=nv_sr_srsg_2",
       "rated": "13+",
       "type": "DVD",
-      "rating": 6.3,
+      "rating": 6,
       "price": 24.96,
       "counts": 23
     },
@@ -1939,7 +1939,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt2345759/?ref_=nv_sr_srsg_2",
       "rated": "12+",
       "type": "DVD",
-      "rating": 5.4,
+      "rating": 5,
       "price": 5.9,
       "counts": 100
     },
@@ -1990,7 +1990,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0049646/?ref_=nv_sr_srsg_0",
       "rated": "12+",
       "type": "VHS",
-      "rating": 6.6,
+      "rating": 7,
       "price": 17.08,
       "counts": 12
     },
@@ -2040,7 +2040,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0047573/?ref_=nv_sr_srsg_10",
       "rated": "12+",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 10.3,
       "counts": 15
     },
@@ -2089,7 +2089,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0072271/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 7.4,
+      "rating": 7,
       "price": 78,
       "counts": 12
     },
@@ -2140,7 +2140,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0092576/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "DVD",
-      "rating": 6.6,
+      "rating": 7,
       "price": 40,
       "counts": 23
     },
@@ -2195,7 +2195,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0107664/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "VHS",
-      "rating": 5.8,
+      "rating": 6,
       "price": 41.99,
       "counts": 4
     },
@@ -2251,7 +2251,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1034306/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 6.6,
+      "rating": 7,
       "price": 5.6,
       "counts": 67
     },
@@ -2303,7 +2303,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1462757/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 4.9,
+      "rating": 5,
       "price": 19.08,
       "counts": 56
     },
@@ -2354,7 +2354,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0089885/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 33.99,
       "counts": 49
     },
@@ -2406,7 +2406,7 @@
       "plot": "Fuko Ando (Miori Takimoto) is a 24-years-old graduate student in psychology. She is tasked to take care of her 4-year-old niece. Soon, mysterious events occur around her niece. She then learns of an incident involving a cursed video that took place 5 years earlier. Fuko Ando finds herself involved with the cursed video.",
       "urlIMDB": "imdb.com/title/tt2440362/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 4.2,
+      "rating": 3,
       "price": 23.06,
       "counts": 36
     },
@@ -2458,7 +2458,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt2965466/",
       "rated": "R",
       "type": "Blu-Ray",
-      "rating": 5.8,
+      "rating": 6,
       "price": 18.76,
       "counts": 2
     },
@@ -2514,7 +2514,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1457767/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "DVD",
-      "rating": 7.5,
+      "rating": 7,
       "price": 34.56,
       "counts": 89
     },
@@ -2562,7 +2562,7 @@
       "plot": "A group of young friends go hunting during their holidays near a small town in Texas, where the father of one of them own a piece of land. But the place has a legend. Years ago the grandfather stole the land from the Indians and they cursed the family. The curse is effective once every 10 years. 20 years ago the grandfather was killed, 10 years ago an uncle disappeared.",
       "urlIMDB": "https://www.imdb.com/title/tt0094996/?ref_=nv_sr_srsg_1",
       "type": "VHS",
-      "rating": 4.2,
+      "rating": 4,
       "price": 56.89,
       "counts": 1
     },
@@ -2608,7 +2608,7 @@
       "plot": "A screenwriter staying in an old manor house in West Wales discovers that it's haunted by malevolent spirits.",
       "urlIMDB": "https://www.imdb.com/title/tt3144266/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 3.3,
+      "rating": 3,
       "price": 15.34,
       "counts": 2
     },
@@ -2665,7 +2665,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1188729/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "Blu-Ray",
-      "rating": 6.7,
+      "rating": 7,
       "price": 34.99,
       "counts": 78
     },
@@ -2722,7 +2722,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0480249/?ref_=nv_sr_srsg_0",
       "rated": "12+",
       "type": "DVD",
-      "rating": 7.2,
+      "rating": 7,
       "price": 9.99,
       "counts": 130
     },
@@ -2778,7 +2778,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0079641/?ref_=nv_sr_srsg_0",
       "rated": "PG",
       "type": "VHS",
-      "rating": 7.4,
+      "rating": 7,
       "price": 67.9,
       "counts": 18
     },
@@ -2831,7 +2831,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt5641606/?ref_=nv_sr_srsg_1",
       "rated": "R",
       "type": "DVD",
-      "rating": 4.1,
+      "rating": 4,
       "price": 15.34,
       "counts": 3
     },
@@ -2882,7 +2882,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0082010/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "VHS",
-      "rating": 7.5,
+      "rating": 7,
       "price": 78.15,
       "counts": 67
     },
@@ -2935,7 +2935,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt2724064/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 3.3,
+      "rating": 3,
       "price": 10.04,
       "counts": 1
     },
@@ -2990,7 +2990,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0366292/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 6.2,
+      "rating": 6,
       "price": 67.3,
       "counts": 56
     },
@@ -3048,7 +3048,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0054215/?ref_=nv_sr_srsg_3",
       "rated": "16+",
       "type": "VHS",
-      "rating": 8.5,
+      "rating": 9,
       "price": 89.9,
       "counts": 56
     },
@@ -3096,7 +3096,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0167404/?ref_=nv_sr_srsg_4",
       "rated": "12+",
       "type": "VHS",
-      "rating": 8.2,
+      "rating": 8,
       "price": 23.67,
       "counts": 34
     },
@@ -3146,7 +3146,7 @@
       "plot": "5 young people, a quiet doll maker in a wheelchair and her dedicated helper, a chained old man in the basement and a mysterious young girl in red... all together in a lonely doll museum in the woods. What starts out as a fun trip to pose for new dolls soon turns into a nightmare that not everyone will survive.",
       "urlIMDB": "https://www.imdb.com/name/nm1062747/?ref_=tt_cl_t_4",
       "type": "DVD",
-      "rating": 5.7,
+      "rating": 6,
       "price": 34.89,
       "counts": 15
     },
@@ -3201,7 +3201,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0364385/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 6.7,
+      "rating": 7,
       "price": 34.56,
       "counts": 67
     },
@@ -3302,7 +3302,7 @@
       "plot": "A Carpathian village is haunted by the ghost of a murderous little girl, prompting a coroner and a medical student to uncover her secrets while a witch attempts to protect the villagers.",
       "urlIMDB": "https://www.imdb.com/title/tt0060794/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 6.9,
+      "rating": 7,
       "price": 34.98,
       "counts": 45
     },
@@ -3353,7 +3353,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0134928/?ref_=nv_sr_srsg_2",
       "rated": "18+",
       "type": "VHS",
-      "rating": 5.2,
+      "rating": 5,
       "price": 9.99,
       "counts": 4
     },
@@ -3460,7 +3460,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0365376/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 7.1,
+      "rating": 7,
       "price": 76.9,
       "counts": 34
     },
@@ -3512,7 +3512,7 @@
       "plot": "While training after hours in her high-school, the aspiring singer Park Young-Eon is mysteriously killed and her body vanishes. Her ghost is invisible and trapped in the school, but her best friend Kang Sun-min, who broadcasts at lunchtime in school, is able to hear her voice. After the suicide of their music teacher Sun-min, aided by her mate Cho-Ah, they discover another student, Hyo-Jung, died in the same elevator trunk some time ago. Meanwhile Young-Eon recalls details of her life, disclosing why she died.",
       "urlIMDB": "https://www.imdb.com/title/tt0470967/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 6.3,
+      "rating": 6,
       "price": 23.45,
       "counts": 1
     },
@@ -3565,7 +3565,7 @@
       "plot": "Three people in Tokyo take a surreal voyage of self-discovery through memory and nightmares. O intends suicide while talking on a cell-phone with a stranger he meets on line who plans a simultaneous suicide. Events take a horrifying turn. Keiko Kirishima is a cool, seemingly emotionless police detective, brilliant but off-putting. She's faced with two mutilated corpses who appear to have killed themselves, but she's not sure. A cell-phone number links the deaths. She calls on Akumu Tantei, a poor and suicidal young man who has the ability to enter people's dreams. He's reluctant to help. His past haunts him. A subconscious duel of terror and blood awaits the three.",
       "urlIMDB": "https://www.imdb.com/title/tt0852726/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 6.1,
+      "rating": 6,
       "price": 18.99,
       "counts": 25
     },
@@ -3617,7 +3617,7 @@
       "plot": "A reporter and her ex-husband investigate a cursed video tape that is rumored to kill the viewer seven days after watching it.",
       "urlIMDB": "https://www.imdb.com/title/tt0178868/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 130.99,
       "counts": 99
     },
@@ -3662,7 +3662,7 @@
       "plot": "After a traumatic accident, a woman becomes drawn to a mysterious abandoned carnival.",
       "urlIMDB": "https://www.imdb.com/title/tt0055830/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 7.1,
+      "rating": 7,
       "price": 100.99,
       "counts": 34
     },
@@ -3716,7 +3716,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1002567/?ref_=nm_flmg_act_12",
       "rated": "14+",
       "type": "DVD",
-      "rating": 6.7,
+      "rating": 6,
       "price": 43.67,
       "counts": 23
     },
@@ -3772,7 +3772,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0301730/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 5.2,
+      "rating": 5,
       "price": 23.12,
       "counts": 5
     },
@@ -3829,7 +3829,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0478988/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 7.1,
+      "rating": 7,
       "price": 34.05,
       "counts": 6
     },
@@ -3882,7 +3882,7 @@
       "urlIMDB": "",
       "rated": "16+",
       "type": "DVD",
-      "rating": 7.2,
+      "rating": 7,
       "price": 33.12,
       "counts": 10
     },
@@ -3930,7 +3930,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0086541/?ref_=fn_al_tt_1",
       "rated": "R",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 44.21,
       "counts": 16
     },
@@ -3980,7 +3980,7 @@
       "plot": "Three lonely herdsmen starved of female companionship creates the girl of their dreams, from a broom, some straw and a few rags. The creation - Sennentuntschi, lives and breathe to cook, clean and look after the three.",
       "urlIMDB": "https://www.imdb.com/title/tt1296077/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 6.4,
+      "rating": 6,
       "price": 55.16,
       "counts": 1
     },
@@ -4036,7 +4036,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0457430/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "DVD",
-      "rating": 8.2,
+      "rating": 9,
       "price": 34.56,
       "counts": 99
     },
@@ -4085,7 +4085,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0058329/?ref_=nv_sr_srsg_0",
       "rated": "PG",
       "type": "VHS",
-      "rating": 7.1,
+      "rating": 7,
       "price": 67.12,
       "counts": 34
     },
@@ -4193,7 +4193,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0256009/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "DVD",
-      "rating": 7.4,
+      "rating": 7,
       "price": 47.12,
       "counts": 56
     },
@@ -4298,7 +4298,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0058279/?ref_=nv_sr_srsg_1",
       "rated": "16+",
       "type": "VHS",
-      "rating": 7.9,
+      "rating": 8,
       "price": 97.33,
       "counts": 2
     },
@@ -4358,7 +4358,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1396484/?ref_=nv_sr_srsg_6",
       "rated": "18+",
       "type": "Blu-Ray",
-      "rating": 7.3,
+      "rating": 7,
       "price": 87.9,
       "counts": 100
     },
@@ -4417,7 +4417,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt1714915/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "Blu-Ray",
-      "rating": 7.2,
+      "rating": 7,
       "price": 78.99,
       "counts": 100
     },
@@ -4469,7 +4469,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0062453/?ref_=nv_sr_srsg_3",
       "rated": "12+",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 66.34,
       "counts": 4
     },
@@ -4517,7 +4517,7 @@
       "plot": "A luxury ship is haunted by the ghosts of a crew that had disappeared off the ship years before.",
       "urlIMDB": "https://www.imdb.com/title/tt0044656/?ref_=nv_sr_srsg_7",
       "type": "VHS",
-      "rating": 5.3,
+      "rating": 5,
       "price": 56.21,
       "counts": 1
     },
@@ -4569,7 +4569,7 @@
       "plot": "Taking place years after The Haunting of Molly Hartley, who now, as an adult, has fallen under the possession of an evil spirit and must be exorcised by a fallen priest before the devil completely takes her.",
       "urlIMDB": "https://www.imdb.com/title/tt3800796/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 4.6,
+      "rating": 5,
       "price": 5.7,
       "counts": 10
     },
@@ -4618,7 +4618,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0070917/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "VHS",
-      "rating": 7.5,
+      "rating": 7,
       "price": 43.12,
       "counts": 28
     },
@@ -4727,7 +4727,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0142688/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "VHS",
-      "rating": 6.7,
+      "rating": 7,
       "price": 33.92,
       "counts": 45
     },
@@ -4783,7 +4783,7 @@
       "plot": "Picking up where the first one leaves off, Light joins the task force searching for Kira in an effort to avert suspicion from himself---and get rid of L.",
       "urlIMDB": "https://www.imdb.com/title/tt0810827/?ref_=nv_sr_srsg_0",
       "type": "Blu-Ray",
-      "rating": 7.2,
+      "rating": 7,
       "price": 45.88,
       "counts": 67
     },
@@ -4834,7 +4834,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0075005/?ref_=fn_al_tt_1",
       "rated": "18+",
       "type": "VHS",
-      "rating": 7.5,
+      "rating": 7,
       "price": 93.12,
       "counts": 45
     },
@@ -4886,7 +4886,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0116367/?ref_=fn_al_tt_1",
       "rated": "16+",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 80.99,
       "counts": 5
     },
@@ -4940,7 +4940,7 @@
       "plot": "In Seoul, Su-Hyeon is terminal with leukemia, and bald due the treatment of chemotherapy. Her sister Ji-Hyeon buys a long-haired wig, but she does not disclose the truth about Su-Hyeon's health condition to her beloved sister. While wearing the wig, Su-Hyeon recovers her health and hits Ji-Hyeon's former boyfriend Ki-Seok, changing her behavior and relationship with her sister. When Ji-Hyeon discovers that the wig is possessed by a fiend, she finds that it was manufactured using hair of a cadaver and a dark secret about Ki-Seok's sentimental life.",
       "urlIMDB": "https://www.imdb.com/title/tt0475590/?ref_=nv_sr_srsg_2",
       "type": "DVD",
-      "rating": 5.4,
+      "rating": 5,
       "price": 14.55,
       "counts": 2
     },
@@ -4990,7 +4990,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0087800/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 7.4,
+      "rating": 7,
       "price": 76.99,
       "counts": 100
     },
@@ -5047,7 +5047,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0289765/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "DVD",
-      "rating": 7.2,
+      "rating": 7,
       "price": 48.33,
       "counts": 78
     },
@@ -5101,7 +5101,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0212985/?ref_=nv_sr_srsg_3",
       "rated": "18+",
       "type": "VHS",
-      "rating": 6.8,
+      "rating": 7,
       "price": 36.99,
       "counts": 67
     },
@@ -5152,7 +5152,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0102926/?ref_=nv_sr_srsg_0",
       "rated": "18+",
       "type": "VHS",
-      "rating": 8.6,
+      "rating": 9,
       "price": 98.99,
       "counts": 10
     },
@@ -5205,7 +5205,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0228786/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "VHS",
-      "rating": 6.9,
+      "rating": 7,
       "price": 67.99,
       "counts": 67
     },
@@ -5258,7 +5258,7 @@
       "plot": "An ex-cop, now working as a security guard in a shopping mall, tries to uncover the secret behind a series of mysterious deaths linked to mirrors.",
       "urlIMDB": "https://www.imdb.com/title/tt0372937/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 6.4,
+      "rating": 6,
       "price": 23.99,
       "counts": 23
     },
@@ -5313,7 +5313,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0451010/?ref_=fn_al_tt_1",
       "rated": "R",
       "type": "DVD",
-      "rating": 5.3,
+      "rating": 5,
       "price": 34.99,
       "counts": 32
     },
@@ -5367,7 +5367,7 @@
       "plot": "In Taipei, the crippled scientist Hashimoto uses his invention of Menger Sponge to capture the energy of the spirit of a child in an old building. He invites the specialist in reading lips, Detective Tung, to join his research team that is studying the phenomenon to understand the movements of the lips of the ghost. Hashimoto is trying to disclose why the energy of the ghost does not dissipate, and Tung discovers the identity and the dramatic story of the boy. He was sick with tumors and was killed by his own mother and buried nearby a nuclear plant. Hashimoto deduces that the rage of the boy for his mother associated to the location where the body was buried were the reason to keep the energy. When the government decides to shutdown the research, Hashimoto becomes insane and takes the spirit with him.",
       "urlIMDB": "https://www.imdb.com/title/tt0486480/?ref_=nv_sr_srsg_0",
       "type": "DVD",
-      "rating": 6.3,
+      "rating": 6,
       "price": 23.99,
       "counts": 32
     },
@@ -5417,7 +5417,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0070698/?ref_=nv_sr_srsg_9",
       "rated": "R",
       "type": "VHS",
-      "rating": 6.9,
+      "rating": 7,
       "price": 25.00,
       "counts": 13
     },
@@ -5524,7 +5524,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0069995/?ref_=nv_sr_srsg_3",
       "rated": "R",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 100.00,
       "counts": 67
     },
@@ -5576,7 +5576,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0057129/?ref_=nv_sr_srsg_8",
       "rated": "G",
       "type": "VHS",
-      "rating": 7.4,
+      "rating": 7,
       "price": 74.99,
       "counts": 20
     },
@@ -5628,7 +5628,7 @@
       "plot": "A young governess for two children becomes convinced that the house and grounds are haunted.",
       "urlIMDB": "https://www.imdb.com/title/tt0055018/?ref_=nv_sr_srsg_3",
       "type": "VHS",
-      "rating": 7.8,
+      "rating": 8,
       "price": 57.99,
       "counts": 21
     },
@@ -5735,7 +5735,7 @@
       "plot": "An industrialist invites his colleagues and their wives to relax on his private island so they can exploit the monetary value of one of the guests' revolutionary resin formula, but a killer within the group disrupts the proceedings.",
       "urlIMDB": "https://www.imdb.com/title/tt0065553/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 5.8,
+      "rating": 6,
       "price": 100.66,
       "counts": 3
     },
@@ -5784,7 +5784,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0320626/?ref_=nv_sr_srsg_7",
       "rated": "R",
       "type": "DVD",
-      "rating": 5.2,
+      "rating": 5,
       "price": 9.45,
       "counts": 1
     },
@@ -5836,7 +5836,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0169543/?ref_=nv_sr_srsg_0",
       "rated": "R",
       "type": "VHS",
-      "rating": 5.6,
+      "rating": 6,
       "price": 16.33,
       "counts": 4
     },
@@ -5888,7 +5888,7 @@
       "plot": "Three apparently unrelated suicides occur on the same day in Tokyo. One involves a young athlete, one a groom at his wedding reception, and the third an elderly man celebrating his wife's birthday. A middle aged detective investigating one of the cases begins to suspect a connection between the three when he discovers that each person mentioned a green monkey before they died. With the help of a young psychiatrist he formulates the theory that hypnosis is somehow involved. In the mean time other bizarre suicides are reported and the mystery intensifies. Who will be next? What is the truth? Can more deaths be prevented?",
       "urlIMDB": "https://www.imdb.com/title/tt0228807/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 6.1,
+      "rating": 6,
       "price": 16.33,
       "counts": 8
     },
@@ -5941,7 +5941,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0266308/?ref_=fn_al_tt_1",
       "rated": "18+",
       "type": "VHS",
-      "rating": 7.6,
+      "rating": 8,
       "price": 99.5,
       "counts": 1
     },
@@ -5993,7 +5993,7 @@
       "plot": "The guests invited to weekend in the country share their supernatural stories, beginning with Walter Craig , who senses impending doom as his half-remembered recurring dream turns into reality.",
       "urlIMDB": "imdb.com/title/tt0037635/?ref_=nv_sr_srsg_3",
       "type": "VHS",
-      "rating": 7.6,
+      "rating": 8,
       "price": 18.99,
       "counts": 17
     },
@@ -6044,7 +6044,7 @@
       "plot": "The wife and mistress of a loathed school principal plan to murder him with what they believe is the perfect alibi.",
       "urlIMDB": "https://www.imdb.com/title/tt0046911/?ref_=nv_sr_srsg_0",
       "type": "VHS",
-      "rating": 8.1,
+      "rating": 8,
       "price": 48.89,
       "counts": 39
     },
@@ -6095,7 +6095,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0012494/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.6,
+      "rating": 8,
       "price": 86.33,
       "counts": 3
     },
@@ -6150,7 +6150,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0013442/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.9,
+      "rating": 8,
       "price": 150.00,
       "counts": 1
     },
@@ -6204,7 +6204,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0014142/?ref_=fn_al_tt_7",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price": 149.99,
       "counts": 3
     },
@@ -6259,7 +6259,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0015202/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.0,
+      "rating": 7,
       "price": 144.99,
       "counts": 10
     },
@@ -6312,7 +6312,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0016220/?ref_=fn_al_tt_2",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.5,
+      "rating": 7,
       "price":139.99,
       "counts": 7
     },
@@ -6367,7 +6367,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0016847/?ref_=nv_sr_srsg_1",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 8.1,
+      "rating": 8,
       "price":134.99,
       "counts": 10
     },{
@@ -6421,7 +6421,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0018528/?ref_=nv_sr_srsg_4",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.8,
+      "rating": 8,
       "price":129.99,
       "counts": 17
     },
@@ -6476,7 +6476,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0018770/?ref_=fn_al_tt_2",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.3,
+      "rating": 7,
       "price":124.99,
       "counts": 4
     },
@@ -6530,7 +6530,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0020004/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.6,
+      "rating": 6,
       "price":119.99,
       "counts": 12
     },
@@ -6583,7 +6583,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0020668/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.3,
+      "rating": 6,
       "price":114.99,
       "counts": 16
     },
@@ -6636,7 +6636,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0021814/?ref_=fn_tt_tt_6",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.4,
+      "rating": 7,
       "price":150.00,
       "counts":13
     },
@@ -6688,7 +6688,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0023649/?ref_=nv_sr_srsg_0",
       "rated": "16+",
       "type": "VHS",
-      "rating": 7.4,
+      "rating": 7,
       "price":56.99,
       "counts":65
     },
@@ -6741,7 +6741,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0023563/?ref_=fn_al_tt_1",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.9,
+      "rating": 8,
       "price":132.99,
       "counts": 10
     },
@@ -6794,7 +6794,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0024894/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.9,
+      "rating": 7,
       "price":87.99,
       "counts": 45
     },
@@ -6845,7 +6845,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0026138/?ref_=fn_al_tt_1",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.8,
+      "rating": 8,
       "price":145.99,
       "counts":4
     },
@@ -6896,7 +6896,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0027545/?ref_=fn_al_tt_1",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.3,
+      "rating": 6,
       "price":78.99,
       "counts": 56
     },
@@ -6945,7 +6945,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0027770/?ref_=nv_sr_srsg_2",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 5.9,
+      "rating": 6,
       "price": 45.99,
       "counts": 34
     },
@@ -6997,7 +6997,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0031208/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 5.7,
+      "rating": 6,
       "price": 56.99,
       "counts": 45
     },
@@ -7043,7 +7043,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0434117/?ref_=fn_al_tt_1",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.2,
+      "rating": 6,
       "price": 148.99,
       "counts": 1
     },
@@ -7094,7 +7094,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0032258/?ref_=nv_sr_srsg_4",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.3,
+      "rating": 6,
       "price":67.99,
       "counts":45
     },
@@ -7145,7 +7145,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0037549/?ref_=nv_sr_srsg_3",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.6,
+      "rating": 8,
       "price":68.99,
       "counts": 45
     },
@@ -7195,7 +7195,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0038975/?ref_=fn_al_tt_1",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.3,
+      "rating": 7,
       "price":34.99,
       "counts": 54
     },
@@ -7247,7 +7247,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0143246/?ref_=nv_sr_srsg_6",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 5.7,
+      "rating": 6,
       "price": 78.99,
       "counts": 30
     },
@@ -7299,7 +7299,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0040068/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.3,
+      "rating": 7,
       "price": 87.99,
       "counts": 7
     },
@@ -7350,7 +7350,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0041776/?ref_=nv_sr_srsg_8",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price":86.99,
       "counts": 32
     },
@@ -7400,7 +7400,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0043647/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.0,
+      "rating": 7,
       "price":85.99,
       "counts":18
     },
@@ -7449,7 +7449,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0034398/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price":84.99,
       "counts": 6
     },
@@ -7498,7 +7498,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0034587/?ref_=nv_sr_srsg_2https://www.imdb.com/title/tt0034587/?ref_=nv_sr_srsg_2",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.2,
+      "rating": 7,
       "price":83.99,
       "counts": 6
     },
@@ -7549,7 +7549,7 @@
       "urlIMDB": "imdb.com/title/tt0036027/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7.0,
+      "rating": 7,
       "price":82.99,
       "counts":56
     },
@@ -7600,7 +7600,7 @@
       "urlIMDB": "https://www.imdb.com/title/tt0036931/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 6.2,
+      "rating": 6,
       "price":81.99,
       "counts":67
     },
@@ -7651,8 +7651,8 @@
       "plot": "Boxer Tommy Nelson is accused of killing his manager. While detectives Bud and Lou investigate, they come across an invisibility formula with which Tommy injects himself rather than face the police. This sparks an idea for trapping gangster Morgan by having Lou fight champ Rocky Hanlon, with Tommy's invisible help.",
       "urlIMDB": "https://www.imdb.com/title/tt0043255/?ref_=fn_al_tt_1",
       "rated": "Not Rated",
-      "type": "Vhs",
-      "rating": 6.6,
+      "type": "VHS",
+      "rating": 7,
       "price":80.99,
       "counts":67
     }
