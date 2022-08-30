@@ -1,3 +1,4 @@
+ <div class="catalog-page">
  <app-catalog-filter (filtersChanged)="applyFilters($event)"></app-catalog-filter>
 
  <div class="page">
@@ -10,7 +11,7 @@
   >
  </app-films-list>
 
-<div *ngIf="showButton==true">
+<!---<div *ngIf="showButton==true">
  <button
   mat-stroked-button
   color="primary"
@@ -41,6 +42,6 @@
  mat-stroked-button
  color="primary"
  (click)="onLoadPage(nextPage)">Next</button>
+</div>--->
 </div>
 </div>
-

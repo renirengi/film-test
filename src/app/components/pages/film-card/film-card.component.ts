@@ -45,7 +45,9 @@ export class FilmCardComponent implements OnInit {
 
        const feed = {...film.feedback, userId:user.id , movieRating:rat}
        const newFilm = {...film, rating:newRating, feedback:feed};
+       const feedF = {...film.feedback, userId:user.id , movieRating:rat, filmId:film.id}
    await firstValueFrom(this.filmService.updateFilm(newFilm));
+   await firstValueFrom(this.feedbackService.updateFilmFeedback(film, user.id, feedF));
   }
 
   public showMessage() {

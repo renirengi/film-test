@@ -1,7 +1,7 @@
 <div *ngIf="film">
   <div class="film-container" >
   <h2>{{film.title}}</h2>
-  <img [src]="film.urlPoster" [alt]="film.title" routerLink="/catalog/{{film.id}}">
+  <img class="catalog-image" [src]="film.urlPoster" [alt]="film.title" routerLink="/catalog/{{film.id}}">
   <p>Year: {{film.year}}</p>
   <ng-container *ngIf="user$ | async as user; else WithoutUser" >
   <app-movie-rating [rating]="film.rating" [user]="user" (update)="onMovieRatingUpdate(film, user, $event)"></app-movie-rating>

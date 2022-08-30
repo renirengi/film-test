@@ -1,4 +1,18 @@
 {
+  "feedback": [
+    {
+      "userId": 1,
+      "movieRating": 10,
+      "filmId": 5,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "movieRating": 10,
+      "filmId": 118,
+      "id": 2
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -61,12 +75,12 @@
       "urlIMDB": "https://www.imdb.com/title/tt2328549/?ref_=tt_mv_close",
       "rated": "18+",
       "type": "DVD",
-      "rating": 3,
+      "rating": 4,
       "price": 18.45,
       "counts": 3,
       "feedback": {
         "userId": 1,
-        "movieRating": 3
+        "movieRating": 4
       }
     },
     {
@@ -273,9 +287,13 @@
       "urlIMDB": "https://www.imdb.com/title/tt1047490/?ref_=nm_knf_t1",
       "rated": "18+",
       "type": "DVD",
-      "rating": 6,
+      "rating": 9,
       "price": 13.05,
-      "counts": 7
+      "counts": 7,
+      "feedback": {
+        "userId": 1,
+        "movieRating": 10
+      }
     },
     {
       "title": "Mother Joan of the Angels",
@@ -334,7 +352,11 @@
       "condition": "new",
       "rating": 8,
       "price": 26.98,
-      "counts": 5
+      "counts": 5,
+      "feedback": {
+        "userId": 1,
+        "movieRating": 7
+      }
     },
     {
       "title": "Suspiria",
@@ -435,9 +457,13 @@
       "urlIMDB": "imdb.com/title/tt0240119/?ref_=nv_sr_srsg_1",
       "rated": "18+",
       "type": "DVD",
-      "rating": 5,
+      "rating": 8,
       "price": 39.37,
-      "counts": 2
+      "counts": 2,
+      "feedback": {
+        "userId": 1,
+        "movieRating": 9
+      }
     },
     {
       "title": "13 Ghosts",
@@ -6264,9 +6290,13 @@
       "urlIMDB": "https://www.imdb.com/title/tt0015202/?ref_=nv_sr_srsg_0",
       "rated": "Not Rated",
       "type": "VHS",
-      "rating": 7,
+      "rating": 9,
       "price": 144.99,
-      "counts": 10
+      "counts": 10,
+      "feedback": {
+        "userId": 1,
+        "movieRating": 10
+      }
     },
     {
       "title": "The Phantom of the Opera",

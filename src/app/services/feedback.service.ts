@@ -18,7 +18,7 @@ export class FeedbackService {
     return this.http.get<IFeedback[]>(`${this.baseUrl}?filmId=${filmId}`);
   }
 
-  public findFeedbackItem(filmId: number, userId: number): Observable<IFeedback> {
+  public findFeedbackItem(filmId: number, userId: number): Observable<IFeedback>  {
     return this.http.get<IFeedback[]>(`${this.baseUrl}?filmId=${filmId}&userId=${userId}`)
     .pipe(
       map(result => result[0])
@@ -34,6 +34,7 @@ export class FeedbackService {
   }
 
   public updateFilmFeedback(film: IFilm, userId: number, feedback: Partial<IFeedback>): Observable<IFeedback> {
+
     return this.findFeedbackItem(film.id, userId)
     .pipe(
       switchMap((fb) => {
