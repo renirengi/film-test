@@ -2508,7 +2508,7 @@
       "genres": [
         "Mystic",
         "Demons",
-        "Cursed houses"
+        "Haunted house"
       ],
       "plot": "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
       "urlIMDB": "https://www.imdb.com/title/tt1457767/?ref_=nv_sr_srsg_0",
@@ -2603,7 +2603,7 @@
       ],
       "genres": [
         "Ghosts",
-        "Cursed houses"
+        "Haunted house"
       ],
       "plot": "A screenwriter staying in an old manor house in West Wales discovers that it's haunted by malevolent spirits.",
       "urlIMDB": "https://www.imdb.com/title/tt3144266/?ref_=nv_sr_srsg_0",
@@ -3195,7 +3195,7 @@
       ],
       "genres": [
         "Ghosts",
-        "Cursed houses"
+        "Haunted house"
       ],
       "plot": "In Japan, when the volunteer social assistant Rika Nishina is assigned to visit a family, she is cursed and chased by two revengeful fiends: Kayako, a woman brutally murdered by her husband and her son Toshio. Each person that lives in or visits the haunted house is murdered or disappears.",
       "urlIMDB": "https://www.imdb.com/title/tt0364385/?ref_=nv_sr_srsg_0",
@@ -4828,7 +4828,8 @@
       "genres": [
         "Children",
         "Religion",
-        "Mystic"
+        "Mystic",
+        "Devil"
       ],
       "plot": "Mysterious deaths surround an American ambassador. Could the child that he is raising actually be the Antichrist? The Devil's own son?",
       "urlIMDB": "https://www.imdb.com/title/tt0075005/?ref_=fn_al_tt_1",
@@ -5568,7 +5569,7 @@
       ],
       "genres": [
         "Mystic",
-        "Cursed houses",
+        "Haunted house",
         "Madness",
         "Adaptation"
       ],
@@ -7655,6 +7656,1137 @@
       "rating": 7,
       "price":80.99,
       "counts":67
+    },
+    {
+      "title": "Alraune",
+      "id": 146,
+      "trailer": "https://www.youtube.com/embed/3owJcFqBTzw",
+      "year": "1952",
+      "directors": [
+        "Arthur Maria Rabenalt"
+      ],
+      "writers": [
+        "Kurt Heuser",
+        "Hanns Heinz Ewers"
+      ],
+      "actors": [
+        {
+           "name": "Hildegard Knef",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTYzNDc0OTE3OV5BMl5BanBnXkFtZTgwOTEyNzIwMjE@._V1_UY317_CR17,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Erich von Stroheim",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjEyMTYwNTcyOF5BMl5BanBnXkFtZTYwMzQ2MjI2._V1_UY317_CR18,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Trude Hesterberg",
+          "photo": "https://images.celebnetworthpost.com/5/1892/trude-hesterberg/trude-hesterberg.jpg"
+        },
+        {
+          "name": "Denise Vernac",
+          "photo": "https://medias.unifrance.org/medias/144/120/96400/format_page/media.jpg"
+        }
+      ],
+      "runtime": "92 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/78e291f6-bd14-4c67-8a98-08f3e222cfb9/1920x",
+      "countries": [
+        "West Germany"
+      ],
+      "languages": [
+        "German"
+      ],
+      "genres": [
+        "Sci-Fi"
+      ],
+      "plot": "A scientist creates a beautiful perfect woman, but since she is artificial, she seems soul-less and with no sense of morality, she brings ruin to all around her.",
+      "urlIMDB": "https://www.imdb.com/title/tt0044344/?ref_=nv_sr_srsg_1",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 6,
+      "price":79.99,
+      "counts": 71
+    },
+    {
+      "title": "House of Wax",
+      "id": 137,
+      "trailer": "https://www.youtube.com/embed/M5RkKx-9tEM&t=4s",
+      "year": "1953",
+      "directors": [
+        "André De Toth"
+      ],
+      "writers": [
+        "Crane Wilbur",
+        "Charles Belden"
+      ],
+      "actors": [
+        {
+           "name": "Vincent Price",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Frank Lovejoy",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNjhiMDc3NmEtMWQ4YS00NTEyLWIyYTAtZDYzN2M3ODNiMjYxXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UY317_CR11,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Phyllis Kirk",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTk0MTQ2NzQwOV5BMl5BanBnXkFtZTcwNTU5NDIzOA@@._V1_UY317_CR26,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Carolyn Jones",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTU5NDQwMjU2N15BMl5BanBnXkFtZTcwNzEwNjYyNw@@._V1_UY317_CR6,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "88 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/927a422c-02cd-40e3-af4c-dbaabbc64211/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Thriller"
+      ],
+      "plot": "Professor Henry Jarrod is a true artist whose wax sculptures are lifelike. He specializes in historical tableau's such a Marie Antoinette or Joan of Arc. His business partner, Matthew Burke, needs some of his investment returned to him and pushes Jarrod to have more lurid exposes like a chamber of horrors. When Jarrod refuses, Burke set the place alight destroying all of his beautiful work in the hope of claiming the insurance. Jarrod is believed to have died in the fire but he unexpectedly reappears some 18 months later when he opens a new exhibit. This time, his displays focus on the macabre but he has yet to reproduce his most cherished work, Marie Antoinette. When he meets his new assistant's beautiful friend, Sue Allen, he knows he's found the perfect model - only unbeknown to anyone, he has a very particular way of making his wax creations.",
+      "urlIMDB": "https://www.imdb.com/title/tt0045888/?ref_=nv_sr_srsg_3",
+      "rated": "GP",
+      "type": "VHS",
+      "rating": 7,
+      "price":78.99,
+      "counts": 82
+    },
+    {
+      "title": "Godzilla",
+      "originalTitle": "Gojira",
+      "id": 148,
+      "trailer": "https://www.youtube.com/embed/GuV-Vb1PlSU",
+      "year": "1954",
+      "directors": [
+        "Ishirô Honda"
+      ],
+      "writers": [
+        "Takeo Murata",
+        "Ishirô Honda",
+        "Shigeru Kayama"
+      ],
+      "actors": [
+        {
+           "name": "Takashi Shimura",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTUyNjY0ODYyMV5BMl5BanBnXkFtZTcwMDg0MTc4Ng@@._V1_UY317_CR104,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Akihiko Hirata",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNDg5YjRmYmMtMjIyYS00MTM1LTkxMTAtNjRjYTNhYTRjN2Y5XkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_UY317_CR112,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Akira Takarada",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNTI5MTFiMjgtYTJmYi00NmQwLWJjZTUtMmU3MTM3Yzk1ZGYwXkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_UY317_CR104,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Momoko Kôchi",
+          "photo": "https://m.media-amazon.com/images/M/MV5BYzNkZDlmMTQtMWZhZS00ZmQ1LThkMjgtMjNiZWFkYjE5OTcyXkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_UY317_CR111,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "96 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/177a06d1-48ea-4385-9d93-7a10632cb1fd/1920x",
+      "countries": [
+        "Japan"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Sci-Fi",
+        "Adaptation",
+        "Monsters"
+      ],
+      "plot": "When seventeen vessels blow-up and sink nearby Odo Island, Professor Kyohei Yamane, his daughter Emiko Yamane and the marine Hideto Ogata head to the island to investigate. Soon they witness a giant monster called Gojira by the locals destroying the spot. Meanwhile Emiko meets her boyfriend, the secluded scientist Serizawa, and he makes she promise to keep a secret about his research with oxygen. She agrees and he discloses the lethal weapon Oxygen Destroyer that he had developed. When Gojira threatens Tokyo and other Japanese cities and the army and the navy are incapable to stop the monster, Emiko discloses Serizawa's secret to her lover Ogata. Now they want to convince Serizawa to use the Oxygen Destroyer to stop Gojira.",
+      "urlIMDB": "https://www.imdb.com/title/tt0047034/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 8,
+      "price":77.99,
+      "counts":90
+    },
+    {
+      "title": "Invasion of the Body Snatchers",
+      "id": 149,
+      "trailer": "https://www.youtube.com/embed/pNJB363yql8",
+      "year": "1955",
+      "directors": [
+        "Don Siegel"
+      ],
+      "writers": [
+        "Daniel Mainwaring",
+        "Jack Finney",
+        "Richard Collins"
+      ],
+      "actors": [
+        {
+           "name": "Kevin McCarthy",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTIzMTA2Mzc0NF5BMl5BanBnXkFtZTYwOTk1OTA2._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Dana Wynter",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTQwMDA4MDg0Nl5BMl5BanBnXkFtZTcwOTE0MTEyNQ@@._V1_UY317_CR125,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Larry Gates",
+          "photo": "https://m.media-amazon.com/images/M/MV5BYWM0NGUyZTktM2ZjZS00MjExLTg0MjgtOTFhNDBjMjE0Mzk5XkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UY317_CR21,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "King Donovan",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNTgzMzZkMTUtNDkzMi00NTEyLTlhY2MtYTIxMjMwNjJlN2FlXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_UX214_CR0,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "80 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/b6c486d9-4915-4920-a824-5aa3ed1abe06/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Sci-Fi"
+      ],
+      "plot": "Dr. Miles Bennell returns to his small town practice to find several of his patients suffering the paranoid delusion that their friends or relatives are impostors. He is initially skeptical, especially when the alleged doppelgangers are able to answer detailed questions about their victim's lives, but he is eventually persuaded that something odd has happened and determines to find out what is causing this phenomenon.",
+      "urlIMDB": "https://www.imdb.com/title/tt0049366/?ref_=nv_sr_srsg_3",
+      "rated": "16+",
+      "type": "VHS",
+      "rating": 7,
+      "price":76.99,
+      "counts": 1
+    },
+    { "title": "Last of The Vampire",
+      "originalTitle": "Vampiri, I",
+      "id": 150,
+      "trailer": "https://www.youtube.com/embed/JnQBUcznF6k",
+      "year": "1956",
+      "directors": [
+        "Riccardo Freda",
+        "Mario Bava"
+      ],
+      "writers": [
+        "Mario Bava",
+        "Piero Regnoli",
+        "Riccardo Freda"
+      ],
+      "actors": [
+        {
+           "name": "Gianna Maria Canale",
+           "photo": "https://m.media-amazon.com/images/M/MV5BOGEwOWRjZmItMjBkYS00YWZiLWI1YmYtOWI0NDAzMzMyOTFlXkEyXkFqcGdeQXVyNTk5NzQ5Ng@@._V1_UY317_CR27,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Carlo D'Angelo",
+          "photo": "https://m.media-amazon.com/images/M/MV5BOTFjNmVkYjMtYjRiOC00MTMwLTlkODItMWNkNTI1ZjBmNjg4XkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_UY317_CR184,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Dario Michaelis",
+          "photo": "https://images.mubicdn.net/images/cast_member/100978/cache-400940-1546501840/image-w856.jpg"
+        },
+        {
+          "name": "Wandisa Guida",
+          "photo": "https://images.mubicdn.net/images/cast_member/191776/cache-286315-1512285013/image-w856.jpg?size=800x"
+        }
+      ],
+      "runtime": "82 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/eb2301dd-8d98-49eb-9b2e-bea8a6135668/1920x",
+      "countries": [
+        "Italy"
+      ],
+      "languages": [
+        "Italian"
+      ],
+      "genres": [
+        "Vampire"
+      ],
+      "plot": "When four young women are found in Paris with the blood completely drained, the ambitious and snoopy journalist Pierre Lantin decides to investigate the cases of the killer known as The Vampire. Inspector Chantal does not approve Lantin's behavior. Soon Pierre suspects that family Du Grand, who lives in an ancient castle, may be involved with the murders but Inspector Chantal does not give support to his investigations. Meanwhile Pierre avoids the harassment of Giselle du Grand, who is the niece of the wealthy matriarch of the family Margherita du Grand.",
+      "urlIMDB": "https://www.imdb.com/title/tt0049429/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":75.99,
+      "counts":2
+    },
+    {  "title": "Curse of The Demon",
+      "originalTitle": "Night of the Demon",
+      "id": 151,
+      "trailer": "https://www.youtube.com/embed/VjeM3k9D4Hs",
+      "year": "1957",
+      "directors": [
+        "Jacques Tourneur"
+      ],
+      "writers": [
+        "Charles Bennett",
+        "Hal E. Chester",
+        "M.R. James"
+      ],
+      "actors": [
+        {
+           "name": "Dana Andrews",
+           "photo": "https://m.media-amazon.com/images/M/MV5BNjQ3ODQzNjQ1MV5BMl5BanBnXkFtZTYwMjExMTM2._V1_UY317_CR15,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Peggy Cummins",
+          "photo": "https://m.media-amazon.com/images/M/MV5BODAxNjcwOTg4Nl5BMl5BanBnXkFtZTcwOTQwMDg2Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Niall MacGinnis",
+          "photo": "https://m.media-amazon.com/images/M/MV5BY2I5N2ZkOWEtNWZiZS00YTk5LThiMjgtOTAxOGI0NDkyYzgzXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_UY317_CR113,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Maurice Denham",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMGNmOGJhNTktYjk4Yy00ZTI2LWI0NmEtM2YzNzk1ODU1NzNlXkEyXkFqcGdeQXVyNTUyMTMyMDg@._V1_UX214_CR0,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "95 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/0d5c4faf-e006-4d01-a495-d934c3f80740/1920x",
+      "countries": [
+        "United Kingdom",
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Demons",
+        "Adaptation",
+        "Classic"
+      ],
+      "plot": "American professor John Holden arrives in London for a parapsychology conference, only to find himself investigating the mysterious actions of Devil-worshiper Julian Karswell.",
+      "urlIMDB": "https://www.imdb.com/title/tt0050766/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 8,
+      "price":74.99,
+      "counts": 3
+    },
+    {
+      "title":"Horror of Dracula",
+      "originalTitle": "Dracula",
+      "id": 152,
+      "trailer": "https://www.youtube.com/embed/sdFUpPAApJQ",
+      "year": "1958",
+      "directors": [
+        "Terence Fisher"
+      ],
+      "writers": [
+        "Jimmy Sangster",
+        "Bram Stoker"
+      ],
+      "actors": [
+        {
+          "name": "Peter Cushing",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNTM4NzE4NTIwNl5BMl5BanBnXkFtZTYwMTYxNzM2._V1_UY317_CR2,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Christopher Lee",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTMzMjU5NDA0NV5BMl5BanBnXkFtZTYwMTUwMzI0._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Michael Gough",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjE1NDA3MjQzMV5BMl5BanBnXkFtZTcwOTc0MTM3NA@@._V1_UY317_CR9,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Melissa Stribling",
+          "photo": "https://images.mubicdn.net/images/cast_member/43091/cache-244905-1502159572/image-w856.jpg"
+        }
+      ],
+      "runtime": "82 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/8c690b72-4c6f-4ed4-a3a0-d6396e6f4e58/1920x",
+      "countries": [
+        "United Kingdom"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Vampire",
+        "Adaptation",
+        "Classic"
+      ],
+      "plot": "Jonathan Harker unsuccessfully tries to stake and kill Count Dracula at the latter's remote castle in Transylvania but becomes one of the count's victims. The vampire later insinuates himself into the Harker family, seeking more blood and vengeance. The only person who may be able to protect them is Dr. van Helsing, Harker's friend and fellow vampirologist, who is determined to destroy Dracula, whatever the cost.",
+      "urlIMDB": "https://www.imdb.com/title/tt0051554/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 8,
+      "price":73.99,
+      "counts": 4
+    },
+    {
+      "title": "House on Haunted Hill",
+      "id": 153,
+      "trailer": "https://www.youtube.com/embed/Bsa9ymSDoJ0",
+      "year": "1959",
+      "directors": [
+        "William Castle"
+      ],
+      "writers": [
+        "Robb White"
+      ],
+      "actors": [
+        {
+          "name": "Vincent Price",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Carol Ohmart",
+          "photo": "https://m.media-amazon.com/images/M/MV5BOWE2MWU4ZjAtMTU3Yi00MTllLTk3YmYtZmMxZWZjNzYwYTdmXkEyXkFqcGdeQXVyMDMxMjQwMw@@._V1_UY317_CR27,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Richard Long",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTQzNzY5NzM5NV5BMl5BanBnXkFtZTcwNDcyNjYxOA@@._V1_UY317_CR27,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Alan Marshal",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjc4YmMyZTMtYWJmOC00YzQxLWI2ZGItOGM0YmViZjQwNzBhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyOTA4NDY2Mw@@._V1_UY317_CR18,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "75 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/5234130b-ba22-4117-bc14-73d2e4484c6c/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Haunted house",
+        "Classic",
+        "Ghosts"
+      ],
+      "plot": "Eccentric millionaire Fredrick Loren and his 4th wife, Annabelle, have invited 5 people to the house on Haunted Hill for a haunted House party. Whoever will stay in the house for one night will earn ten thousand dollars each. As the night progresses, all the guests are trapped inside the house with ghosts, murderers, and other terrors",
+      "urlIMDB": "https://www.imdb.com/title/tt0051744/?ref_=fn_al_tt_2",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":72.99,
+      "counts": 5
+    },
+    {
+      "title": "House of Usher",
+      "id": 154,
+      "trailer": "https://www.youtube.com/embed/QslKMIOeME8",
+      "year": "1960",
+      "directors": [
+        "Roger Corman"
+      ],
+      "writers": [
+        "Edgar Allan Poe",
+        "Richard Matheson"
+      ],
+      "actors": [
+        {
+          "name": "Vincent Price",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Mark Damon",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTYxNjI1NDY1Ml5BMl5BanBnXkFtZTgwMjEwNTE5NjE@._V1_UY317_CR6,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Myrna Fahey",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTQ0NjM3OTMzOV5BMl5BanBnXkFtZTgwNjYwMTAxMzE@._V1_UY317_CR104,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Harry Ellerbe",
+          "photo": "https://m.media-amazon.com/images/M/MV5BZDdhNDUzYzEtMjI0My00ZTU2LWJiNDItN2YzMWQzYTZmNDQ3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyOTA4NDY2Mw@@._V1_UY317_CR19,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "79 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/457a2494-0ad2-4802-8e7f-335e20af4c64/300x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Adaptation",
+        "Madness",
+        "Ghosts",
+        "Gothic"
+      ],
+      "plot": "Philip Winthrop calls upon his fiancée, Madeline Usher, at her family home. His presence is unwelcome, especially to Madeline's brother, Roderick. Roderick explains that the Ushers are cursed, suffering from hereditary physical defects. By Madeline marrying Winthrop this would only likely continue the affliction. It soon becomes clear that something sinister is afoot: not only due to Roderick's determination to prevent Madeline from leaving but also due to the evil that seems to lurk in the house itself.",
+      "urlIMDB": "https://www.imdb.com/title/tt0053925/?ref_=nv_sr_srsg_2",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":71.99,
+      "counts": 6
+    },
+    {
+      "title": "The Pit and the Pendulum",
+      "id": 155,
+      "trailer": "https://www.youtube.com/embed/QChBy15UiTs",
+      "year": "1961",
+      "directors": [
+        "Roger Corman"
+      ],
+      "writers": [
+        "Richard Matheson",
+        "Edgar Allan Poe"
+      ],
+      "actors": [
+        {
+          "name": "Vincent Price",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Barbara Steele",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTM0NTc0MDMxNl5BMl5BanBnXkFtZTYwODczNjM2._V1_UY317_CR18,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "John Kerr",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTY0NzU4Mzg1Nl5BMl5BanBnXkFtZTcwNTg5MDAxOQ@@._V1_UY317_CR3,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Luana Anders",
+          "photo": "https://m.media-amazon.com/images/M/MV5BOGYzNjUyNzUtOGJiMi00NDgxLTlhNTctZjJhODk0OGFlZGVmXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_UY317_CR146,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "80 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/1efe1c91-00ac-4e63-9c81-6717e0004d2c/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Adaptation",
+        "Mystic",
+        "Classic",
+        "Gothic"
+      ],
+      "plot": "Francis Barnard goes to Spain, when he hears his sister Elizabeth has died. Her husband Nicholas Medina, the son of the brutest torturer of the Spanish Inquisition, tells him she has died of a blood disease, but Francis finds this hard to believe. After some investigating he finds out that it was extreme fear that was fatal to his sister and that she may have been buried alive! Strange things then start to happen in the Medina castle.",
+      "urlIMDB": "https://www.imdb.com/title/tt0055304/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":70.99,
+      "counts": 7
+    },
+    {
+      "title": "Tales of Terror",
+      "id": 156,
+      "trailer": "https://www.youtube.com/embed/fCB6IexwwtA",
+      "year": "1962",
+      "directors": [
+        "Roger Corman"
+      ],
+      "writers": [
+        "Richard Matheson",
+        "Edgar Allan Poe"
+      ],
+      "actors": [
+        {
+          "name": "Vincent Price",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Maggie Pierce",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNmJkMWMzNWYtNWI0ZC00NTJiLTkyMjItODQyYjJjMTFkYWFkXkEyXkFqcGdeQXVyMzAwOTU1MTk@._V1_UY317_CR18,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Leona Gage",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNDEzNTE4NTYyMV5BMl5BanBnXkFtZTcwNjEzMTM3NA@@._V1_UY317_CR21,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Peter Lorre",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTI2MzM0ODQwOV5BMl5BanBnXkFtZTYwMjYwNjI2._V1_UY317_CR0,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "89 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/f44379ef-7591-4992-901f-ff163e10d2ca/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Antology",
+        "Mystic",
+        "Adaptation",
+        "Classic",
+        "Gothic"
+      ],
+      "plot": "Three stories adapted from the work of Edgar Allen Poe. A man and his daughter are reunited, but the blame for the death of his wife hangs over them, unresolved. A derelict challenges the local wine-tasting champion to a competition, but finds the man's attention to his wife worthy of more dramatic action. A man dying and in great pain agrees to be hypnotized at the moment of death, with unexpected consequences.",
+      "urlIMDB": "https://www.imdb.com/title/tt0056552/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":69.99,
+      "counts": 8
+    },
+    {
+      "title": "The Haunted Palace",
+      "id": 153,
+      "trailer": "https://www.youtube.com/embed/CIxey5Y0inY",
+      "year": "1963",
+      "directors": [
+        "Roger Corman"
+      ],
+      "writers": [
+        "Charles Beaumont",
+        "H.P. Lovecraft",
+        "Edgar Allan Poe"
+      ],
+      "actors": [
+        {
+          "name": "Vincent Price",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+       },
+        {
+           "name": "Debra Paget",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTQzNTk5MDQ2Ml5BMl5BanBnXkFtZTcwNTI5ODMxOA@@._V1_UY317_CR20,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Lon Chaney Jr.",
+         "photo": "https://images.mubicdn.net/images/cast_member/29413/cache-1310-1478101707/image-w856.jpg"
+       },
+        {
+          "name": "Frank Maxwell",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNjQ0NmMxODgtNTk3Mi00NTI1LWIxYzYtOWJhM2E4NDA2MWUyXkEyXkFqcGdeQXVyMTI3MDk3MzQ@._V1_UY317_CR273,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "87 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/ae8e8266-88e3-46f5-986a-ce6cbb154dcf/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Curse",
+        "Adaptation",
+        "Gothic"
+      ],
+      "plot": "Loosely based on H.P. Lovecraft's novel THE CASE OF CHARLES DEXTER WARD, this fright flick opens with a warlock placing a curse on a group of villagers about to burn him at the stake. Generations later, the warlock's descendant returns to the village to pick up where his ancestor left off.",
+      "urlIMDB": "https://www.imdb.com/title/tt0057128/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":68.99,
+      "counts": 9
+    },
+    {
+      "title": "The Masque of the Red Death",
+      "id": 158,
+      "trailer": "https://www.youtube.com/embed/vCUtm7mCF4I",
+      "year": "1964",
+      "directors": [
+        "Roger Corman"
+      ],
+      "writers": [
+        "Charles Beaumont",
+        "Edgar Allan Poe",
+        "R. Wright Campbell"
+      ],
+      "actors": [
+        {
+          "name": "Vincent Price",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_UY317_CR20,0,214,317_AL_.jpg"
+       },
+       {
+        "name": "Hazel Court",
+        "photo": "https://m.media-amazon.com/images/M/MV5BMTkzNTc0MzkwMl5BMl5BanBnXkFtZTcwMDAzMTU2NA@@._V1_UY317_CR34,0,214,317_AL_.jpg"
+      },
+        {
+           "name": "Jane Asher",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMzYxMTcwNzQ0MF5BMl5BanBnXkFtZTcwNDMxMjk5Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "David Weston",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNTViYWYxN2UtZTZlZi00NWQ2LTg2NmQtZTE4ZTMyYmE0NjQyXkEyXkFqcGdeQXVyMzAwOTU1MTk@._V1_UY317_CR8,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "89 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/caecebf3-6c24-4cf0-bb30-0341fc8eb5d8/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Adaptation",
+        "Classic",
+        "Gothic",
+        "Mystic"
+      ],
+      "plot": "The evil Prince Prospero is riding through the Catania village when he sees that the peasants are dying of Red Death plague. Prospero asks to burn down the village and he is offended by the villagers Gino and his father-in-law Ludovico. He decides to kill them, but Gino's wife, the young and beautiful Francesca, begs for the lives of her husband and her father and Prospero brings them alive to his castle expecting to corrupt Francesca. Propero worships Satan and invites his noble friends to stay in his castle that is a shelter of depravity against the plague. When Prospero invites his guests to attend a masked ball, he sees a red hooded stranger and he believes that Satan himself has attended his party. But soon he learns who his mysterious guest is.",
+      "urlIMDB": "https://www.imdb.com/title/tt0058333/?ref_=fn_al_tt_1",
+      "rated": "18+",
+      "type": "VHS",
+      "rating": 7,
+      "price":67.99,
+      "counts": 10
+    },
+    {
+      "title": "Repulsion",
+      "id": 159,
+      "trailer": "https://www.youtube.com/embed/-jdUAZ-tstk",
+      "year": "1965",
+      "directors": [
+        "Roman Polanski"
+      ],
+      "writers": [
+        "Gérard Brach",
+        "Roman Polanski",
+        "David Stone"
+      ],
+      "actors": [
+        {
+           "name": "Catherine Deneuve",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTQ0NDQ2MjYwMl5BMl5BanBnXkFtZTcwMjQ0MDM2Nw@@._V1_UY317_CR16,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Ian Hendry",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjk2NTI5NTU5Ml5BMl5BanBnXkFtZTcwMjQwNzAxOA@@._V1_UY317_CR19,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "John Fraser",
+          "photo": "https://m.media-amazon.com/images/M/MV5BZTVmMzlhYzUtODEzNS00M2IzLTllODUtOTQ3ZTE0ZGUwOGYxL2ltYWdlXkEyXkFqcGdeQXVyMjU5OTg5NDc@._V1_UY317_CR12,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Yvonne Furneaux",
+          "photo": "https://images.mubicdn.net/images/cast_member/2971/cache-56816-1656674725/image-w856.jpg"
+        }
+      ],
+      "runtime": "105 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/ba19b726-ec7d-4ed1-bdb9-e26d4f0b3b6a/1920x",
+      "countries": [
+        "United Kingdom"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Madness",
+        "Classic",
+        "Thriller"
+      ],
+      "plot": "In London, Belgian immigrant Carol Ledoux shares an apartment with her older sister Helen, and works as a manicurist at a beauty salon. Helen uses the word sensitive to describe Carol's overall demeanor, which is almost like she walks around in a daze, rarely speaking up about anything. When she does speak up, it generally is about something against one of those few issues on which she obsesses, such as Helen's boyfriend Michael's invasion of her space at the apartment. That specific issue may be more about men in general than just Michael's actions, as witnessed by Carol being agitated by hearing Helen and Michael's lovemaking, and she not being able to rebuff the advances effectively of a male suitor, Colin, who is infatuated with her. ",
+      "urlIMDB": "https://www.imdb.com/title/tt0059646/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 8,
+      "price":66.99,
+      "counts": 11
+    },
+    {
+      "title": "Manos: The Hands of Fate",
+      "id": 160,
+      "trailer": "https://www.youtube.com/embed/sF03ZFt8t8w",
+      "year": "1966",
+      "directors": [
+        "Harold P. Warren"
+      ],
+      "writers": [
+        "Harold P. Warren"
+      ],
+      "actors": [
+        {
+           "name": "Tom Neyman",
+           "photo": "https://images.mubicdn.net/images/cast_member/96309/cache-631570-1610426231/image-w856.jpg"
+        },
+        {
+           "name": "John Reynolds",
+          "photo": "https://m.media-amazon.com/images/M/MV5BYTQxM2UzY2YtMjI0Zi00YjY4LTg5NmUtODAwZWRmMjI3NTNhXkEyXkFqcGdeQXVyMTEwODg2MDY@._V1_UY317_CR103,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Diane Adelson",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNzcxZDJhMDMtYjQwYi00OTU1LWFiZjctMGI5ODY4ZjMwYWQ4XkEyXkFqcGdeQXVyMTE2NzA0Ng@@._V1_UY317_CR109,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Harold P. Warren"
+        }
+      ],
+      "runtime": "70 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/d340725d-8673-4be6-a36d-4c91fa0b361a/300x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Mystic"
+      ],
+      "plot": "A family is driving across the country when they stumble across a mysterious house inhabited by the satyr-man Torgo. When the family decides to stay over at the house, mother Margaret is now the object of desire for Torgo and the owner of the house, The Master: a mysterious figure who dresses in a black robe decorated with red hands.",
+      "urlIMDB": "https://www.imdb.com/title/tt0060666/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 2,
+      "price":65.99,
+      "counts":12
+    },
+    {
+      "title": "The Devil Rides Out",
+      "id": 161,
+      "trailer": "https://www.youtube.com/embed/DTRWmqHEe7g",
+      "year": "1967",
+      "directors": [
+        "Terence Fisher"
+      ],
+      "writers": [
+        "Richard Matheson",
+        "Dennis Wheatley"
+      ],
+      "actors": [
+        {
+          "name": "Christopher Lee",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTMzMjU5NDA0NV5BMl5BanBnXkFtZTYwMTUwMzI0._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Charles Gray",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTAzNDEzNjMwMDZeQTJeQWpwZ15BbWU3MDM2ODUzMzQ@._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Nike Arrighi",
+          "photo": "https://staticimg.spicyonion.com/images/profile/person/nike-arrighi/8dDRwjScCYbApYZfNxwnxlk9wiU.jpg"
+        },
+        {
+          "name": "Leon Greene",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjAwNzYwNDM4N15BMl5BanBnXkFtZTgwNzY1NjQwNTM@._V1_UY317_CR16,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "96 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/7c6e851b-dff8-4fab-bcb7-cb59c25f0822/1920x",
+      "countries": [
+        "United Kingdom"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Secta",
+        "Devil",
+        "Religion",
+        "Adaptation"
+      ],
+      "plot": "In the countryside of England, the Duc de Richleau a.k.a Nicholas welcomes his old friend Rex Van Ryn that has flown to meet him and Simon Aron, who is the son of an old friend of them that had passed away but charged them the task of watching the youngster. Nicholas and Rex unexpectedly visit Simon that is receiving twelve mysterious friends. Sooner Nicholas, who is proficient in black magic, learns that the guests are member of a satanic cult and Simon and his friend Tanith Carlisle will be baptized by the powerful leader Mocata to serve the devil. The two friends abduct Simon and Tanith expecting to save their souls but Mocata summons the Angel of Death and the Goat of Mendes to help him in a battle between the good and the forces of evil.",
+      "urlIMDB": "imdb.com/title/tt0062885/?ref_=nv_sr_srsg_0",
+      "rated": "Not Rated",
+      "type": "VHS",
+      "rating": 7,
+      "price":64.99,
+      "counts": 13
+    },
+    {
+      "title": "Night of the Living Dead",
+      "id": 162,
+      "trailer": "https://www.youtube.com/embed/ob8vZhSjES8",
+      "year": "1968",
+      "directors": [
+        "George A. Romero"
+      ],
+      "writers": [
+        "George A. Romero",
+        "John A. Russo"
+      ],
+      "actors": [
+        {
+           "name": "Duane Jones",
+           "photo": "https://m.media-amazon.com/images/M/MV5BOTUxNzQyMTItMWUxOC00N2YwLTk1YTEtZjA0ZWZkZjkxZjRkXkEyXkFqcGdeQXVyNTAyNDQ2NjI@._V1_UY317_CR25,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Judith O'Dea",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTI5ODcwNzM2MF5BMl5BanBnXkFtZTYwMTExNjYz._V1_UY317_CR20,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Karl Hardman",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNjg4N2Y3YzUtZDYwOC00NGIwLWIxMDEtMDdiN2I3YTJlOWE2XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY317_CR22,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Marilyn Eastman",
+          "photo": "https://m.media-amazon.com/images/M/MV5BN2M0MjkzMjEtOWY1Ni00Y2Q4LWFlNTUtZGRlNTAyNzc5ZjFmXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY317_CR11,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "96 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/24d3cf5c-6657-4797-8ecd-00f8da19ff4f/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English"
+      ],
+      "genres": [
+        "Zombie",
+        "Classic"
+      ],
+      "plot": "Barbra and Johnny visit their father's grave in a remote cemetery when they are suddenly set upon by zombies. Barbra manages to get away and takes refuge in what seems to be an abandoned farm house. She is soon joined by Ben who stopped at the house in need of gas. Beset by the walking dead all around them Ben does his best to secure the doors and windows. The news reports are grim however with creatures returning to life everywhere. Barbra and Ben are surprised when they realize there are 5 people hiding out in the basement: Harry, Helen and Karen Cooper; and a young couple, Tom and Judy. Dissensions sets in almost immediately with Harry Cooper wanting to be in charge. As their situation deteriorates, their chances of surviving the night lessen minute by minute.",
+      "urlIMDB": "https://www.imdb.com/title/tt0063350/?ref_=nv_sr_srsg_0",
+      "rated": "16+",
+      "type": "VHS",
+      "rating": 8,
+      "price":63.99,
+      "counts": 14
+    },
+    {
+      "title": "The House That Screamed",
+      "originalTitle": "La residencia",
+      "id": 163,
+      "trailer": "https://www.youtube.com/embed/iRcKB7Ppmvc",
+      "year": "1969",
+      "directors": [
+        "Narciso Ibáñez Serrador"
+      ],
+      "writers": [
+        "Narciso Ibáñez Serrador",
+        "Juan Tébar"
+      ],
+      "actors": [
+        {
+           "name": "Lilli Palmer",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTc1NDUxOTAwN15BMl5BanBnXkFtZTgwOTcxNDE2MDE@._V1_UY317_CR20,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Cristina Galbó",
+          "photo": "https://images.mubicdn.net/images/cast_member/99109/cache-57303-1656674959/image-w856.jpg?size=800x"
+        },
+        {
+           "name": "John Moulder-Brown",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTI4NDYyMDg0NV5BMl5BanBnXkFtZTcwNzc3ODEzMQ@@._V1_UY317_CR108,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Maribel Martín",
+          "photo": "https://images.celebnetworthpost.com/6/1954/maribel-martin/maribel-martin.jpg"
+        }
+      ],
+      "runtime": "99 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/d27b7108-ae32-4587-9286-21e20513bd26/1920x",
+      "countries": [
+        "Spain"
+      ],
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "genres": [
+        "Serial killer"
+      ],
+      "plot": "In 19th-century France, teenage Teresa Garan is the daughter of a cabaret-singer single mother. A friend of her mother pays for her to have one year at Ms. Fourneau's boarding school. Soon Teresa learns that the school is also a prison: Ms. Fourneau keeps everything locked up. Her protégée, the wicked student Irene Tupan, keeps watch over the other girls and uses her power to bully and torture them. Ms. Fourneau's teenage son is a peeping Tom and his mother keeps him secluded from the girls, saying they're worthless and he needs to find a girl who's more like his mother. When students start vanishing, their classmates think they're running away, but they're actually being abducted and murdered by a serial killer. When Irene discovers that Teresa is secretly meeting Luis, she tortures her until Teresa decides to flee in the middle of the night. What will happen to her?",
+      "urlIMDB": "https://www.imdb.com/title/tt0064888/?ref_=nv_sr_srsg_0",
+      "rated": "GP",
+      "type": "VHS",
+      "rating": 7,
+      "price":62.99,
+      "counts": 15
+    },
+    {
+      "title": "The House That Dripped Blood",
+      "id": 164,
+      "trailer": "https://www.youtube.com/embed/nNO3yw0Cg5I",
+      "year": "1970",
+      "directors": [
+        "Peter Duffell"
+      ],
+      "writers": [
+        "Robert Bloch",
+        "Russ Jones"
+      ],
+      "actors": [
+        {
+           "name": "John Bryans"
+        },
+        {
+           "name": "John Bennett",
+          "photo": "https://www.themoviedb.org/t/p/w500/arSkPpoGcRyqSdx4iAE9DtBc2Z8.jpg"
+        },
+        {
+           "name": "Denholm Elliott",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMTY2ODQ3NDc5Nl5BMl5BanBnXkFtZTcwNDAwMjg5Nw@@._V1_UY317_CR131,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Peter Cushing",
+          "photo": "https://m.media-amazon.com/images/M/MV5BNTM4NzE4NTIwNl5BMl5BanBnXkFtZTYwMTYxNzM2._V1_UY317_CR2,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "97 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/e9d90739-70b2-46e2-a264-81bb1a47752a/1920x",
+      "countries": [
+        "United Kingdom"
+      ],
+      "languages": [
+        "English"
+      ],
+      "subs": [
+        ""
+      ],
+      "genres": [
+        "Antology",
+        "Adaptation",
+        "Witch",
+        "Vampire"
+      ],
+      "plot": "A Scotland Yard investigator looks into four mysterious cases involving an unoccupied house and its tragic previous tenants: 1) A hack novelist encounters a strangler who's the villain of his books, leading his wife to question his sanity, 2) Two men are obsessed with a wax figure of a woman from their past, 3) A little girl with a stern, widowed father displays an interest in witchcraft, and 4) An arrogant horror film actor purchases a black cloak which gives him a vampire's powers.",
+      "urlIMDB": "https://www.imdb.com/title/tt0065854/?ref_=nv_sr_srsg_0",
+      "rated": "PG",
+      "type": "VHS",
+      "rating": 6,
+      "price":61.99,
+      "counts":16
+    },
+    {
+      "title": "Bay Of Blood",
+      "originalTitle": "Ecologia del delitto",
+      "id": 165,
+      "trailer": "https://www.youtube.com/embed/6_4WUKwk_is",
+      "year": "1971",
+      "directors": [
+        "Mario Bava"
+      ],
+      "writers": [
+        "Mario Bava",
+        "Giuseppe Zaccariello",
+        "Filippo Ottoni"
+
+      ],
+      "actors": [
+        {
+           "name": "Claudine Auger",
+           "photo": "https://m.media-amazon.com/images/M/MV5BMTM3NDQwOTg1OV5BMl5BanBnXkFtZTYwOTU0ODgz._V1_UX214_CR0,0,214,317_AL_.jpg"
+        },
+        {
+           "name": "Luigi Pistilli",
+          "photo": "https://alchetron.com/cdn/luigi-pistilli-0cfc42ea-e608-4620-9d22-c97e3781be4-resize-750.jpeg"
+        },
+        {
+           "name": "Claudio Camaso",
+          "photo": "https://images.mubicdn.net/images/cast_member/80348/cache-182491-1479092826/image-w856.jpg"
+        },
+        {
+          "name": "Anna Maria Rosati",
+          "photo": "https://images.mubicdn.net/images/cast_member/80349/cache-182495-1479093132/image-w856.jpg"
+        }
+      ],
+      "runtime": "84 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/300fe5a6-c8bc-4278-b75a-0132b7e3f1d3/1920x",
+      "countries": [
+        "Italy"
+      ],
+      "languages": [
+        "Italian"
+      ],
+      "genres": [
+        "Slasher",
+        "Crime",
+        "Giallo"
+      ],
+      "plot": "An elderly heiress is killed by her husband who wants control of her fortunes. What ensues is an all-out murder spree as relatives and friends attempt to reduce the inheritance playing field, complicated by some teenagers who decide to camp out in a dilapidated building on the estate.",
+      "urlIMDB": "https://www.imdb.com/title/tt0067656/?ref_=nv_sr_srsg_0",
+      "rated": "R",
+      "type": "VHS",
+      "rating": 6,
+      "price":60.99,
+      "counts":17
+    },
+    {
+      "title": "The Last House on the Left",
+      "id": 166,
+      "trailer": "https://www.youtube.com/embed/",
+      "year": "1972",
+      "directors": [
+        "Wes Craven"
+      ],
+      "writers": [
+        "Wes Craven",
+        "Ulla Isaksson"
+      ],
+      "actors": [
+        {
+          "name": "Sandra Peabody",
+          "photo": "https://m.media-amazon.com/images/M/MV5BYmU1NWNkNGItYTJmMS00MmNjLTkwYTMtNzU1NWM3YmUzOTgwXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UY317_CR175,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Lucy Grantham",
+          "photo": "https://www.wallofcelebrities.com/celebrity/lucy-grantham/pictures/xlarge/lucy-grantham_4170270.jpg"
+        },
+        {
+          "name": "David Hess",
+          "photo": "https://m.media-amazon.com/images/M/MV5BMjAxMTMxNjUyN15BMl5BanBnXkFtZTYwNDI3NjYy._V1_UY317_CR131,0,214,317_AL_.jpg"
+        },
+        {
+          "name": "Fred J. Lincoln",
+          "photo": "https://m.media-amazon.com/images/M/MV5BZWY3YjU4Y2UtYzBhZS00M2RmLWFiYWQtOTg1MDQ1NjIyNTdhXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UY317_CR187,0,214,317_AL_.jpg"
+        }
+      ],
+      "runtime": "84 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/097b3e1e-6072-4804-b1f6-d0b72e538678/1920x",
+      "countries": [
+        "USA"
+      ],
+      "languages": [
+        "English (Dolby Digital 5.1)"
+      ],
+      "genres": [
+        "Slasher",
+        "Crime",
+        "Classic"
+      ],
+      "plot": "On the eve of her seventeenth birthday, Mari Collingwood tells her parents that she is going to the concert of underground band Bloodlust in New York with her friend Phyllis Stone. She borrows the family's car and heads with her friend to a dangerous neighborhood in the city. Meanwhile, the sadistic and cruel escapees Krug Stillo and Fred Weasel Podowski are hidden in a hideout with their partners Sadie (Jeramie Rain) and Krug's addicted son Junior Stillo (Marc Sheffler) after killing two guards and one shepherd in their runaway. The two girls seek marijuana near the theater and meet Junior that offers some Colombian grass to them. They go to his apartment and are subdued by the criminals that rape Phyllis. On the next morning, they hide the girls in the trunk of their convertible and head to Canada. However, they have a problem with the car's rod and they stop on the road close to Mari's house. ",
+      "urlIMDB": "https://www.imdb.com/title/tt0068833/?ref_=nv_sr_srsg_3",
+      "rated": "16+",
+      "type": "VHS",
+      "rating": 6,
+      "price":59.99,
+      "counts":18
+    },
+    {
+      "title": "The Exorcist",
+      "id": 167,
+      "trailer": "https://www.youtube.com/embed/0iS59iV2Ffs",
+      "year": "1973",
+      "directors": [
+        ""
+      ],
+      "writers": [
+        ""
+      ],
+      "actors": [
+        {
+          "name": "",
+          "photo": ""
+        },
+        {
+          "name": "",
+          "photo": ""
+        },
+        {
+          "name": "",
+          "photo": ""
+        },
+        {
+          "name": "",
+          "photo": ""
+        }
+      ],
+      "runtime": "122 min",
+      "urlPoster": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/6720a90e-a876-4c38-804d-eef81dd37a7d/1920x",
+      "countries": [
+        ""
+      ],
+      "languages": [
+        ""
+      ],
+      "subs": [
+        ""
+      ],
+      "genres": [
+        ""
+      ],
+      "plot": "",
+      "urlIMDB": "https://www.imdb.com/title/tt0070047/?ref_=nv_sr_srsg_0",
+      "rated": "",
+      "type": "Blu-Ray",
+      "rating": ,
+      "price":58.99,
+      "counts":19
     }
 
   ]

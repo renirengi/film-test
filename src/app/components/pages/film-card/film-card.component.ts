@@ -39,7 +39,9 @@ export class FilmCardComponent implements OnInit {
 
   public async onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
     const newRating = (film.rating + rating) / 2;
-    const newFeedback = {userId: user.id, filmId: film.id, movieRating: rating};
+    const a= { userId: user.id, filmId: film.id, movieRating: rating};
+    let newFeedback =[];
+    newFeedback.push(a);
       const newFilm = {
       title: film.title,
       originalTitle: film.originalTitle,
@@ -61,6 +63,7 @@ export class FilmCardComponent implements OnInit {
       rating: newRating,
       price: film.price,
       counts: film.counts,
+      feedback : newFeedback
 
     };
    await this.filmService.updateFilm(newFilm).pipe().subscribe();

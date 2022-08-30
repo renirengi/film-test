@@ -20,7 +20,7 @@ export interface IFilm {
   rating: number,
   price: number,
   counts: number
-  //feedback: IFeedback []
+  feedback: IFeedback []
 }
 
 export interface IActor {
