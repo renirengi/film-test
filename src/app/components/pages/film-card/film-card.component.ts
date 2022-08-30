@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { first, Observable, map } from 'rxjs';
+import { first, Observable, map, firstValueFrom, lastValueFrom } from 'rxjs';
 import { IFeedback } from 'src/app/interfaces/feedback';
 import { IFilm } from 'src/app/interfaces/film';
 import { IUser } from 'src/app/interfaces/user';
@@ -20,6 +20,8 @@ export class FilmCardComponent implements OnInit {
   @Input() film!: IFilm;
 
   public user$: Observable<IUser | null>;
+
+
   public message: string = "";
 
   constructor(
@@ -29,6 +31,7 @@ export class FilmCardComponent implements OnInit {
     private feedbackService: FeedbackService
   ) {
     this.user$ = this.userService.currentUser$;
+
   }
 
   ngOnInit(): void {}
@@ -37,36 +40,12 @@ export class FilmCardComponent implements OnInit {
     this.router.navigate([`/catalog/${film.id}`]);
   }
 
-  public async onMovieRatingUpdate(film: IFilm, user: IUser, rating: number) {
-    const newRating = (film.rating + rating) / 2;
-    const a= { userId: user.id, filmId: film.id, movieRating: rating};
-    let newFeedback =[];
-    newFeedback.push(a);
-      const newFilm = {
-      title: film.title,
-      originalTitle: film.originalTitle,
-      id: film.id,
-      trailer: film.trailer,
-      year: film.year,
-      directors: film.directors,
-      writers: film.writers,
-      actors: film.actors,
-      runtime: film.runtime,
-      urlPoster: film.urlPoster,
-      countries: film.countries,
-      languages: film.languages,
-      genres: film.genres,
-      plot: film.plot,
-      urlIMDB: film.urlIMDB,
-      rated: film.rated,
-      type: film.type,
-      rating: newRating,
-      price: film.price,
-      counts: film.counts,
-      feedback : newFeedback
+  public async onMovieRatingUpdate(film: IFilm, user: IUser, rat: number) {
+    const newRating = Math.round((film.rating + rat) / 2);
 
-    };
-   await this.filmService.updateFilm(newFilm).pipe().subscribe();
+       const feed = {...film.feedback, userId:user.id , movieRating:rat}
+       const newFilm = {...film, rating:newRating, feedback:feed};
+   await firstValueFrom(this.filmService.updateFilm(newFilm));
   }
 
   public showMessage() {

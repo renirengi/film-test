@@ -2,7 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IFilm } from '../interfaces/film';
 
-import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay, BehaviorSubject} from 'rxjs'
+import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay, BehaviorSubject, switchMap} from 'rxjs'
+import { IFeedback } from '../interfaces/feedback';
+import { FeedbackService } from './feedback.service';
 
 
 @Injectable({
@@ -24,7 +26,8 @@ export class FilmService {
   }
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private feedback: FeedbackService
   ) { }
 
   public getFilmsPage(page: number): Observable<IFilm[]> {
@@ -97,5 +100,14 @@ export class FilmService {
 
   public updateFilm(film:IFilm): Observable <IFilm> {
     return this.http.patch<IFilm>(`${this.baseUrl}/${film.id}`, film);
+  }
+
+  public updateFilmFeedback(film: IFilm, userId: number, feedback: Partial<IFeedback>): Observable<IFilm> {
+    return this.feedback.updateFilmFeedback(film, userId, feedback).pipe(
+      switchMap(() => {
+        return this.feedback.getFilmFeedback(film.id);
+      }),
+      map((feedback) => ({...film, feedback}))
+    );
   }
 }
