@@ -1,21 +1,53 @@
-<ng-container *ngIf="film$ | async as film">
-  <div class="film-page-container">
-  <img [src]="film.urlPoster" [alt]="film.title">
-  <h2>{{film.title}}</h2>
-  <h3 *ngIf="film.originalTitle">{{film.originalTitle}}</h3>
-  <p>Year: {{film.year}}</p>
-  <p>Directors: {{film.directors}} </p>
-  <p>Writers: {{film.writers}}</p>
-  <p>Actors:</p>
-  <app-actors-card [actors]="film.actors">
-  </app-actors-card>
-  <p>Plot: {{film.plot}}</p>
-  <p>Genres:</p>
-  <span *ngFor="let genre of film.genres">{{genre}}
-  </span>
-  <app-movie-rating [rating]="film.rating"></app-movie-rating>
-  <div *ngIf="film.id">
-  <app-video-player [id]="film.id"></app-video-player>
-  </div>
+<ng-container  *ngIf="film$ | async as film">
+  <div class = "page">
+  <div class = "film-page-container">
+    <div class = "upper-container">
+      <div class = "title-upper-container">
+        <h2>{{film.title | uppercase}}</h2>
+        <h3 *ngIf = "film.originalTitle"><span class="note">Original title: </span>{{film.originalTitle}}</h3>
+        <div class = "year-container">
+          <button
+          mat-flat-button
+          (click) ="onCheck('year', film.year)">{{film.year}}
+          </button>
+          <span class="span">{{film.rated}}</span>
+          <span class="span">{{film.runtime}}</span>
+        </div>
+      </div>
+      <div class="rating-container">
+        <app-movie-rating [rating]="film.rating"></app-movie-rating>
+        <p>Your rating is<mat-icon color="accent"> <span class="material-symbols-outlined">
+          star
+          </span></mat-icon>9/10</p>
+      </div>
+    </div>
+    <div class="visual-container">
+      <img [src]="film.urlPoster" [alt]="film.title">
+    </div>
+    <div class = "information-container">
+      <p>{{film.plot}}</p>
+      <div class="directors note" *ngFor="let director of film.directors">Directors:
+        <button
+        mat-flat-button
+        (click) ="onCheck('director',director)">{{director}} </button>
+      </div>
+      <div class="writers note" *ngFor="let writer of film.writers">Writers:
+        <button
+        mat-flat-button
+        (click) ="onCheck('writer',writer)">{{writer}}</button>
+      </div>
+      <p>Actors:</p>
+      <app-actors-card [actors]="film.actors">
+      </app-actors-card>
+      <div class="genres note" *ngFor="let genre of film.genres">
+        <div class="genres-container">
+          <button
+          mat-flat-button
+          color="accent"
+          (click) ="onCheck('genre',genre)">#{{genre}} </button>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
   </ng-container>

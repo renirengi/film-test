@@ -17,6 +17,11 @@ export class FilmService {
   films: IFilm[] = [];
   page: number = 1;
   public _currentGenre$ = new BehaviorSubject<string|null>(null);
+  public _currentDirector$ = new BehaviorSubject<string|null>(null);
+  public _currentWriter$ = new BehaviorSubject<string|null>(null);
+  public _currentYear$ = new BehaviorSubject<string|null>(null);
+  public _currentActor$ = new BehaviorSubject<string|null>(null);
+
   public _currentUrl$ = new BehaviorSubject<any|null>(null);
   public readonly filmSearchString$ = new BehaviorSubject<string>('');
   public url: any;
@@ -69,6 +74,12 @@ export class FilmService {
         }
         else if (value === 'years') {
           films.forEach((film) => years.add(film.year));
+        }
+        else if (value === 'actors') {
+          films.forEach((film) => film.actors.map(elem=> years.add(elem.name)));
+        }
+        else if (value === 'writers') {
+          films.forEach((film) => years.add(film.writers));
         }
         else if (value === 'prices') {
           films.forEach((film) => years.add(film.price));

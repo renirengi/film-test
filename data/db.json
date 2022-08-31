@@ -11,6 +11,18 @@
       "movieRating": 10,
       "filmId": 118,
       "id": 2
+    },
+    {
+      "userId": 1,
+      "movieRating": 3,
+      "filmId": 3,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "movieRating": 5,
+      "filmId": 1,
+      "id": 4
     }
   ],
   "users": [
@@ -43,7 +55,7 @@
       "actors": [
         {
           "name": "Missy Keating",
-          "photo": "https://images.celebnetworthpost.com/247/2001/missy-keating/missy-keating.jpg"
+          "photo": "https://images.mubicdn.net/images/cast_member/373573/cache-216390-1492475145/image-w856.jpg"
         },
         {
           "name": "Marcella Plunkett",
@@ -75,12 +87,12 @@
       "urlIMDB": "https://www.imdb.com/title/tt2328549/?ref_=tt_mv_close",
       "rated": "18+",
       "type": "DVD",
-      "rating": 4,
+      "rating": 5,
       "price": 18.45,
       "counts": 3,
       "feedback": {
         "userId": 1,
-        "movieRating": 4
+        "movieRating": 5
       }
     },
     {
@@ -186,9 +198,13 @@
         "Japan",
         "Korean"
       ],
-      "rating": 6,
+      "rating": 5,
       "price": 13.65,
-      "counts": 2
+      "counts": 2,
+      "feedback": {
+        "userId": 1,
+        "movieRating": 3
+      }
     },
     {
       "title": "Deep Red",
@@ -316,7 +332,7 @@
         },
         {
           "name": "Lucyna Winnicka",
-          "photo": "https://m.media-amazon.com/images/M/MV5BNTgxMzEzZDktMTY5OS00ZmYzLWFhYWItZGI4MjQ1NGUyNDQxXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY317_CR173,0,214,317_AL_.jpg"
+          "photo": "https://media2.nekropole.info/2015/01/Lucyna-Winnicka.jpg"
         },
         {
           "name": "Mieczyslaw Voit",

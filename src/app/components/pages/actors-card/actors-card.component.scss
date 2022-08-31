@@ -1,0 +1,15 @@
+.actor-container {
+  margin: 0 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+     img.ng-star-inserted{
+      object-fit: cover;
+      width:120px;
+      height:120px;
+      margin: 0 auto;
+      padding: 0;
+      border-radius: 100px;
+}
+}

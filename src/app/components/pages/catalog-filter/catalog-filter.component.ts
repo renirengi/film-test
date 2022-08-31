@@ -22,11 +22,13 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   public filtersForm = new FormGroup({
     genres: new FormControl(['']),
     types: new FormControl([]),
-    directors: new FormControl([]),
-    countries: new FormControl([]),
+    directors: new FormControl(['']),
+    writers: new FormControl(['']),
+    ///actors: new FormControl(['']),
+    countries: new FormControl(['']),
     languages: new FormControl([]),
     rated: new FormControl([]),
-    year: new FormControl([]),
+    year: new FormControl(['']),
     priceMax: new FormControl(),
     priceMin: new FormControl(),
     maxRating: new FormControl(),
@@ -40,6 +42,10 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   public prices: string[] = [];
   public ratingArr: string[] = [];
   public currentGenre: string | null = '';
+  public currentYear: string | null = '';
+  public currentWriter: string | null = '';
+  public currentDirector: string | null = '';
+  public currentActor: string | null = '';
   public searchString: string = '';
 
    constructor(private filmService: FilmService, private route: ActivatedRoute) {
@@ -52,6 +58,8 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
       rateds: this.filmService.getAvailable('rated'),
       years: this.filmService.getAvailable('years'),
       prices: this.filmService.getAvailable('prices'),
+      ///actors:  this.filmService.getAvailable('actors'),
+      writers: this.filmService.getAvailable('writers'),
     });
 
 
@@ -61,13 +69,37 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     this. getPricesOrRating("prices").then((prices) => (this.prices = prices));
     this. getPricesOrRating("rating").then((rating) => (this.ratingArr= rating));
 
+    let newArr = [];
     this.currentGenre = this.filmService._currentGenre$.getValue();
-    if (this.currentGenre) {
-      let newArr = [];
+    this.currentYear = this.filmService._currentYear$.getValue();
+    this.currentActor = this.filmService._currentActor$.getValue();
+    this.currentWriter = this.filmService._currentWriter$.getValue();
+    this.currentDirector = this.filmService._currentDirector$.getValue();
+    if(this.currentGenre!==null){
       newArr.push(this.currentGenre);
-      this.filtersForm.get('genres')!.patchValue(newArr);
+      this.filtersForm.get("genres")!.patchValue(newArr);
       this.onChange();
+      this.filmService._currentGenre$.next(null);
     }
+    else if (this.currentYear!==null){
+      newArr.push(this.currentYear);
+      this.filtersForm.get("year")!.patchValue(newArr);
+      this.onChange();
+      this.filmService._currentYear$.next(null);
+    }
+    else if (this.currentWriter!==null){
+      newArr.push(this.currentWriter);
+      this.filtersForm.get("writers")!.patchValue(newArr);
+      this.onChange();
+      this.filmService._currentWriter$.next(null);
+    }
+    else if (this.currentDirector!==null){
+      newArr.push(this.currentDirector);
+      this.filtersForm.get("directors")!.patchValue(newArr);
+      this.onChange();
+      this.filmService._currentDirector$.next(null);
+    }
+
 
     const searchString$ = this.route.queryParams
       .pipe(map((params) => params['q']))
@@ -82,6 +114,9 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
     this.subscription.add(searchString$.subscribe());
   }
+
+
+
 
   public ngOnDestroy(): void {
     this.subscription.unsubscribe();

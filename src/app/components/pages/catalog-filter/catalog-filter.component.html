@@ -20,6 +20,29 @@
       </mat-select>
     </mat-form-field>
 
+    <mat-form-field appearance="fill" class="writers">
+      <mat-label>Sort by writers</mat-label>
+      <mat-select formControlName="writers" multiple (selectionChange)="onChange()">
+        <mat-option
+          *ngFor="let writer of options['writers']"
+          [value]="writer"
+          >{{ writer }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+
+
+    <!---<mat-form-field appearance="fill" class="actors">
+      <mat-label>Sort by actors</mat-label>
+      <mat-select formControlName="actors" multiple (selectionChange)="onChange()">
+        <mat-option
+          *ngFor="let actor of options['actors']"
+          [value]="actor"
+          >{{ actor }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>--->
+
     <mat-form-field appearance="fill" class="years">
       <mat-label>Sort by years</mat-label>
       <mat-select formControlName="year" multiple (selectionChange)="onChange()">
@@ -33,9 +56,9 @@
       <mat-label>Sort by countries</mat-label>
       <mat-select formControlName="countries" multiple (selectionChange)="onChange()">
         <mat-option
-          *ngFor="let countrie of options['countries']"
-          [value]="countrie"
-          >{{ countrie }}</mat-option
+          *ngFor="let country of options['countries']"
+          [value]="country"
+          >{{ country }}</mat-option
         >
       </mat-select>
     </mat-form-field>

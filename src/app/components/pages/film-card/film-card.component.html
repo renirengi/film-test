@@ -1,15 +1,19 @@
-<div *ngIf="film">
+<div class="film-card" *ngIf="film">
   <div class="film-container" >
-  <h2>{{film.title}}</h2>
-  <img class="catalog-image" [src]="film.urlPoster" [alt]="film.title" routerLink="/catalog/{{film.id}}">
-  <p>Year: {{film.year}}</p>
+    <img class="catalog-image" [src]="film.urlPoster" [alt]="film.title" routerLink="/catalog/{{film.id}}">
+    <p class="film-title">{{ film.title | uppercase}} <span>({{film.year}})</span></p>
+</div>
+
   <ng-container *ngIf="user$ | async as user; else WithoutUser" >
   <app-movie-rating [rating]="film.rating" [user]="user" (update)="onMovieRatingUpdate(film, user, $event)"></app-movie-rating>
   </ng-container>
+
+
   <ng-template #WithoutUser >
     <app-movie-rating [rating]="film.rating" (update)="showMessage()" (mouseleave)="deleteMessage()"></app-movie-rating>
     <p >{{message}}</p>
     </ng-template>
-  <p>Price: {{film.price | currency}}</p>
-  </div>
-  </div>
+ <h2 class="film-price">{{film.price | currency}}</h2>
+
+</div>
+

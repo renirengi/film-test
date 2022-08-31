@@ -1,7 +1,7 @@
  <div class="catalog-page">
  <app-catalog-filter (filtersChanged)="applyFilters($event)"></app-catalog-filter>
 
- <div class="page">
+ <div class="catalog-films page">
   <app-films-list
   *ngIf="films"
   [films]="films"

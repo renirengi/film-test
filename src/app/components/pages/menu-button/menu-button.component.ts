@@ -22,7 +22,6 @@ export class MenuButtonComponent implements OnInit {
    }
 
    onRoute(par:string){
-    let genres_like = `(${par})`;
     this.filmService._currentGenre$.next(par);
     this.router.navigate(['/catalog']);
    }

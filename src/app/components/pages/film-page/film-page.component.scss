@@ -1,0 +1,51 @@
+.film-page-container {
+
+  .upper-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+
+    .year-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .span {
+        padding: 1em;
+      }
+    }
+    .rating-container {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .visual-container {
+    display: flex;
+    margin-bottom: 1em;
+
+    img {
+      max-height: 60vh;
+    }
+  }
+
+  .information-container {
+    margin: 0 1em;
+
+    app-actors-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .genres {
+     display: inline-block;
+     text-align: center;
+
+        .genres-container {
+        margin: 1em;
+        max-width: 93px;
+      }
+  }
+  }
+}
