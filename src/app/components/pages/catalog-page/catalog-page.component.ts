@@ -38,6 +38,7 @@ export class CatalogPageComponent implements OnInit {
   }
 
   public async applyFilters(params: {[key: string]: string}) {
+    console.log(params)
     this.films = await lastValueFrom(this.filmService.findFilmsByParams(params));
     //this.displayedPage = null;
     this.showLoadMore = false;

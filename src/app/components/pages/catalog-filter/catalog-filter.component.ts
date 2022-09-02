@@ -8,6 +8,7 @@ import {
 import { FormControl, FormGroup } from '@angular/forms';
 import { forkJoin, map, Observable, Subscription, tap } from 'rxjs';
 import { FilmService } from 'src/app/services/film.service';
+import { CelebreService } from 'src/app/services/celebre.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -24,7 +25,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     types: new FormControl([]),
     directors: new FormControl(['']),
     writers: new FormControl(['']),
-    ///actors: new FormControl(['']),
+    actors: new FormControl(['']),
     countries: new FormControl(['']),
     languages: new FormControl([]),
     rated: new FormControl([]),
@@ -48,18 +49,23 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
   public currentActor: string | null = '';
   public searchString: string = '';
 
-   constructor(private filmService: FilmService, private route: ActivatedRoute) {
+   constructor(
+    private filmService: FilmService,
+    private celebreService: CelebreService,
+    private route: ActivatedRoute,
+     ) {
     this.filtersOptions$ = forkJoin({
       genres: this.filmService.getAvailable('genre'),
       types: this.filmService.getAvailable('type'),
-      directors: this.filmService.getAvailable('director'),
       countries: this.filmService.getAvailable('country'),
       languages: this.filmService.getAvailable('language'),
       rateds: this.filmService.getAvailable('rated'),
       years: this.filmService.getAvailable('years'),
       prices: this.filmService.getAvailable('prices'),
-      ///actors:  this.filmService.getAvailable('actors'),
-      writers: this.filmService.getAvailable('writers'),
+
+      actors:  this.celebreService.getAllByParams('actor'),
+      writers: this.celebreService.getAllByParams('writer'),
+      directors: this.celebreService.getAllByParams('director'),
     });
 
 

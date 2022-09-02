@@ -5,6 +5,7 @@ import { IFilm } from '../interfaces/film';
 import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay, BehaviorSubject, switchMap} from 'rxjs'
 import { IFeedback } from '../interfaces/feedback';
 import { FeedbackService } from './feedback.service';
+import { CelebreService } from './celebre.service';
 
 
 @Injectable({
@@ -32,7 +33,8 @@ export class FilmService {
 
   constructor(
     private http: HttpClient,
-    private feedback: FeedbackService
+    private feedback: FeedbackService,
+    private celebre: CelebreService
   ) { }
 
   public getFilmsPage(page: number): Observable<IFilm[]> {
@@ -47,6 +49,7 @@ export class FilmService {
       tap(films => this.films = films)
     )
   }
+
 
   public findFilmsByParams(params: { [key: string]: string }): Observable<IFilm[]> {
     return this.http.get<IFilm[]>(this.baseUrl, { params });
@@ -67,19 +70,11 @@ export class FilmService {
           films.forEach((film) => years.add(film.countries));
         } else if (value === 'language') {
           films.forEach((film) => years.add(film.languages));
-        } else if (value === 'director') {
-          films.forEach((film) => years.add(film.directors));
         } else if (value === 'rated') {
           films.forEach((film) => years.add(film.rated));
         }
         else if (value === 'years') {
           films.forEach((film) => years.add(film.year));
-        }
-        else if (value === 'actors') {
-          films.forEach((film) => film.actors.map(elem=> years.add(elem.name)));
-        }
-        else if (value === 'writers') {
-          films.forEach((film) => years.add(film.writers));
         }
         else if (value === 'prices') {
           films.forEach((film) => years.add(film.price));

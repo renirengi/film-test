@@ -37,7 +37,7 @@
         (click) ="onCheck('writer',writer)">{{writer}}</button>
       </div>
       <p>Actors:</p>
-      <app-actors-card [actors]="film.actors">
+      <app-actors-card>
       </app-actors-card>
       <div class="genres note" *ngFor="let genre of film.genres">
         <div class="genres-container">

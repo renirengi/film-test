@@ -1,14 +1,14 @@
 import { IFeedback } from "./feedback";
-import { ICelebre } from "./celebre"
+
 export interface IFilm {
   title: string,
   originalTitle?: string,
   id: number,
   trailer: string,
   year: number,
-  directors: ICelebre[],
-  writers: ICelebre[],
-  actors: ICelebre[],
+  directors: number[],
+  writers: number[],
+  actors: number[],
   runtime: string,
   urlPoster: string,
   countries: string[],

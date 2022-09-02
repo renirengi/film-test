@@ -1,8 +1,8 @@
 export interface ICelebre {
 id:number;
 name: string;
-acted?:number[];
-directed?: number[];
-written?:number[];
+actorOf?:number[];
+directorOf?: number[];
+writerOf?:number[];
 photo?: string;
 }
