@@ -5,7 +5,7 @@ import { IFilm } from '../interfaces/film';
 import {catchError, map, delay, Observable, retry, tap, throwError, shareReplay, BehaviorSubject, switchMap} from 'rxjs'
 import { IFeedback } from '../interfaces/feedback';
 import { FeedbackService } from './feedback.service';
-import { CelebreService } from './celebre.service';
+
 
 
 @Injectable({
@@ -34,7 +34,7 @@ export class FilmService {
   constructor(
     private http: HttpClient,
     private feedback: FeedbackService,
-    private celebre: CelebreService
+
   ) { }
 
   public getFilmsPage(page: number): Observable<IFilm[]> {

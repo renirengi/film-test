@@ -6,10 +6,11 @@ import {
   Output,
 } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { forkJoin, map, Observable, Subscription, tap } from 'rxjs';
+import { forkJoin, lastValueFrom, map, Observable, Subscription, tap } from 'rxjs';
 import { FilmService } from 'src/app/services/film.service';
 import { CelebreService } from 'src/app/services/celebre.service';
 import { ActivatedRoute } from '@angular/router';
+import { ICelebre } from 'src/app/interfaces/celebre';
 
 @Component({
   selector: 'app-catalog-filter',
@@ -191,8 +192,15 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
             acc = { ...acc, [keyString]: valueString };
           }
         }
+        else if (key=='actors'|| key == 'writers' || key ==='directors') {
+          let val:string[]=[];
+          let id;
+          value.map((el:string) => this.getCelebreID(el).then((el) => id=el) )
+          console.log (id)
+        }
          else if (Array.isArray(value) && value.length > 0) {
           keyString = `${key}_like`;
+          console.log(value)
           valueString = value.reduce(
             (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
             ''
@@ -211,10 +219,21 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     if (this.searchString) {
       filterParams['q'] = this.searchString;
     }
-    console.log (filterParams)
+    ///console.log (filterParams)
     this.filtersChanged.emit(filterParams);
 
   }
+
+  private async getCelebreID (name:string) {
+    let id:number=0;
+    if (name!==""){
+    let celebre$ = this.celebreService.getCelebIDByParams(name);
+    let celebre = await lastValueFrom(celebre$);
+    celebre.map(el=> id=el.id);
+    return id;
+  }
+ return
+}
 
   private getInterval(min: any, max: any, arr:string[] ) {
     return arr

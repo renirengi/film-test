@@ -21,7 +21,7 @@ export class CelebreService {
   }
 
   public getCelebIDByParams (params:string) {
-    return this.http.get<ICelebre[]>(`http://localhost:3000/celebrities?name_like=${params}/`)
+    return this.http.get<ICelebre[]>(`http://localhost:3000/celebrities?name_like=${params}`)
   }
 
   public getAllByParams(params:string): Observable<string[]>{
