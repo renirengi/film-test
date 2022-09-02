@@ -85,28 +85,23 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     if(this.currentGenre!==null){
       newArr.push(this.currentGenre);
       this.filtersForm.get("genres")!.patchValue(newArr);
-      this.onChange();
-      this.filmService._currentGenre$.next(null);
+       this.filmService._currentGenre$.next(null);
     }
     else if (this.currentYear!==null){
       newArr.push(this.currentYear);
       this.filtersForm.get("year")!.patchValue(newArr);
-      this.onChange();
       this.filmService._currentYear$.next(null);
     }
     else if (this.currentWriter!==null){
       newArr.push(this.currentWriter);
       this.filtersForm.get("writers")!.patchValue(newArr);
-      this.onChange();
       this.filmService._currentWriter$.next(null);
     }
     else if (this.currentDirector!==null){
       newArr.push(this.currentDirector);
       this.filtersForm.get("directors")!.patchValue(newArr);
-      this.onChange();
       this.filmService._currentDirector$.next(null);
     }
-
 
     const searchString$ = this.route.queryParams
       .pipe(map((params) => params['q']))
@@ -121,9 +116,6 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
 
     this.subscription.add(searchString$.subscribe());
   }
-
-
-
 
   public ngOnDestroy(): void {
     this.subscription.unsubscribe();
@@ -195,19 +187,18 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
         else if (key=='actors'|| key == 'writers' || key ==='directors') {
           let val:string[]=[];
           let id;
-          value.map((el:string) => this.getCelebreID(el).then((el) => id=el) )
-          console.log (id)
+          value.map((el:string) => this.getCelebreID(el).then((el) => console.log(el)) )
+          ///console.log (id)
         }
          else if (Array.isArray(value) && value.length > 0) {
           keyString = `${key}_like`;
-          console.log(value)
           valueString = value.reduce(
             (acc, val, i) => (i === 0 ? `(${val})` : `${acc}|(${val})`),
             ''
           );
            if(valueString !=="()"){
             acc = { ...acc, [keyString]: valueString };
-}
+          }
         } else if (typeof value === 'boolean' && value === true) {
           [keyString, valueString] = this.booleanFilterGenerator(key);
           acc = { ...acc, [keyString]: valueString };
@@ -232,7 +223,7 @@ export class CatalogFilterComponent implements OnInit, OnDestroy {
     celebre.map(el=> id=el.id);
     return id;
   }
- return
+ return null;
 }
 
   private getInterval(min: any, max: any, arr:string[] ) {
